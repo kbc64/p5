@@ -1,6 +1,8 @@
 
 let MAC_INFO;
-
+let animationStartTime = -1;  
+const animationDuration = 1200; 
+const toggleInterval = 120;    
 
 function preload() {
   MAC_INFO = loadJSON('./json/mac.json'); // JSON verisini yükle
@@ -24,52 +26,62 @@ function draw() {
 
 function MatchComentaryAnimation() {
   setTimeout(MatchComentaryAnimation, MAC_INFO['aksiyonlar'][JSON_INDEX]['dc'] + ANIMATION_TIME)
-  animationStartTime = 1;
-
+  animationStartTime = millis()
   JSON_INDEX++
 }
 
-let animationStartTime = -1;  
-const animationDuration = 2000; 
-const toggleInterval = 150;     
+ 
 
 
 function addMatchCommentary() {
-  let currentColor = getMatchCommentaryColor()
-  const whiteColor = { r: 255, g: 255, b: 255, a: 255 };
-
+  let currentColor = getMatchCommentaryBoxColor()
+  let textColor = getMatchCommentaryTextColor()
   if (animationStartTime !== -1) {
     let elapsed = millis() - animationStartTime;
     if (elapsed < animationDuration) {
       let phase = floor(elapsed / toggleInterval);
-      currentColor = (phase % 2 === 0) ? whiteColor : { r: 25, g: 25, b: 25, a: 255 };
+      currentColor = (phase % 2 === 0) ? getMatchCommentaryTextColor() : getMatchCommentaryBoxColor()
+      textColor = (phase % 2 === 0) ? getMatchCommentaryBoxColor(): getMatchCommentaryTextColor()
     } else {
       animationStartTime = -1;
-      currentColor = getMatchCommentaryColor();
+      currentColor = getMatchCommentaryBoxColor();
+      textColor = getMatchCommentaryTextColor()
     }
   }
   
   fill(currentColor.r, currentColor.g, currentColor.b, currentColor.a);
   rect(MATCH_COMMENTARY_BOX_X, MATCH_COMMENTARY_BOX_Y, MATCH_COMMENTARY_BOX_WIDTH, MATCH_COMMENTARY_BOX_HEIGHT);
-  addMatchCommentaryText(MAC_INFO['aksiyonlar'][JSON_INDEX]['text'])
+  addMatchCommentaryText(MAC_INFO['aksiyonlar'][JSON_INDEX]['text'], textColor)
 }
 
-function getMatchCommentaryColor() {
-  color = MATCH_COMMENTARY_BOX_COLOR
+function getMatchCommentaryBoxColor() {
+  let color = MATCH_COMMENTARY_BOX_COLOR
   if(MAC_INFO['aksiyonlar'][JSON_INDEX]['w'] == 1) {
-    color = HOME_COLOR
+    color = HOME_BOX_COLOR
   } else if(MAC_INFO['aksiyonlar'][JSON_INDEX]['w'] == 2) {
-    color = AWAY_COLOR
+    color = AWAY_BOX_COLOR
+  } 
+  return color
+}
+
+function getMatchCommentaryTextColor() {
+  let color = {r:0, g:0, b:0, a: 255}
+  if(MAC_INFO['aksiyonlar'][JSON_INDEX]['w'] == 1) {
+    color = HOME_BOX_TEXT_COLOR
+  } else if(MAC_INFO['aksiyonlar'][JSON_INDEX]['w'] == 2) {
+    color = AWAY_BOX_TEXT_COLOR
   }
   return color
 }
 
-function addMatchCommentaryText(boxText, is_black=true) {
-  if (is_black) {
-    fill(0, 0, 0);
+function addMatchCommentaryText(boxText, color=false) {
+  if(!color) {
+    color = getMatchCommentaryTextColor();
   } else {
-    fill(255, 255, 255);
+    color = color
   }
+  
+  fill(color.r, color.g, color.b, color.a)
   textSize(52);
   textFont('Futura');
   textAlign(CENTER, CENTER);
@@ -84,5 +96,8 @@ function addBox(x, y, boxWidth, boxHeight, color) {
 
 function Settings() {
   MATCH_COMMENTARY_BOX_COLOR = 'matchCommentaryBoxColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['matchCommentaryBoxColor'] : MATCH_COMMENTARY_BOX_COLOR
-  HOME_COLOR = 'homeColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['homeColor'] : HOME_COLOR
+  HOME_BOX_COLOR = 'homeBoxColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['homeBoxColor'] : HOME_BOX_COLOR;
+  AWAY_BOX_COLOR = 'awayBoxColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['awayBoxColor'] : AWAY_BOX_COLOR;
+  HOME_BOX_TEXT_COLOR = 'homeBoxTextColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['homeBoxTextColor'] : HOME_BOX_TEXT_COLOR;
+  AWAY_BOX_TEXT_COLOR = 'awayBoxTextColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['awayBoxTextColor'] : AWAY_BOX_TEXT_COLOR;
 }

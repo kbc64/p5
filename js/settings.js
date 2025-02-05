@@ -7,8 +7,10 @@ let JSON_INDEX = 0;
 ANIMATION_TIME = 5000;
 
 
-let HOME_COLOR = { r: 255, g: 0, b: 0, a: 180 };
-let AWAY_COLOR = { r: 0, g: 0, b: 255, a: 180 };
+let HOME_BOX_COLOR = { r: 255, g: 0, b: 0, a: 180 };
+let AWAY_BOX_COLOR = { r: 0, g: 0, b: 255, a: 180 };
+let HOME_BOX_TEXT_COLOR = { r: 255, g: 255, b: 255, a: 255 };
+let AWAY_BOX_TEXT_COLOR = { r: 255, g: 255, b: 255, a: 255 };
 
 const MATCH_COMMENTARY_BOX_X = 0;
 const MATCH_COMMENTARY_BOX_Y = 0;
