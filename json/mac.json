@@ -1,0 +1,28 @@
+{
+    "settings": {
+        "matchCommentaryBoxColor_bak" : {"r": 0, "g": 0, "b": 0, "a": 255 },
+        "homeColor_bak": {"r": 33, "g": 0, "b": 0, "a": 255 },
+        "awayColor_bak": {"r":3, "g": 0, "b": 0, "a": 255 }
+    },
+    "aksiyonlar": [
+        {
+            "text": "Maç Başlıyor!",
+            "w": 0,
+            "dc": 0
+
+        },
+        {
+            "text": "Golll!",
+            "w":1,
+            "dc": 0
+        },
+        {
+            "text": "Golll!",
+            "w":2,
+            "dc": -4000
+        }
+
+
+    ]
+
+}
