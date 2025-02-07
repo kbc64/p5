@@ -1,28 +1,100 @@
 {
+    "info": {
+        "homeTeam": "GALATASARAY",
+        "awayTeam": "FENERBAHÇE",
+        "matchDate": "21 Eylül 2005, TSL 12.Hafta"
+    },
     "settings": {
         "matchCommentaryBoxColor_bak" : {"r": 0, "g": 0, "b": 0, "a": 255 },
-        "homeBoxColor_bak": {"r": 33, "g": 0, "b": 0, "a": 255 },
-        "awayBoxColor_bak": {"r":3, "g": 0, "b": 0, "a": 255 },
+        "homeBoxColor_bak": {"r": 33, "g": 0, "b": 0, "a": 25},
+        "awayBoxColor_bak": {"r":3, "g": 0, "b": 0, "a": 25},
         "homeBoxTextColor_bak": {"r": 255, "g": 255, "b":255, "a": 255},
-        "awayBoxTextColor_bak": {"r": 255, "g": 255, "b":255, "a": 255}
+        "awayBoxTextColor_bak": {"r": 255, "g": 255, "b":255, "a": 255},
+        "homeNameColor": {"r": 255, "g": 255, "b": 255, "a":255},
+        "awayNameColor": {"r": 255, "g": 255, "b": 255, "a":255},
+        "scoreHomeColor": {"r": 255, "g": 255, "b": 255, "a":255},
+        "scoreAwayColor": {"r": 255, "g": 255, "b": 255, "a":255}
     },
     "aksiyonlar": [
         {
             "text": "Maç Başlıyor!",
             "w": 0,
-            "dc": 0
+            "dc": 0,
+            "isAnimation": false
 
         },
         {
-            "text": "Golll!",
+            "text": "Gooolllll",
             "w":1,
-            "dc": 0
+            "dc": 0,
+            "isAnimation": true,
+            "homeScore": 1,
+            "awayScore": 0,
+            
+            "isScoreChange": true
         },
         {
-            "text": "Golll!",
+            "text": "Gol, Hagi 45'",
+            "w":1,
+            "dc": -2000,
+            "homeScore": 1,
+            "awayScore":0,
+            "isAnimation": false
+        }, 
+        {
+            "text": " 45' Galatasaray 1-0 Fenerbahçe ",
+            "w": 0,
+            "dc": -2000,
+            "isAnimation": false
+        }, 
+        {
+            "text": "Sarı Kart, Hagi 60'",
+            "w": 1,
+            "dc": -2000,
+            "isAnimation": false
+        },
+        {
+            "text": "65', 1-0 Maç devam ediyor.",
+            "w": 0,
+            "dc": 0,
+            
+            "isAnimation": false
+        },
+        {
+            "text": "Gooolllll",
             "w":2,
-            "dc": 0
+            "dc": -2000,
+            "homeScore": 1,
+            "awayScore": 1,
+            
+            "isScoreChange": true,
+            "isAnimation": true
+        },
+        {
+            "text": "Gol, Alex 85'",
+            "w":2,
+            "dc": -2000,
+            "isAnimation": false
+        },
+        {
+            "text": "88', Oyuncu Değişikliği",
+            "w":2,
+            "dc": -2000,
+            "isAnimation": false
+        },
+        {
+            "text": "Çıkan Oyuncu, Alex",
+            "w":2,
+            "dc": -2000,
+            "isAnimation": false
+        }, {
+            "text": "Giren Oyuncu, Anelka",
+            "w":2,
+            "dc": -2000,
+            "isAnimation": false
         }
+
+
 
 
     ]
