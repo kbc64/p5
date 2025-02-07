@@ -12,8 +12,6 @@ const rosterTextColor = { r: 255, g: 255, b: 255, a: 255 };
 // Forma numarası (jersey) kutusu için renkler:
 const jerseyBoxColor = { r: 80, g: 80, b: 80, a: 255 };
 const jerseyTextColor = { r: 255, g: 255, b: 255, a: 255 };
-const substituteJerseyTextColor = { r: 200, g: 200, b: 200, a: 255 }; // Yedek oyuncu numaraları için yeni renk
-const substituteJerseyBoxColor = { r: 80, g: 80, b: 80, a: 255 }; // Yedek oyuncu kutusu için yeni renk
 
 const playerFadeDelay = 200;    // Her oyuncu için gecikme (ms)
 const playerFadeDuration = 500; // Her oyuncunun fade-in süresi (ms)
@@ -25,12 +23,6 @@ let awayFadeStartTime = null;
 
 let homePlayers = null;
 let awayPlayers = null;
-let homeCoach = "";
-let awayCoach = "";
-let homeSubstitutes = [];
-let awaySubstitutes = [];
-let playerPositions = {};
-
 
 function preload() {
   MAC_INFO = loadJSON('./json/mac.json');
@@ -46,14 +38,6 @@ function setup() {
   createCanvas(WIDTH, HEIGTH);
   homePlayers = MAC_INFO['homePlayers']
   awayPlayers = MAC_INFO['awayPlayers']
-  homeCoach = MAC_INFO['info']['homeCoach'];
-  awayCoach = MAC_INFO['info']['awayCoach'];
-  homeSubstitutes = MAC_INFO['homeSubstitutes'];
-  awaySubstitutes = MAC_INFO['awaySubstitutes'];
-
-  console.log(homeSubstitutes)
-
-  console.log(awaySubstitutes)
   Settings()
  
   setTimeout(MatchComentaryAnimation, ANIMATION_TIME)
@@ -79,11 +63,6 @@ function draw() {
 
 }
 
-function addBox(x, y, boxWidth, boxHeight, color) {
-  fill(color.r, color.g, color.b, color.a);
-  rect(x, y, boxWidth, boxHeight);
-}
-
 function triggerSquad() {
   if (homeFadeStartTime === null) {
     homeFadeStartTime = millis();
@@ -91,29 +70,74 @@ function triggerSquad() {
   } 
 }
 
-function draw() {
-  noStroke(); 
-  background(backgroundImage);
-  addMatchCommentary();
-  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, HOME_BOX_COLOR);
-  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, AWAY_BOX_COLOR);
-  image(team1Logo, LOGO_HOME_IMAGE_X, LOGO_IMAGE_Y, LOGO_IMAGE_WIDTH, LOGO_IMAGE_HEIGHT);  
-  image(team2Logo, LOGO_AWAY_IMAGE_X, LOGO_IMAGE_Y, LOGO_IMAGE_WIDTH, LOGO_IMAGE_HEIGHT);
-  addTeamName(MAC_INFO['info']['homeTeam'], HOME_NAME_X, TEAM_NAME_Y, HOME_NAME_COLOR);
-  addTeamName(MAC_INFO['info']['awayTeam'], AWAY_NAME_X, TEAM_NAME_Y, AWAY_NAME_COLOR);
-  addTeamScore(homeScore, SCORE_HOME_X, SCORE_TEAM_Y, SCORE_HOME_COLOR);
-  addTeamScore(awayScore, SCORE_AWAY_X, SCORE_TEAM_Y, SCORE_AWAY_COLOR);
-  addMatchDate(MAC_INFO['info']['matchDate'], MATCH_DATE_BOX_X, MATCH_DATE_BOX_Y, MATCH_DATE_BOX_WIDTH, MATCH_DATE_BOX_HEIGHT, MATCH_DATE_BOX_COLOR);
-  addSquad();
+function addBox(x, y, boxWidth, boxHeight, color) {
+  fill(color.r, color.g, color.b, color.a);
+  rect(x, y, boxWidth, boxHeight);
 }
 
 function addSquad() {
-  addBox(0, MATCH_SQUAD_Y, width, HEIGTH - MATCH_SQUAD_Y, { r: 0, g: 0, b: 0, a: 70 });
-  renderTeamRoster(0, MATCH_SQUAD_Y, 540, 800, homePlayers, rosterTextColor, homeCoach, homeSubstitutes);
-  renderTeamRoster(540, MATCH_SQUAD_Y, 540, 800, awayPlayers, rosterTextColor, awayCoach, awaySubstitutes);
+  addBox(0, MATCH_SQUAD_Y, width, HEIGTH-MATCH_SQUAD_Y, rosterRightColor);
+
+  if (homeFadeStartTime !== null) {
+    leftLogoBoxX = 0;
+    logoBoxWidth = 540
+    rosterHeight=800
+    rightLogoBoxX = 540
+    renderTeamRoster(leftLogoBoxX, MATCH_SQUAD_Y, logoBoxWidth, rosterHeight, homePlayers, rosterTextColor, homeFadeStartTime);
+
+    renderTeamRoster(rightLogoBoxX, MATCH_SQUAD_Y, logoBoxWidth, rosterHeight, awayPlayers, rosterTextColor, awayFadeStartTime);
+  }
 }
 
-function renderTeamRoster(x, y, boxWidth, boxHeight, teamPlayers, textColor, coach, substitutes) {
+function renderTeamRoster(x, y, boxWidth, boxHeight, teamPlayers, textColor, fadeStartTime) {
+  let starting11 = teamPlayers
+  //let starting11 = teamPlayers.slice(0, 11);
+  //let substitutes = teamPlayers.slice(11);
+  
+  let currentY = y;
+  console.log(y)
+  
+  //"İlk 11" başlığını animasyonla çiz (fade başlangıcı: fadeStartTime)
+ 
+ // currentY = renderAnimatedSectionHeading(x, currentY, "İlk 11", fadeStartTime);
+  
+  // İlk 11 oyuncuları; başlık animasyon süresini ekleyerek başlatıyoruz:
+  let startingSectionFadeStartTime = fadeStartTime + headingFadeDuration;
+  currentY = renderAnimatedRosterSection(x, currentY, boxWidth, starting11, textColor, startingSectionFadeStartTime);
+  
+  // Hesapla: İlk 11 bölümü tamamlandığında (son oyuncu başlangıcının zamanı + süresi)
+  let starting11TotalDelay = startingSectionFadeStartTime + (starting11.length - 1) * playerFadeDelay + playerFadeDuration;
+  
+  // "Yedekler" başlığını animasyonla çiz (fade başlangıcı: starting11TotalDelay)
+  //currentY = renderAnimatedSectionHeading(x, currentY, "Yedekler", starting11TotalDelay);
+  
+  // Yedek oyuncularını animasyonla çizleyelim:
+  //let substitutesFadeStartTime = starting11TotalDelay + headingFadeDuration;
+  //currentY = renderAnimatedRosterSection(x, currentY, boxWidth, substitutes, textColor, substitutesFadeStartTime);
+  
+  return currentY;
+}
+
+function renderAnimatedSectionHeading(x, y, headingText, sectionFadeStartTime) {
+  let elapsed = millis() - sectionFadeStartTime;
+  let alphaValue;
+  if (elapsed < 0) {
+    alphaValue = 0;
+  } else if (elapsed > headingFadeDuration) {
+    alphaValue = 255;
+  } else {
+    alphaValue = map(elapsed, 0, headingFadeDuration, 0, 255);
+  }
+  const headingHeight = 40;
+  fill(255, 255, 255, alphaValue);
+  textFont('futura');
+  textSize(36);
+  textAlign(LEFT, CENTER);
+  text(headingText, x + 20, y + headingHeight / 2);
+  return y + headingHeight;
+}
+
+function renderAnimatedRosterSection(x, startY, sectionWidth, players, textColor, fadeStartTime) {
   let rowHeight = 60;
   let padding = 10;
   let jerseyBoxWidth = 60;
@@ -121,60 +145,48 @@ function renderTeamRoster(x, y, boxWidth, boxHeight, teamPlayers, textColor, coa
   textFont('futura');
   textSize(36);
 
-  let currentY = y + padding + rowHeight / 2;
-  for (let i = 0; i < teamPlayers.length; i++) {
-    let player = teamPlayers[i];
-    let jerseyX = x + padding;
-    let jerseyY = currentY - rowHeight / 2;
-    fill(jerseyBoxColor.r, jerseyBoxColor.g, jerseyBoxColor.b, 255);
-    rect(jerseyX, jerseyY, jerseyBoxWidth, rowHeight);
-    
-    push();
-    textAlign(CENTER, CENTER);
-    fill(jerseyTextColor.r, jerseyTextColor.g, jerseyTextColor.b, 255);
-    text(player.number, jerseyX + jerseyBoxWidth / 2, jerseyY + rowHeight / 2);
-    pop();
-    
-    fill(textColor.r, textColor.g, textColor.b, 255);
-    textAlign(LEFT, CENTER);
-    let nameX = jerseyX + jerseyBoxWidth + 10;
-    text(player.name, nameX, currentY);
-    
-    currentY += rowHeight;
-  }
-  
-  // Teknik direktörü ekle
-  fill(textColor.r, textColor.g, textColor.b, 255);
-  textAlign(LEFT, CENTER);
-  textSize(32);
-  text(`Teknik Direktör: ${coach}`, x + padding, currentY + 10);
-  currentY += rowHeight;
+  let currentY = startY + padding + rowHeight / 2;
+  for (let i = 0; i < players.length; i++) {
+    let player = players[i];
 
-  currentY +=10
-  
-  // Yedek oyuncuları aynı formatta ekle
-  for (let i = 0; i < substitutes.length; i++) {
-    let player = substitutes[i];
+    // Eğer animasyon başlamamışsa, oyuncuyu hiç gösterme!
+    if (fadeStartTime === null) {
+      continue;
+    }
+
+    // Her oyuncu için animasyon gecikmesini hesapla:
+    let playerFadeTime = millis() - fadeStartTime - (i * playerFadeDelay);
+    let alphaValue;
+    if (playerFadeTime < 0) {
+      alphaValue = 0; // Animasyon başlamadan önce tamamen görünmez
+    } else if (playerFadeTime > playerFadeDuration) {
+      alphaValue = 255;
+    } else {
+      alphaValue = map(playerFadeTime, 0, playerFadeDuration, 0, 255);
+    }
+
+    // Forma numarası kutusunu çiz:
     let jerseyX = x + padding;
     let jerseyY = currentY - rowHeight / 2;
-    fill(substituteJerseyBoxColor.r, substituteJerseyBoxColor.g, substituteJerseyBoxColor.b, 255);
+    fill(jerseyBoxColor.r, jerseyBoxColor.g, jerseyBoxColor.b, alphaValue);
     rect(jerseyX, jerseyY, jerseyBoxWidth, rowHeight);
-    
+
+    // Forma numarasını kutu içinde göster:
     push();
     textAlign(CENTER, CENTER);
-    fill(jerseyTextColor.r, jerseyTextColor.g, jerseyTextColor.b, 255);
-    textSize(36); // İlk 11 ile aynı font boyutu
+    fill(jerseyTextColor.r, jerseyTextColor.g, jerseyTextColor.b, alphaValue);
     text(player.number, jerseyX + jerseyBoxWidth / 2, jerseyY + rowHeight / 2);
     pop();
-    
-    fill(textColor.r, textColor.g, textColor.b, 255);
+
+    // Oyuncu adını yazdır:
+    fill(textColor.r, textColor.g, textColor.b, alphaValue);
     textAlign(LEFT, CENTER);
-    textSize(36); // İlk 11 ile aynı font boyutu
     let nameX = jerseyX + jerseyBoxWidth + 10;
     text(player.name, nameX, currentY);
-    
+
     currentY += rowHeight;
   }
+  return currentY;
 }
 
 

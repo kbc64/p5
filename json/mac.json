@@ -2,6 +2,8 @@
     "info": {
         "homeTeam": "GALATASARAY",
         "awayTeam": "FENERBAHÇE",
+        "homeCoach": "Fatih Terim",
+        "awayCoach": "Warner Lorent",
         "matchDate": "21 Eylül 2005, TSL 12.Hafta"
     },
     "settings": {
@@ -90,13 +92,55 @@
         }, {
             "text": "Giren Oyuncu, Anelka",
             "w":2,
-            "dc": -2000,
+            "dc": 900000,
             "isAnimation": false
         }
 
-
-
-
-    ]
+    ],
+    "homePlayers": [
+            { "number": 1,  "name": "Ali", "id": 1},
+            { "number": 2,  "name": "Veli", "id": 2},
+            { "number": 3,  "name": "Hakan Şükür", "id": 3},
+            { "number": 4,  "name": "Hagi",  "id":  4},
+            { "number": 5,  "name": "Arif",  "id": 5 },
+            { "number": 6,  "name": "Metin",  "id": 6 },
+            { "number": 7,  "name": "Kerem",  "id": 7 },
+            { "number": 8,  "name": "Mert",  "id": 8 },
+            { "number": 9,  "name": "Onur", "id": 9 },
+            { "number": 10, "name": "Berk",  "id": 10 },
+            { "number": 11, "name": "Cem", "id": 11 }
+          
+    ],  
+    "awayPlayers": [
+        { "number": 1,  "name": "Ahmet", "id": 12},
+        { "number": 2,  "name": "Mehmet", "id": 13},
+        { "number": 3,  "name": "Hasan",  "id": 14 },
+        { "number": 4,  "name": "Hüseyin", "id": 15 },
+        { "number": 5,  "name": "Mustafa", "id": 16 },
+        { "number": 6,  "name": "Osman", "id": 17 },
+        { "number": 7,  "name": "Faruk", "id": 18 },
+        { "number": 8,  "name": "Sedat", "id": 19 },
+        { "number": 9,  "name": "Semih", "id": 20 },
+        { "number": 10, "name": "Sinan","id": 21},
+        { "number": 11, "name": "Kemal","id": 22 }
+       
+      ],
+      "homeSubstitutes": [
+            { "number": 1,  "name": "Ahmet","id": 23},
+            { "number": 2,  "name": "Mehmet","id": 24 },
+            { "number": 3,  "name": "Hasan","id": 25 },
+            { "number": 4,  "name": "Hüseyin","id": 26 },
+            { "number": 10, "name": "Berk","id": 27 },
+            { "number": 11, "name": "Cem","id": 28 },
+            { "number": 10, "name": "Berk","id": 29 },
+            { "number": 11, "name": "Cem","id": 30 }
+        ],
+        "awaySubstitutes": [
+            { "number": 1,  "name": "Ahmet","id": 31 },
+            { "number": 2,  "name": "Mehmet","id": 32 },
+            { "number": 3,  "name": "Hasan","id": 33 },
+            { "number": 4,  "name": "Hüseyin","id": 34 }
+        ]
+      
 
 }
