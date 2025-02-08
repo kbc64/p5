@@ -4,7 +4,7 @@ let animationStartTime = -1;
 let team1Logo, team2Logo;
 let homeScore = 0
 let awayScore = 0
-goalMinute = 25
+
 
 // Roster alanları için siyah tonlarında arka plan (alfa 150) ve beyaz yazı:
 const rosterLeftColor = { r: 0, g: 0, b: 0, a: 70 };
@@ -30,13 +30,14 @@ let homeCoach = "";
 let awayCoach = "";
 let homeSubstitutes = [];
 let awaySubstitutes = [];
-let homePlayerPositions = {};
-let awayPlayerPositions = {}
+let playerPositions = {};
 
 
 function preload() {
   MAC_INFO = loadJSON('./json/mac.json');
   ballImage = loadImage("../images/ball.png");
+  yellowImage = loadImage("../images/yellow.png");
+  redImage = loadImage("../images/red.png");
   backgroundImage = loadImage("images/stadyum.png");
   team1Logo = loadImage("images/gs.png");  
   team2Logo = loadImage("images/fb.png");  
@@ -52,20 +53,47 @@ function setup() {
   awayCoach = MAC_INFO['info']['awayCoach'];
   homeSubstitutes = MAC_INFO['homeSubstitutes'];
   awaySubstitutes = MAC_INFO['awaySubstitutes'];
-
-  console.log(homeSubstitutes)
-
-  console.log(awaySubstitutes)
   Settings()
  
   setTimeout(MatchComentaryAnimation, ANIMATION_TIME)
   setTimeout(triggerSquad, 1000)
-  
-
+  getPlayersPositions()
 }
 
 
+function getPlayersPositions() {
+  let currentY = MATCH_SQUAD_Y + MATCH_SQUAD_PADDING
+  for(i=0; i<MAC_INFO['homePlayers'].length; i++) {
+    playerPositions[MAC_INFO['homePlayers'][i]['id']] = currentY
+    currentY +=  MATCH_SQUAD_ROW_HEIGHT
+  }
 
+  currentY += MATCH_SQUAD_ROW_HEIGHT + MATCH_SQUAD_PADDING;
+  for(i=0; i<MAC_INFO['homeSubstitutes'].length; i++) {
+    playerPositions[MAC_INFO['homeSubstitutes'][i]['id']] = currentY
+    currentY +=  MATCH_SQUAD_ROW_HEIGHT
+  }
+
+
+  currentY = MATCH_SQUAD_Y + MATCH_SQUAD_PADDING
+  for(i=0; i<MAC_INFO['awayPlayers'].length; i++) {
+    playerPositions[MAC_INFO['awayPlayers'][i]['id']] = currentY
+    currentY +=  MATCH_SQUAD_ROW_HEIGHT
+  }
+
+  currentY += MATCH_SQUAD_ROW_HEIGHT + MATCH_SQUAD_PADDING;
+  for(i=0; i<MAC_INFO['awaySubstitutes'].length; i++) {
+    playerPositions[MAC_INFO['awaySubstitutes'][i]['id']] = currentY
+    currentY +=  MATCH_SQUAD_ROW_HEIGHT
+  }
+
+
+
+
+
+  console.log(playerPositions)
+  
+}
 
 
 function addBox(x, y, boxWidth, boxHeight, color) {
@@ -94,73 +122,44 @@ function draw() {
   addTeamScore(awayScore, SCORE_AWAY_X, SCORE_TEAM_Y, SCORE_AWAY_COLOR);
   addMatchDate(MAC_INFO['info']['matchDate'], MATCH_DATE_BOX_X, MATCH_DATE_BOX_Y, MATCH_DATE_BOX_WIDTH, MATCH_DATE_BOX_HEIGHT, MATCH_DATE_BOX_COLOR);
   addSquad();
-  drawYellowCard(210,870, 35, 40);
-  let imgSize = 40; // Topun boyutu
-  let x = 450
-  let y = 870
+  addActions(120, 750, "sarı");
+  addActions(180, 750, "kırmızı");
+  addActions(220, 750, "gol");
 
-  // 🏆 Futbol topunu ekrana ekle
-  image(ballImage, x, y, imgSize, imgSize);
 
-  // 🟥 Gol dakikasını gösteren çember
-  drawGoalTime(x+25, y+25);
-  let exitMinute = 65;
-  //drawExitBox(x, y, exitMinute); // Oyuncu çıkışı ikonunu çiz
-  drawEnterBox(x-150, y,45); // Oyuncu girişi ikonunu çiz
+
+  
 
 
   
 }
 
-function drawEnterBox(x, y, minute) {
-  let boxWidth = 40; // Kutu genişliği
-  let boxHeight = 40; // Kutu yüksekliği
-  let arrowY = y + boxHeight - 9; // 🎯 Okun yüksekliği fonksiyon içinde!
-  let arrowSize = 10; // Ok uzunluğu
-  let arrowHeadSize = 4; // Ok ucunun uzunluğu
 
-  // 🎯 Siyahın üstüne çıkacak renk (açık gri)
-  fill(0,0,0, 120);
-  noStroke(); // Border kaldırıldı
-  //rect(x - boxWidth / 2, y, boxWidth, boxHeight, 5);
+function addActions(x, y, action) {
+  currentX = x;
+  currentY = y;
+  currentY += (MATCH_SQUAD_ROW_HEIGHT - MATCH_ACTION_BOX_HEIGHT) / 2;
+  addBox(currentX, currentY, MATCH_ACTION_BOX_WIDTH, MATCH_ACTION_BOX_HEIGHT, { r: 0, g: 0, b: 0, a: 0 });
 
-  // ⏳ Dakika Metni (Üstte)
-  fill(255);
-  noStroke();
-  textSize(18); // Daha belirgin
-  textAlign(CENTER, CENTER);
-  text(minute + "'", x, y + 15); // Dakika kutunun üstüne konumlandırıldı
-
-  // 🟢 Tek uçlu yatay yeşil ok (SADECE sola doğru)
-  stroke(0, 200, 0);
-  strokeWeight(4);
-  line(x - arrowSize, arrowY, x + arrowSize, arrowY); // Yatay çizgi
-
-  // 🔺 Tek taraflı ok ucu (sadece solda)
-  line(x + arrowSize - arrowHeadSize, arrowY - arrowHeadSize, x + arrowSize, arrowY); // Sağ yukarı eğimli
-  line(x + arrowSize - arrowHeadSize, arrowY + arrowHeadSize, x + arrowSize, arrowY); // Sağ aşağı eğimli
-}
-
-
-
-
-function drawGoalTime(x, y) {
-
-
-  let circleSize = 26; // Çember boyutu küçültüldü
-
-  fill(255, 255, 255); // Kırmızı renk
-  stroke(0);
-  strokeWeight(1);
-  ellipse(x+10, y+6, circleSize, circleSize); // Dakika göstergesi
-
-  fill(0); // Beyaz yazı
-  noStroke();
+  fill(255, 255, 255);
+  textAlign(CENTER, TOP);
   textSize(16);
-  textAlign(CENTER, CENTER);
-  text(goalMinute , x+10, y+10); // Dakikayı ekrana yaz
+  text("35'", currentX + MATCH_ACTION_BOX_WIDTH / 2, currentY);
+  let ballSize = 14;
+  if (action == "sarı") {
+    
+    image(yellowImage, currentX + MATCH_ACTION_BOX_WIDTH / 2 - ballSize / 2, currentY+15, ballSize, ballSize);
   
+  } else if (action == "gol") {
+    
+    image(ballImage, currentX + MATCH_ACTION_BOX_WIDTH / 2 - ballSize / 2, currentY+15, ballSize, ballSize);
+  }
+ else if (action == "kırmızı") {
+    
+    image(redImage, currentX + MATCH_ACTION_BOX_WIDTH / 2 - ballSize / 2, currentY+15, ballSize, ballSize);
+  }
 }
+
 
 
 
@@ -179,10 +178,12 @@ function renderTeamRoster(x, y, boxWidth, boxHeight, teamPlayers, textColor, coa
   textSize(32);
 
   let currentY = y + padding + rowHeight / 2;
+  //console.log(currentY)
   for (let i = 0; i < teamPlayers.length; i++) {
     let player = teamPlayers[i];
     let jerseyX = x + padding;
     let jerseyY = currentY - rowHeight / 2;
+    //console.log(jerseyY)
     fill(jerseyBoxColor.r, jerseyBoxColor.g, jerseyBoxColor.b, 255);
     rect(jerseyX, jerseyY, jerseyBoxWidth, rowHeight);
     
@@ -329,19 +330,6 @@ function addMatchDate(t, x, y, w, h, color) {
     text(t, x + w / 2, y + h / 2 + textAscent() / 2-10);
 }
 
-function drawYellowCard(x, y, w, h) {
-  fill(255, 204, 0, 200); 
-
-  rect(x+ 145 +160, y, w, h, 5);
-
-
-  
-  fill(0, 0, 0);
-  textAlign(CENTER, TOP);
-  textSize(18);
-  text("35'", x+196+126, y+16 );
-
-}
 
 function Settings() {
   MATCH_COMMENTARY_BOX_COLOR = 'matchCommentaryBoxColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['matchCommentaryBoxColor'] : MATCH_COMMENTARY_BOX_COLOR
