@@ -4,6 +4,7 @@ let animationStartTime = -1;
 let team1Logo, team2Logo;
 let homeScore = 0
 let awayScore = 0
+goalMinute = 25
 
 // Roster alanları için siyah tonlarında arka plan (alfa 150) ve beyaz yazı:
 const rosterLeftColor = { r: 0, g: 0, b: 0, a: 70 };
@@ -29,7 +30,8 @@ let homeCoach = "";
 let awayCoach = "";
 let homeSubstitutes = [];
 let awaySubstitutes = [];
-let playerPositions = {};
+let homePlayerPositions = {};
+let awayPlayerPositions = {}
 
 
 function preload() {
@@ -62,22 +64,9 @@ function setup() {
 
 }
 
-function draw() {
-  noStroke(); 
-  background(backgroundImage);
-  addMatchCommentary()
-  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, HOME_BOX_COLOR);
-  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, AWAY_BOX_COLOR);
-  image(team1Logo, LOGO_HOME_IMAGE_X, LOGO_IMAGE_Y, LOGO_IMAGE_WIDTH, LOGO_IMAGE_HEIGHT);  
-  image(team2Logo, LOGO_AWAY_IMAGE_X, LOGO_IMAGE_Y, LOGO_IMAGE_WIDTH, LOGO_IMAGE_HEIGHT);
-  addTeamName(MAC_INFO['info']['homeTeam'], HOME_NAME_X, TEAM_NAME_Y, HOME_NAME_COLOR)
-  addTeamName(MAC_INFO['info']['awayTeam'], AWAY_NAME_X, TEAM_NAME_Y, AWAY_NAME_COLOR)
-  addTeamScore(homeScore, SCORE_HOME_X, SCORE_TEAM_Y, SCORE_HOME_COLOR)
-  addTeamScore(awayScore, SCORE_AWAY_X, SCORE_TEAM_Y, SCORE_AWAY_COLOR)
-  addMatchDate(MAC_INFO['info']['matchDate'], MATCH_DATE_BOX_X, MATCH_DATE_BOX_Y, MATCH_DATE_BOX_WIDTH, MATCH_DATE_BOX_HEIGHT, MATCH_DATE_BOX_COLOR);
-  addSquad()
 
-}
+
+
 
 function addBox(x, y, boxWidth, boxHeight, color) {
   fill(color.r, color.g, color.b, color.a);
@@ -105,7 +94,75 @@ function draw() {
   addTeamScore(awayScore, SCORE_AWAY_X, SCORE_TEAM_Y, SCORE_AWAY_COLOR);
   addMatchDate(MAC_INFO['info']['matchDate'], MATCH_DATE_BOX_X, MATCH_DATE_BOX_Y, MATCH_DATE_BOX_WIDTH, MATCH_DATE_BOX_HEIGHT, MATCH_DATE_BOX_COLOR);
   addSquad();
+  drawYellowCard(210,870, 35, 40);
+  let imgSize = 40; // Topun boyutu
+  let x = 450
+  let y = 870
+
+  // 🏆 Futbol topunu ekrana ekle
+  image(ballImage, x, y, imgSize, imgSize);
+
+  // 🟥 Gol dakikasını gösteren çember
+  drawGoalTime(x+25, y+25);
+  let exitMinute = 65;
+  //drawExitBox(x, y, exitMinute); // Oyuncu çıkışı ikonunu çiz
+  drawEnterBox(x-150, y,45); // Oyuncu girişi ikonunu çiz
+
+
+  
 }
+
+function drawEnterBox(x, y, minute) {
+  let boxWidth = 40; // Kutu genişliği
+  let boxHeight = 40; // Kutu yüksekliği
+  let arrowY = y + boxHeight - 9; // 🎯 Okun yüksekliği fonksiyon içinde!
+  let arrowSize = 10; // Ok uzunluğu
+  let arrowHeadSize = 4; // Ok ucunun uzunluğu
+
+  // 🎯 Siyahın üstüne çıkacak renk (açık gri)
+  fill(0,0,0, 120);
+  noStroke(); // Border kaldırıldı
+  //rect(x - boxWidth / 2, y, boxWidth, boxHeight, 5);
+
+  // ⏳ Dakika Metni (Üstte)
+  fill(255);
+  noStroke();
+  textSize(18); // Daha belirgin
+  textAlign(CENTER, CENTER);
+  text(minute + "'", x, y + 15); // Dakika kutunun üstüne konumlandırıldı
+
+  // 🟢 Tek uçlu yatay yeşil ok (SADECE sola doğru)
+  stroke(0, 200, 0);
+  strokeWeight(4);
+  line(x - arrowSize, arrowY, x + arrowSize, arrowY); // Yatay çizgi
+
+  // 🔺 Tek taraflı ok ucu (sadece solda)
+  line(x + arrowSize - arrowHeadSize, arrowY - arrowHeadSize, x + arrowSize, arrowY); // Sağ yukarı eğimli
+  line(x + arrowSize - arrowHeadSize, arrowY + arrowHeadSize, x + arrowSize, arrowY); // Sağ aşağı eğimli
+}
+
+
+
+
+function drawGoalTime(x, y) {
+
+
+  let circleSize = 26; // Çember boyutu küçültüldü
+
+  fill(255, 255, 255); // Kırmızı renk
+  stroke(0);
+  strokeWeight(1);
+  ellipse(x+10, y+6, circleSize, circleSize); // Dakika göstergesi
+
+  fill(0); // Beyaz yazı
+  noStroke();
+  textSize(16);
+  textAlign(CENTER, CENTER);
+  text(goalMinute , x+10, y+10); // Dakikayı ekrana yaz
+  
+}
+
+
 
 function addSquad() {
   addBox(0, MATCH_SQUAD_Y, width, HEIGTH - MATCH_SQUAD_Y, { r: 0, g: 0, b: 0, a: 70 });
@@ -116,10 +173,10 @@ function addSquad() {
 function renderTeamRoster(x, y, boxWidth, boxHeight, teamPlayers, textColor, coach, substitutes) {
   let rowHeight = 60;
   let padding = 10;
-  let jerseyBoxWidth = 60;
+  let jerseyBoxWidth = 50;
 
   textFont('futura');
-  textSize(36);
+  textSize(32);
 
   let currentY = y + padding + rowHeight / 2;
   for (let i = 0; i < teamPlayers.length; i++) {
@@ -163,13 +220,13 @@ function renderTeamRoster(x, y, boxWidth, boxHeight, teamPlayers, textColor, coa
     push();
     textAlign(CENTER, CENTER);
     fill(jerseyTextColor.r, jerseyTextColor.g, jerseyTextColor.b, 255);
-    textSize(36); // İlk 11 ile aynı font boyutu
+    textSize(32); // İlk 11 ile aynı font boyutu
     text(player.number, jerseyX + jerseyBoxWidth / 2, jerseyY + rowHeight / 2);
     pop();
     
     fill(textColor.r, textColor.g, textColor.b, 255);
     textAlign(LEFT, CENTER);
-    textSize(36); // İlk 11 ile aynı font boyutu
+    textSize(32); // İlk 11 ile aynı font boyutu
     let nameX = jerseyX + jerseyBoxWidth + 10;
     text(player.name, nameX, currentY);
     
@@ -270,6 +327,20 @@ function addMatchDate(t, x, y, w, h, color) {
     textSize(32); // Küçük font boyutu
     textAlign(CENTER, CENTER);
     text(t, x + w / 2, y + h / 2 + textAscent() / 2-10);
+}
+
+function drawYellowCard(x, y, w, h) {
+  fill(255, 204, 0, 200); 
+
+  rect(x+ 145 +160, y, w, h, 5);
+
+
+  
+  fill(0, 0, 0);
+  textAlign(CENTER, TOP);
+  textSize(18);
+  text("35'", x+196+126, y+16 );
+
 }
 
 function Settings() {
