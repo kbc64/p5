@@ -26,9 +26,19 @@
             "text": "Maç Başlıyor!",
             "w": 0,
             "dc": 0,
-            "isAnimation": false
+            "isAnimation": false,
+            "isSquad": false
 
         },
+        {
+            "text": "Maç Kadroları",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": true
+
+        },
+        
         {
             "text": "Gooolllll",
             "w":1,
@@ -37,7 +47,8 @@
             "homeScore": 1,
             "awayScore": 0,
             
-            "isScoreChange": true
+            "isScoreChange": true,
+            "isSquad": false
         },
         {
             "text": "Gol, Hagi 45'",
@@ -45,26 +56,30 @@
             "dc": -2000,
             "homeScore": 1,
             "awayScore":0,
-            "isAnimation": false
+            "isAnimation": false,
+            "isSquad": false
         }, 
         {
             "text": " 45' Galatasaray 1-0 Fenerbahçe ",
             "w": 0,
             "dc": -2000,
-            "isAnimation": false
+            "isAnimation": false,
+            "isSquad": false
         }, 
         {
             "text": "Sarı Kart, Hagi 60'",
             "w": 1,
             "dc": -2000,
-            "isAnimation": false
+            "isAnimation": false,
+            "isSquad": false
         },
         {
             "text": "65', 1-0 Maç devam ediyor.",
             "w": 0,
             "dc": 0,
             
-            "isAnimation": false
+            "isAnimation": false,
+            "isSquad": false
         },
         {
             "text": "Gooolllll",
@@ -74,30 +89,35 @@
             "awayScore": 1,
             
             "isScoreChange": true,
-            "isAnimation": true
+            "isAnimation": true,
+            "isSquad": false
         },
         {
             "text": "Gol, Alex 85'",
             "w":2,
             "dc": -2000,
-            "isAnimation": false
+            "isAnimation": false,
+            "isSquad": false
         },
         {
             "text": "88', Oyuncu Değişikliği",
             "w":2,
             "dc": -2000,
-            "isAnimation": false
+            "isAnimation": false,
+            "isSquad": false
         },
         {
             "text": "Çıkan Oyuncu, Alex",
             "w":2,
             "dc": -2000,
-            "isAnimation": false
+            "isAnimation": false,
+            "isSquad": false
         }, {
             "text": "Giren Oyuncu, Anelka",
             "w":2,
             "dc": 900000,
-            "isAnimation": false
+            "isAnimation": false,
+            "isSquad": false
         }
 
     ],
