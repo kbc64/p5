@@ -4,7 +4,11 @@
         "awayTeam": "FENERBAHÇE",
         "homeCoach": "Fatih Terim",
         "awayCoach": "Warner Lorent",
-        "matchDate": "21 Eylül 2005, TSL 12.Hafta"
+        "leagueName":  "TSL",
+        "season": "2024/2025",
+        "week": 12,
+        "matchDate": "21 Eylül 2005",
+        "stadium": "Ali Sami Yen"
     },
     "settings": {
         "matchCommentaryBoxColor_bak" : {"r": 0, "g": 0, "b": 0, "a": 255 },
@@ -129,11 +133,7 @@
             { "number": 1,  "name": "Ahmet","id": 23},
             { "number": 2,  "name": "Mehmet","id": 24 },
             { "number": 3,  "name": "Hasan","id": 25 },
-            { "number": 4,  "name": "Hüseyin","id": 26 },
-            { "number": 10, "name": "Berk","id": 27 },
-            { "number": 11, "name": "Cem","id": 28 },
-            { "number": 10, "name": "Berk","id": 29 },
-            { "number": 11, "name": "Cem","id": 30 }
+            { "number": 4,  "name": "Hüseyin","id": 26 }
         ],
         "awaySubstitutes": [
             { "number": 1,  "name": "Ahmet","id": 31 },

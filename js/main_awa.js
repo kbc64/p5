@@ -135,10 +135,12 @@ function addActionTitle(t) {
   text(t, ACTION_BOX_X, ACTION_BOX_Y + ACTION_TITLE_MARGIN_TOP)
 }
 
+
+
 let homeIndex = 0;
 let awayIndex = 0;
 let stage = "homePlayers";
-let animationSpeed = 30; // Tüm animasyonlar için aynı hız
+let animationSpeed = 10000000; // Tüm animasyonlar için aynı hız
 let lastUpdateFrame = 0;
 let homeCoachDisplayed = false;
 let awayCoachDisplayed = false;
@@ -152,13 +154,13 @@ function addSquad() {
   addActionTitle("KADROLAR");
   
   // Ev sahibi kadrosu tamamlandıysa ekranda sabit kalacak
-  if (homeRosterComplete || stage === "homeCoach" || stage === "homeSubstitutes" || stage.startsWith("away")) {
+  if (homeRosterComplete) {
     renderTeamRoster(0, MATCH_SQUAD_Y, 540, 800 + homeSubstitutes.length * 60 + spacingAfterCoach, homePlayers, rosterTextColor, homeCoach, homeSubstitutes, true, 255);
   }
   
   if (stage === "homePlayers" && !homeRosterComplete) {
-    let fadeInOpacity = (homeIndex >= homePlayers.length - 1) ? min(fadeAmount + 15, 255) : 255;
-    renderTeamRoster(0, MATCH_SQUAD_Y, 540, 800, homePlayers.slice(0, homeIndex), rosterTextColor, "", [], false, fadeInOpacity);
+    fadeAmount = min(fadeAmount + 15, 255); // Fade-in efekti
+    renderTeamRoster(0, MATCH_SQUAD_Y, 540, 800, homePlayers.slice(0, homeIndex), rosterTextColor, "", [], false, fadeAmount);
     if (frameCount - lastUpdateFrame > animationSpeed) {
       lastUpdateFrame = frameCount;
       homeIndex++;
@@ -172,7 +174,8 @@ function addSquad() {
   } 
   
   if (stage === "homeCoach" && !homeRosterComplete) {
-    renderTeamRoster(0, MATCH_SQUAD_Y, 540, 800, homePlayers, rosterTextColor, homeCoach, [], true, 255);
+    fadeAmount = min(fadeAmount + 15, 255);
+    renderTeamRoster(0, MATCH_SQUAD_Y, 540, 800, homePlayers, rosterTextColor, homeCoach, [], true, fadeAmount);
     if (frameCount - lastUpdateFrame > animationSpeed) {
       stage = "homeSubstitutes";
       homeIndex = 0;
@@ -181,8 +184,8 @@ function addSquad() {
   }
   
   if (stage === "homeSubstitutes" && !homeRosterComplete) {
-    let fadeInOpacity = (homeIndex >= homeSubstitutes.length - 1) ? min(fadeAmount + 15, 255) : 255;
-    renderTeamRoster(0, MATCH_SQUAD_Y, 540, 800 + homeSubstitutes.length * 60 + spacingAfterCoach, homePlayers, rosterTextColor, homeCoach, homeSubstitutes.slice(0, homeIndex), true, fadeInOpacity);
+    fadeAmount = min(fadeAmount + 15, 255);
+    renderTeamRoster(0, MATCH_SQUAD_Y, 540, 800 + homeSubstitutes.length * 60 + spacingAfterCoach, homePlayers, rosterTextColor, homeCoach, homeSubstitutes.slice(0, homeIndex), true, fadeAmount);
     if (frameCount - lastUpdateFrame > animationSpeed) {
       lastUpdateFrame = frameCount;
       homeIndex++;
@@ -197,8 +200,8 @@ function addSquad() {
   }
   
   if (stage === "awayPlayers" && !awayRosterComplete) {
-    let fadeInOpacity = (awayIndex >= awayPlayers.length - 1) ? min(fadeAmount + 15, 255) : 255;
-    renderTeamRoster(540, MATCH_SQUAD_Y, 540, 800, awayPlayers.slice(0, awayIndex), rosterTextColor, "", [], false, fadeInOpacity);
+    fadeAmount = min(fadeAmount + 15, 255);
+    renderTeamRoster(540, MATCH_SQUAD_Y, 540, 800, awayPlayers.slice(0, awayIndex), rosterTextColor, "", [], false, fadeAmount);
     if (frameCount - lastUpdateFrame > animationSpeed) {
       lastUpdateFrame = frameCount;
       awayIndex++;
@@ -212,7 +215,8 @@ function addSquad() {
   }
   
   if (stage === "awayCoach" && !awayRosterComplete) {
-    renderTeamRoster(540, MATCH_SQUAD_Y, 540, 800, awayPlayers, rosterTextColor, awayCoach, [], true, 255);
+    fadeAmount = min(fadeAmount + 15, 255);
+    renderTeamRoster(540, MATCH_SQUAD_Y, 540, 800, awayPlayers, rosterTextColor, awayCoach, [], true, fadeAmount);
     if (frameCount - lastUpdateFrame > animationSpeed) {
       stage = "awaySubstitutes";
       awayIndex = 0;
@@ -221,8 +225,8 @@ function addSquad() {
   }
   
   if (stage === "awaySubstitutes" && !awayRosterComplete) {
-    let fadeInOpacity = (awayIndex >= awaySubstitutes.length - 1) ? min(fadeAmount + 15, 255) : 255;
-    renderTeamRoster(540, MATCH_SQUAD_Y, 540, 800 + awaySubstitutes.length * 60 + spacingAfterCoach, awayPlayers, rosterTextColor, awayCoach, awaySubstitutes.slice(0, awayIndex), true, fadeInOpacity);
+    fadeAmount = min(fadeAmount + 15, 255);
+    renderTeamRoster(540, MATCH_SQUAD_Y, 540, 800 + awaySubstitutes.length * 60 + spacingAfterCoach, awayPlayers, rosterTextColor, awayCoach, awaySubstitutes.slice(0, awayIndex), true, fadeAmount);
     if (frameCount - lastUpdateFrame > animationSpeed) {
       lastUpdateFrame = frameCount;
       awayIndex++;
@@ -234,8 +238,6 @@ function addSquad() {
     }
   }
 }
-
-
 
 function renderTeamRoster(x, y, boxWidth, boxHeight, teamPlayers, textColor, coach, substitutes, showCoach, opacity = 255) {
   let rowHeight = 60;
@@ -288,6 +290,8 @@ function renderTeamRoster(x, y, boxWidth, boxHeight, teamPlayers, textColor, coa
     currentY += rowHeight;
   }
 }
+
+
 
 
 
