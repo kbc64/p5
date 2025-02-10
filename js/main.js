@@ -32,7 +32,8 @@ let playerPositions = {};
 let isSquadAnimating = false; // Animasyonun aktif olup olmadığını belirtir
 let animationSquaStartTime = 0; // Animasyonun başlangıç zamanı
 let animationSquadEndTime = 0;
-let isSquadOnTheScreen = false
+let isSquadOnTheScreen = false;
+let isActionBox = false
 
 function preload() {
   MAC_INFO = loadJSON('./json/mac.json');
@@ -56,10 +57,18 @@ let currentIndex = 0; // Şu anda beliren elemanın indeksi
 let lastUpdateTime = 0; // Son güncelleme zamanı
 let delayBetweenElements = 300; // Elemanlar arası gecikme (ms)
 
-
+const capturer = new CCapture( {
+  format: 'webm',
+  framerate: 60,
+  verbose: true,
+  quality: 1
+} )
 
 function setup() {
   createCanvas(WIDTH, HEIGTH);
+  if (isRecord) {
+    capturer.start();
+  }
   homePlayers = MAC_INFO['homePlayers']
   awayPlayers = MAC_INFO['awayPlayers']
   homeCoach = MAC_INFO['info']['homeCoach'];
@@ -77,12 +86,7 @@ function setup() {
 
 
 
-  capturer = new CCapture( {
-    format: 'webm',
-    framerate: 60,
-    verbose: true,
-    quality: 1
-} );
+ ;
 }
 
 
@@ -97,13 +101,10 @@ function addBox(x, y, boxWidth, boxHeight, color) {
 
 
 function draw() {
-  if (frameCount === 1 && isRecord) {
-    console.log('buaradayım')
-    capturer.start()
-}
+ 
   noStroke(); 
   background(backgroundImage);
-  addMatchCommentary();
+  
 
   if (isSquadAnimating) {
     
@@ -112,9 +113,13 @@ function draw() {
   }
 
   if(isSquadOnTheScreen) {
+    drawFooterBox()
+   addSquadTeamName()
     renderTeamRoster(0, MATCH_SQUAD_Y, 540, 800, homePlayers, rosterTextColor, homeCoach, homeSubstitutes);
     renderTeamRoster(540, MATCH_SQUAD_Y, 540, 800, awayPlayers, rosterTextColor, awayCoach, awaySubstitutes);
   }
+
+  
 
 
   addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, HOME_BOX_COLOR);
@@ -129,30 +134,100 @@ function draw() {
   //addAction()
   //addSquad()
 
+  if(isActionBox) {
+    addAction()
+  }
+  addMatchCommentary();
+  addMatchAction(0, MATCH_SQUAD_Y, HALF_X, 60, 
+    { r: 0, g: 0, b: 0, a:40 }, // Sarı kutu rengi
+    "45'", "Arda Güler", "2-1");
+  
+    addMatchAction(0, MATCH_SQUAD_Y, HALF_X, 60, 
+      { r: 0, g: 0, b: 0, a:40 }, // Sarı kutu rengi
+      "45'", "Arda Güler", "2-1");
 
-
-  if (frameCount < 60 * 15 && isRecord) {
+  if (frameCount < 60 * 60 && isRecord) {
    
     capturer.capture(canvas)
     
-} else if (frameCount === 60 * 15 && isRecord) {
+} else if (frameCount === 60 * 60 && isRecord) {
     capturer.save()
     capturer.stop()
   
 }
-  
+
+
 
 
   
 }
+
 
 function addAction() {
   drawFooterBox()
-  addActionTitle("ÖNEMLİ ANLAR")
+}
+  
+
+
+
+
+function addMatchAction(x, y, width, height, color, minute, playerName, score) {
+ addBox(x, y, width, height, color);
+
+  // Boşluk ve boyut değişkenleri
+  let imageLeftMargin = 10;
+  let minuteLeftMargin = 15;
+  let playerLeftMargin = 30;
+
+  let imageSize = 40 // Görüntü boyutu kutuya göre ayarlanıyor
+  let textSizeVal = 32 // Metin boyutu ayarı
+  
+  // Sarı kart görseli
+  
+  //image(redImage, x + imageLeftMargin, y + (height - imageSize) / 2, imageSize, imageSize);
+  image(ballImage, x + imageLeftMargin, y + (height - imageSize)   / 2 +6 , 35, 35);
+  image(yellowImage, x + imageLeftMargin, y + (height - imageSize)  / 2 +80, 35, imageSize);
+
+  
+
+  // Metin başlangıç noktası
+  let textX = x + imageSize + minuteLeftMargin 
+  let textY = y + height / 2; // Y ekseninde ortalamak için
+  
+  // Yazı ayarları
+  fill(255);
+  textSize(textSizeVal);
+  textAlign(LEFT, CENTER);
+
+  // Dakika bilgisi
+  text(minute, textX, textY);
+  let minuteWidth = textWidth(minute); // Dakika uzunluğu kadar boşluk ekle
+  textX += minuteWidth+  playerLeftMargin
+
+  // Oyuncu adı
+  text(playerName, textX, textY);
+  let playerWidth = textWidth(playerName) + 40; // Oyuncu adına boşluk bırak
+  textX += playerWidth;
+
+  // Skor bilgisi
+  textAlign(RIGHT, CENTER);
+  text(score, WIDTH/2 -5, textY);
 }
 
+
+
+
 function drawFooterBox() {
-  addBox(0, ACTION_BOX_Y, WIDTH, HEIGTH - ACTION_BOX_Y,{r:0, g:0, b:0, a:100})
+  addBox(0, ACTION_BOX_Y, WIDTH, HEIGTH - ACTION_BOX_Y,{r:0, g:0, b:0, a:60})
+}
+
+function addSquadTeamName() {
+  textSize(32);
+  textAlign(CENTER, TOP);
+  fill(255)
+
+  text(MAC_INFO['info']['homeTeam'], HALF_X/2, ACTION_BOX_Y + ACTION_TITLE_MARGIN_TOP)
+  text(MAC_INFO['info']['awayTeam'], HALF_X + HALF_X/2, ACTION_BOX_Y + ACTION_TITLE_MARGIN_TOP)
 }
 
 function addActionTitle(t) {
@@ -187,6 +262,7 @@ function checkSquadAnimationEnd() {
     setTimeout(function(){
       isSquadOnTheScreen = false
       MatchComentaryAnimation()
+      isActionBox = true
     }, 5000)
   }
 }
@@ -217,7 +293,7 @@ function renderTeamRoster(x, y, boxWidth, boxHeight, teamPlayers, textColor, coa
   let padding = 10;
   let jerseyBoxWidth = 50;
   let currentY = y + padding + rowHeight / 2;
-  textSize(32);
+  textSize(36);
   for (let i = 0; i < teamPlayers.length; i++) {
     let player = teamPlayers[i];
     let jerseyX = x + padding;
@@ -305,7 +381,15 @@ function MatchComentaryAnimation() {
 }
 
 
- 
+function addMinute(minute) {
+  
+  //addBox(WIDTH/2, LOGO_BOX_Y + LOGO_BOX_HEIGHT, 80, 40, {r:0, g:0, b:0, a:100})
+  textAlign(CENTER, TOP);
+  fill(255)
+  textSize(34);
+  text(minute, WIDTH/2, LOGO_BOX_Y + LOGO_BOX_HEIGHT);
+  
+}
 
 
 function addMatchCommentary() {
@@ -327,6 +411,10 @@ function addMatchCommentary() {
   fill(currentColor.r, currentColor.g, currentColor.b);
   rect(MATCH_COMMENTARY_BOX_X, MATCH_COMMENTARY_BOX_Y, MATCH_COMMENTARY_BOX_WIDTH, MATCH_COMMENTARY_BOX_HEIGHT);
   addMatchCommentaryText(MAC_INFO['aksiyonlar'][JSON_INDEX]['text'], textColor)
+  if ('minute' in MAC_INFO['aksiyonlar'][JSON_INDEX]) {
+    addMinute(MAC_INFO['aksiyonlar'][JSON_INDEX]['minute'])
+  }
+  
 }
 
 function getMatchCommentaryBoxColor() {
@@ -364,7 +452,7 @@ function addMatchCommentaryText(boxText, color) {
 function addTeamName(teamName, x, y, color) {
   fill(color.r, color.g, color.b, color.a); // Siyah renk
   textSize(44);
-  textAlign(CENTER, CENTER);
+  textAlign(CENTER, TOP);
   text(teamName, x, y); // Takım adını ekrana yazdır
 }
 
@@ -380,9 +468,9 @@ function addMatchDate(x, y, w, h, color) {
   fill(255);
   textSize(32); 
   textAlign(CENTER, TOP);
-  let macInfo =  `${MAC_INFO['info']['leagueName']}, ${MAC_INFO['info']['season']} Sezonu, ${MAC_INFO['info']['week']}. Hafta`
+  let macInfo =  `${MAC_INFO['info']['leagueName']} - ${MAC_INFO['info']['season']} Sezonu`
   text(macInfo, x + w / 2, y + MATCH_DATE_TEXT_FIRST_LINE_MARGIN_TOP);
-  macInfo =  `${MAC_INFO['info']['matchDate']}, ${MAC_INFO['info']['stadium']}`
+  macInfo =  `${MAC_INFO['info']['matchDate']} (${MAC_INFO['info']['week']}. Hafta)`
   text(macInfo, x + w / 2, y + MATCH_DATE_TEXT_SECOND_LINE_MARGIN_TOP);
 }
 

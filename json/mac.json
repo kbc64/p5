@@ -4,7 +4,7 @@
         "awayTeam": "FENERBAHÇE",
         "homeCoach": "Fatih Terim",
         "awayCoach": "Warner Lorent",
-        "leagueName":  "TSL",
+        "leagueName":  "Türkiye Süper Ligi",
         "season": "2024/2025",
         "week": 12,
         "matchDate": "21 Eylül 2005",
@@ -28,6 +28,7 @@
             "dc": 0,
             "isAnimation": false,
             "isSquad": false
+            
 
         },
         {
@@ -48,7 +49,8 @@
             "awayScore": 0,
             
             "isScoreChange": true,
-            "isSquad": false
+            "isSquad": false,
+            "minute": "45'"
         },
         {
             "text": "Gol, Hagi 45'",
@@ -57,21 +59,24 @@
             "homeScore": 1,
             "awayScore":0,
             "isAnimation": false,
-            "isSquad": false
+            "isSquad": false,
+            "minute": "45'"
         }, 
         {
             "text": " 45' Galatasaray 1-0 Fenerbahçe ",
             "w": 0,
             "dc": -2000,
             "isAnimation": false,
-            "isSquad": false
+            "isSquad": false,
+            "minute": "45'"
         }, 
         {
             "text": "Sarı Kart, Hagi 60'",
             "w": 1,
             "dc": -2000,
             "isAnimation": false,
-            "isSquad": false
+            "isSquad": false,
+            "minute": "60'"
         },
         {
             "text": "65', 1-0 Maç devam ediyor.",
