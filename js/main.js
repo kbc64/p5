@@ -4,6 +4,7 @@ let team1Logo, team2Logo;
 let homeScore = 0
 let awayScore = 0
 
+const actions = []
 
 isRecord = false;
 
@@ -135,16 +136,10 @@ function draw() {
   //addSquad()
 
   if(isActionBox) {
-    addAction()
+    addActionBox()
   }
   addMatchCommentary();
-  addMatchAction(0, MATCH_SQUAD_Y, HALF_X, 60, 
-    { r: 0, g: 0, b: 0, a:40 }, // Sarı kutu rengi
-    "45'", "Arda Güler", "2-1");
-  
-    addMatchAction(0, MATCH_SQUAD_Y, HALF_X, 60, 
-      { r: 0, g: 0, b: 0, a:40 }, // Sarı kutu rengi
-      "45'", "Arda Güler", "2-1");
+  addAction()
 
   if (frameCount < 60 * 60 && isRecord) {
    
@@ -163,11 +158,28 @@ function draw() {
 }
 
 
-function addAction() {
+function addActionBox() {
   drawFooterBox()
 }
   
+function addAction() {
 
+  let currentY = MATCH_SQUAD_Y
+  const boxHeight = 60
+  const marginTop = 15
+  for(let i=0; i<actions.length; i++) {
+    
+    
+    const color = { r: 0, g: 0, b: 0, a:200 }
+    const minute = 45
+    const name = 'Hagi'
+    const score = '3-1'
+    addMatchAction(0, currentY, HALF_X, boxHeight, color, minute, name, score);
+    currentY = currentY + boxHeight + marginTop
+  }
+ 
+ 
+}
 
 
 
@@ -373,6 +385,9 @@ function MatchComentaryAnimation() {
   if(MAC_INFO['aksiyonlar'][JSON_INDEX]['isSquad']) {
     addSquad()
   } else {
+  if('action' in MAC_INFO['aksiyonlar'][JSON_INDEX]) {
+    actions.push(MAC_INFO['aksiyonlar'][JSON_INDEX])
+  }
     setTimeout(MatchComentaryAnimation, time)
   }
 

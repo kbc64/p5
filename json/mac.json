@@ -47,7 +47,6 @@
             "isAnimation": true,
             "homeScore": 1,
             "awayScore": 0,
-            
             "isScoreChange": true,
             "isSquad": false,
             "minute": "45'"
@@ -60,7 +59,8 @@
             "awayScore":0,
             "isAnimation": false,
             "isSquad": false,
-            "minute": "45'"
+            "minute": "45'",
+            "action": true
         }, 
         {
             "text": " 45' Galatasaray 1-0 Fenerbahçe ",
@@ -76,7 +76,8 @@
             "dc": -2000,
             "isAnimation": false,
             "isSquad": false,
-            "minute": "60'"
+            "minute": "60'",
+            "action": true
         },
         {
             "text": "65', 1-0 Maç devam ediyor.",

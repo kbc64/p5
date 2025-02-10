@@ -73,6 +73,9 @@ const MATCH_SQUAD_PADDING = 10
 const MATCH_SQUAD_JERSEY_BOX_WIDTH = 50
 const MATCH_SQUAD_ROW_HEIGHT = 60
 
+
+
+
 let HOME_BOX_COLOR = { r: 255, g: 0, b: 0, a: 160 };
 let AWAY_BOX_COLOR = { r: 0, g: 0, b: 255, a: 160 };
 let HOME_BOX_TEXT_COLOR = { r: 255, g: 255, b: 255, a: 255 };
