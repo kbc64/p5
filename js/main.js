@@ -168,18 +168,36 @@ function addActionBox() {
   
 function addAction() {
 
-  let currentY = MATCH_SQUAD_Y
+  let currentHomeY = null
+  let currentAwayY = null
+  
   const boxHeight = 60
   const marginTop = 15
+
   for(let i=0; i<actions.length; i++) {
-    
-    
-    const color = { r: 0, g: 0, b: 0, a:200 }
-    const minute = 45
-    const name = 'Hagi'
+    let currentX = null
+    let currentY = null
+    const action = actions[i]
+    const alpha = 60
+    let color = { r: 0, g: 0, b: 0, a: alpha}
+    const minute = action.minute
+    const name = action.text
     const score = '3-1'
-    addMatchAction(0, currentY, HALF_X, boxHeight, color, minute, name, score);
-    currentY = currentY + boxHeight + marginTop
+    
+    if(action.w ==1) {
+      currentX = 0
+      currentHomeY = currentHomeY == null ? MATCH_SQUAD_Y : currentHomeY + boxHeight + marginTop
+      currentY = currentHomeY
+      
+    }
+    if(action.w ==2) {
+      currentX = currentX + HALF_X
+      currentAwayY = currentAwayY == null ? MATCH_SQUAD_Y : currentAwayY + boxHeight + marginTop
+      currentY = currentAwayY
+    }
+
+    addMatchAction(currentX, currentY, HALF_X-20, boxHeight, color, minute, name, score);
+    
   }
  
  
@@ -202,7 +220,6 @@ function addMatchAction(x, y, width, height, color, minute, playerName, score) {
   
   //image(redImage, x + imageLeftMargin, y + (height - imageSize) / 2, imageSize, imageSize);
   image(ballImage, x + imageLeftMargin, y + (height - imageSize)   / 2 +6 , 35, 35);
-  image(yellowImage, x + imageLeftMargin, y + (height - imageSize)  / 2 +80, 35, imageSize);
 
   
 
