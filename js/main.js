@@ -53,7 +53,7 @@ function preload() {
 }
 
 let fadeInValues = []; // Her eleman için opaklık değerleri
-let fadeInSpeed = 3; // Opaklık artış hızı
+let fadeInSpeed = 10; // Opaklık artış hızı
 let currentIndex = 0; // Şu anda beliren elemanın indeksi
 let lastUpdateTime = 0; // Son güncelleme zamanı
 let delayBetweenElements = 300; // Elemanlar arası gecikme (ms)
@@ -76,7 +76,11 @@ function setup() {
   awayCoach = MAC_INFO['info']['awayCoach'];
   homeSubstitutes = MAC_INFO['homeSubstitutes'];
   awaySubstitutes = MAC_INFO['awaySubstitutes'];
+
+  console.log(MAC_INFO)
   Settings()
+
+ 
 
   textFont(roboto); // Varsayılan font olarak ayarla
 
@@ -141,11 +145,11 @@ function draw() {
   addMatchCommentary();
   addAction()
 
-  if (frameCount < 60 * 60 && isRecord) {
+  if (frameCount < 60 * 15 && isRecord) {
    
     capturer.capture(canvas)
     
-} else if (frameCount === 60 * 60 && isRecord) {
+} else if (frameCount === 60 * 15 && isRecord) {
     capturer.save()
     capturer.stop()
   
@@ -310,6 +314,8 @@ function renderTeamRoster(x, y, boxWidth, boxHeight, teamPlayers, textColor, coa
     let player = teamPlayers[i];
     let jerseyX = x + padding;
     let jerseyY = currentY - rowHeight / 2;
+
+  
 
     // Opaklık değerini kullan
     let opacity = fadeInValues[i] || 0;
@@ -492,6 +498,7 @@ function addMatchDate(x, y, w, h, color) {
 
 
 function Settings() {
+  console.log(MAC_INFO.settings)
   MATCH_COMMENTARY_BOX_COLOR = 'matchCommentaryBoxColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['matchCommentaryBoxColor'] : MATCH_COMMENTARY_BOX_COLOR
   HOME_BOX_COLOR = 'homeBoxColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['homeBoxColor'] : HOME_BOX_COLOR;
   AWAY_BOX_COLOR = 'awayBoxColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['awayBoxColor'] : AWAY_BOX_COLOR;

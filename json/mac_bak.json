@@ -1,0 +1,172 @@
+{
+    "info": {
+        "homeTeam": "GALATASARAY",
+        "awayTeam": "FENERBAHÇE",
+        "homeCoach": "Fatih Terim",
+        "awayCoach": "Warner Lorent",
+        "leagueName":  "Türkiye Süper Ligi",
+        "season": "2024/2025",
+        "week": 12,
+        "matchDate": "21 Eylül 2005",
+        "stadium": "Ali Sami Yen"
+    },
+    "settings": {
+        "matchCommentaryBoxColor_bak" : {"r": 0, "g": 0, "b": 0, "a": 255 },
+        "homeBoxColor_bak": {"r": 33, "g": 0, "b": 0, "a": 25},
+        "awayBoxColor_bak": {"r":3, "g": 0, "b": 0, "a": 25},
+        "homeBoxTextColor_bak": {"r": 255, "g": 255, "b":255, "a": 255},
+        "awayBoxTextColor_bak": {"r": 255, "g": 255, "b":255, "a": 255},
+        "homeNameColor": {"r": 255, "g": 255, "b": 255, "a":255},
+        "awayNameColor": {"r": 255, "g": 255, "b": 255, "a":255},
+        "scoreHomeColor": {"r": 255, "g": 255, "b": 255, "a":255},
+        "scoreAwayColor": {"r": 255, "g": 255, "b": 255, "a":255}
+    },
+    "aksiyonlar": [
+        {
+            "text": "Maç Başlıyor!",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false
+            
+
+        },
+        {
+            "text": "Maç Kadroları",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": true
+
+        },
+        
+        {
+            "text": "Gooolllll",
+            "w":1,
+            "dc": 0,
+            "isAnimation": true,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "45'"
+        },
+        {
+            "text": "Gol, Hagi 45'",
+            "w":1,
+            "dc": -2000,
+            "homeScore": 1,
+            "awayScore":0,
+            "isAnimation": false,
+            "isSquad": false,
+            "minute": "45'",
+            "action": true
+        }, 
+        {
+            "text": " 45' Galatasaray 1-0 Fenerbahçe ",
+            "w": 0,
+            "dc": -2000,
+            "isAnimation": false,
+            "isSquad": false,
+            "minute": "45'"
+        }, 
+        {
+            "text": "Sarı Kart, Hagi 60'",
+            "w": 1,
+            "dc": -2000,
+            "isAnimation": false,
+            "isSquad": false,
+            "minute": "60'",
+            "action": true
+        },
+        {
+            "text": "65', 1-0 Maç devam ediyor.",
+            "w": 0,
+            "dc": 0,
+            
+            "isAnimation": false,
+            "isSquad": false
+        },
+        {
+            "text": "Gooolllll",
+            "w":2,
+            "dc": -2000,
+            "homeScore": 1,
+            "awayScore": 1,
+            
+            "isScoreChange": true,
+            "isAnimation": true,
+            "isSquad": false
+        },
+        {
+            "text": "Gol, Alex 85'",
+            "w":2,
+            "dc": -2000,
+            "isAnimation": false,
+            "isSquad": false
+        },
+        {
+            "text": "88', Oyuncu Değişikliği",
+            "w":2,
+            "dc": -2000,
+            "isAnimation": false,
+            "isSquad": false
+        },
+        {
+            "text": "Çıkan Oyuncu, Alex",
+            "w":2,
+            "dc": -2000,
+            "isAnimation": false,
+            "isSquad": false
+        }, {
+            "text": "Giren Oyuncu, Anelka",
+            "w":2,
+            "dc": 900000,
+            "isAnimation": false,
+            "isSquad": false
+        }
+
+    ],
+    "homePlayers": [
+            { "number": 1,  "name": "Ali", "id": 1},
+            { "number": 2,  "name": "Veli", "id": 2},
+            { "number": 3,  "name": "Hakan Şükür", "id": 3},
+            { "number": 4,  "name": "Hagi",  "id":  4},
+            { "number": 5,  "name": "Arif",  "id": 5 },
+            { "number": 6,  "name": "Metin",  "id": 6 },
+            { "number": 7,  "name": "Kerem",  "id": 7 },
+            { "number": 8,  "name": "Mert",  "id": 8 },
+            { "number": 9,  "name": "Onur", "id": 9 },
+            { "number": 10, "name": "Berk",  "id": 10 },
+            { "number": 11, "name": "Cem", "id": 11 }
+          
+    ],  
+    "awayPlayers": [
+        { "number": 1,  "name": "Ahmet", "id": 12},
+        { "number": 2,  "name": "Mehmet", "id": 13},
+        { "number": 3,  "name": "Hasan",  "id": 14 },
+        { "number": 4,  "name": "Hüseyin", "id": 15 },
+        { "number": 5,  "name": "Mustafa", "id": 16 },
+        { "number": 6,  "name": "Osman", "id": 17 },
+        { "number": 7,  "name": "Faruk", "id": 18 },
+        { "number": 8,  "name": "Sedat", "id": 19 },
+        { "number": 9,  "name": "Semih", "id": 20 },
+        { "number": 10, "name": "Sinan","id": 21},
+        { "number": 11, "name": "Kemal","id": 22 }
+       
+      ],
+      "homeSubstitutes": [
+            { "number": 1,  "name": "Ahmet","id": 23},
+            { "number": 2,  "name": "Mehmet","id": 24 },
+            { "number": 3,  "name": "Hasan","id": 25 },
+            { "number": 4,  "name": "Hüseyin","id": 26 }
+        ],
+        "awaySubstitutes": [
+            { "number": 1,  "name": "Ahmet","id": 31 },
+            { "number": 2,  "name": "Mehmet","id": 32 },
+            { "number": 3,  "name": "Hasan","id": 33 },
+            { "number": 4,  "name": "Hüseyin","id": 34 }
+        ]
+      
+
+}
