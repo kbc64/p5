@@ -56,7 +56,7 @@
             "isScoreChange": false,
             "isSquad": false,
             "minute": "9'",
-            "action": false
+            "action": true
         },
         {
             "text": "9', Maç skoru 1-0 oldu.",
@@ -95,7 +95,7 @@
             "isScoreChange": false,
             "isSquad": false,
             "minute": "38'",
-            "action": false
+            "action": true
         },
         {
             "text": "38', Maç skoru 2-0 oldu.",

@@ -2,7 +2,7 @@
 const WIDTH = 1080;
 const HEIGTH = 1920;
 HALF_X = WIDTH/2
-let JSON_INDEX = 0;
+let JSON_INDEX = null;
 
 const ANIMATION_TIME = 3000;
 const ANIMATION_DURATION = 1000;
