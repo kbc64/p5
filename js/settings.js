@@ -4,7 +4,7 @@ const HEIGTH = 1920;
 HALF_X = WIDTH/2
 let JSON_INDEX = 0;
 
-const ANIMATION_TIME = 1500;
+const ANIMATION_TIME = 3000;
 const ANIMATION_DURATION = 1000;
 const TOGGLE_INTERVAL = 100; 
 
@@ -76,8 +76,8 @@ const MATCH_SQUAD_ROW_HEIGHT = 60
 
 
 
-let HOME_BOX_COLOR = { r: 255, g: 0, b: 0, a: 160 };
-let AWAY_BOX_COLOR = { r: 0, g: 0, b: 255, a: 160 };
+let HOME_BOX_COLOR = { r: 255, g: 0, b: 0, a: 200 };
+let AWAY_BOX_COLOR = { r: 0, g: 0, b: 255, a: 200 };
 let HOME_BOX_TEXT_COLOR = { r: 255, g: 255, b: 255, a: 255 };
 let AWAY_BOX_TEXT_COLOR = { r: 255, g: 255, b: 255, a: 255 };
 

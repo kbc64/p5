@@ -1,5 +1,12 @@
 let MAC_INFO;
-let animationStartTime = -1;  
+let colors;
+let currenAnimsationIndex = 0;
+let lastChangeTime = 0;
+let interval = 50; // 100ms'de bir renk değiştir (Hızlı yanıp sönme efekti)
+let animationDuration = 1000; // Toplam 2 saniye boyunca devam edecek
+let animationStartTime = null;
+let animating = false;
+
 let team1Logo, team2Logo;
 let homeScore = 0
 let awayScore = 0
@@ -87,7 +94,7 @@ function setup() {
   
 
  
-  setTimeout(MatchComentaryAnimation, ANIMATION_TIME)
+  setTimeout(MatchComentaryAnimation, 3000)
 
 
 
@@ -177,26 +184,31 @@ function addAction() {
   for(let i=0; i<actions.length; i++) {
     let currentX = null
     let currentY = null
+    let padding = 10
     const action = actions[i]
-    const alpha = 60
+    const alpha = 50
     let color = { r: 0, g: 0, b: 0, a: alpha}
     const minute = action.minute
     const name = action.text
     const score = '3-1'
     
     if(action.w ==1) {
-      currentX = 0
+      currentX = 10
       currentHomeY = currentHomeY == null ? MATCH_SQUAD_Y : currentHomeY + boxHeight + marginTop
       currentY = currentHomeY
+
+      //color = {r: HOME_BOX_COLOR.r, g: HOME_BOX_COLOR.g, b: HOME_BOX_COLOR.b, a: alpha}
       
     }
     if(action.w ==2) {
       currentX = currentX + HALF_X
       currentAwayY = currentAwayY == null ? MATCH_SQUAD_Y : currentAwayY + boxHeight + marginTop
       currentY = currentAwayY
+    //color = {r: AWAY_BOX_COLOR.r, g: AWAY_BOX_COLOR.g, b: AWAY_BOX_COLOR.b, a: alpha}
     }
 
-    addMatchAction(currentX, currentY, HALF_X-20, boxHeight, color, minute, name, score);
+
+    addMatchAction(currentX + padding, currentY, HALF_X-(padding*2), boxHeight, color, minute, name, 'kırmızı', score);
     
   }
  
@@ -205,38 +217,52 @@ function addAction() {
 
 
 
-function addMatchAction(x, y, width, height, color, minute, playerName, score) {
- addBox(x, y, width, height, color);
+function addMatchAction(x, y, width, height, color, minute, playerName, actionType, score) {
+ 
+  addBox(x, y, width, height, color);
 
   // Boşluk ve boyut değişkenleri
-  let imageLeftMargin = 10;
-  let minuteLeftMargin = 15;
-  let playerLeftMargin = 30;
-
-  let imageSize = 40 // Görüntü boyutu kutuya göre ayarlanıyor
-  let textSizeVal = 32 // Metin boyutu ayarı
-  
-  // Sarı kart görseli
-  
-  //image(redImage, x + imageLeftMargin, y + (height - imageSize) / 2, imageSize, imageSize);
-  image(ballImage, x + imageLeftMargin, y + (height - imageSize)   / 2 +6 , 35, 35);
-
+  let imageRightMargin = 10;
+  let minuteLeftMargin = 10;
+  let playerLeftMargin = 55;
   
 
-  // Metin başlangıç noktası
-  let textX = x + imageSize + minuteLeftMargin 
-  let textY = y + height / 2; // Y ekseninde ortalamak için
-  
-  // Yazı ayarları
+  let imageSize = 38 
+  let textSizeVal = 32 
+
+  let textX = x
+  let textY = y + height / 2;
+
   fill(255);
   textSize(textSizeVal);
   textAlign(LEFT, CENTER);
+  
 
-  // Dakika bilgisi
+ 
+  textX += minuteLeftMargin
   text(minute, textX, textY);
-  let minuteWidth = textWidth(minute); // Dakika uzunluğu kadar boşluk ekle
-  textX += minuteWidth+  playerLeftMargin
 
+
+  textX +=  playerLeftMargin
+  text(playerName, textX, textY);
+
+  if (actionType=='gol') {
+    image(ballImage, x+ width-imageSize-imageRightMargin, y + (height - imageSize) / 2 , imageSize, imageSize );
+  } else if(actionType=='sarı') {
+    image(yellowImage, x+ width-imageSize-imageRightMargin, y + (height - imageSize) / 2 , imageSize, imageSize );
+  } else if(actionType=='kırmızı') {
+    tint(255, 255, 255, 160); // Şeffaflığı %50 (128) yap
+
+    image(redImage, x+ width-imageSize-imageRightMargin, y + (height - imageSize) / 2 , imageSize, imageSize );
+    tint(255, 255, 255, 255);
+  }
+
+
+  
+
+
+
+/*
   // Oyuncu adı
   text(playerName, textX, textY);
   let playerWidth = textWidth(playerName) + 40; // Oyuncu adına boşluk bırak
@@ -245,6 +271,9 @@ function addMatchAction(x, y, width, height, color, minute, playerName, score) {
   // Skor bilgisi
   textAlign(RIGHT, CENTER);
   text(score, WIDTH/2 -5, textY);
+
+*/
+
 }
 
 
@@ -392,31 +421,51 @@ function renderTeamRoster(x, y, boxWidth, boxHeight, teamPlayers, textColor, coa
 
 
 function MatchComentaryAnimation() {
-  
-    JSON_INDEX++
+  JSON_INDEX++;
 
-  
-  let time = MAC_INFO['aksiyonlar'][JSON_INDEX]['dc'] + ANIMATION_TIME
-  if(MAC_INFO['aksiyonlar'][JSON_INDEX]['isAnimation']) {
-    animationStartTime = millis()
-    time = ANIMATION_DURATION + 2000
+  // Eğer aksiyon yoksa dur
+  if (!MAC_INFO['aksiyonlar'][JSON_INDEX]) {
+    console.log("Tüm animasyonlar tamamlandı!");
+    return;
   }
-  if(MAC_INFO['aksiyonlar'][JSON_INDEX]['isScoreChange']) {
-    homeScore = MAC_INFO['aksiyonlar'][JSON_INDEX]['homeScore']
-    awayScore = MAC_INFO['aksiyonlar'][JSON_INDEX]['awayScore']
+
+  // Yeni animasyonu başlatmadan önce zaman değişkenlerini sıfırla
+  animating = false; 
+  animationStartTime = null; 
+  lastChangeTime = null; 
+
+  let time = MAC_INFO['aksiyonlar'][JSON_INDEX]['dc'] + 3000;
+
+  if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isAnimation']) {
+    console.log("Yeni animasyon başladı!");
+
+    animating = true;
+    animationStartTime = millis(); // **Yeni başlangıç zamanı**
+    currenAnimsationIndex = 0; // **İlk renk (kırmızı) ile başlasın**
+    lastChangeTime = millis(); // **Son değişim zamanını sıfırla**
+    
+    time = 1000 + 2000; // **Animasyon süresi**
+  }
+
+  if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isScoreChange']) {
+    homeScore = MAC_INFO['aksiyonlar'][JSON_INDEX]['homeScore'];
+    awayScore = MAC_INFO['aksiyonlar'][JSON_INDEX]['awayScore'];
   } 
-  if(MAC_INFO['aksiyonlar'][JSON_INDEX]['isSquad']) {
-    addSquad()
+
+  if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isSquad']) {
+    addSquad();
   } else {
-  if('action' in MAC_INFO['aksiyonlar'][JSON_INDEX]) {
-    actions.push(MAC_INFO['aksiyonlar'][JSON_INDEX])
-  }
-    setTimeout(MatchComentaryAnimation, time)
-  }
+    if ('action' in MAC_INFO['aksiyonlar'][JSON_INDEX]) {
+      actions.push(MAC_INFO['aksiyonlar'][JSON_INDEX]);
+    }
 
-
- 
+    // **Yeni animasyon başlamadan önce biraz bekle**
+    setTimeout(() => {
+      MatchComentaryAnimation();
+    }, time);
+  }
 }
+
 
 
 function addMinute(minute) {
@@ -430,29 +479,52 @@ function addMinute(minute) {
 }
 
 
+
+
 function addMatchCommentary() {
-  let currentColor = getMatchCommentaryBoxColor()
-  let textColor = getMatchCommentaryTextColor()
-  if (animationStartTime !== -1) {
-    let elapsed = millis() - animationStartTime;
-    if (elapsed < ANIMATION_DURATION) {
-      let phase = floor(elapsed / TOGGLE_INTERVAL);
-      currentColor = (phase % 2 === 0) ? getMatchCommentaryTextColor() : getMatchCommentaryBoxColor()
-      textColor = (phase % 2 === 0) ? getMatchCommentaryBoxColor(): getMatchCommentaryTextColor()
+  let textColor = getMatchCommentaryTextColor();
+  let boxColor = getMatchCommentaryBoxColor();
+  let colors = [
+    color(textColor.r, textColor.g, textColor.b), 
+    color(boxColor.r, boxColor.g, boxColor.b)
+  ]; 
+
+  let textColors = [
+    boxColor,
+    textColor
+   
+    
+  ];
+
+
+
+
+  if (animating) {
+    let elapsedTime = millis() - animationStartTime;
+
+    if (elapsedTime < animationDuration) { 
+      if (millis() - lastChangeTime > interval) { 
+        currenAnimsationIndex = (currenAnimsationIndex + 1) % colors.length;
+        lastChangeTime = millis();
+      }
     } else {
-      animationStartTime = -1;
-      currentColor = getMatchCommentaryBoxColor();
-      textColor = getMatchCommentaryTextColor()
+      animating = false; // Animasyonu durdur
+      currenAnimsationIndex = 1; // Beyazda kalsın
     }
   }
-  
-  fill(currentColor.r, currentColor.g, currentColor.b);
+
+  fill(colors[currenAnimsationIndex]);
   rect(MATCH_COMMENTARY_BOX_X, MATCH_COMMENTARY_BOX_Y, MATCH_COMMENTARY_BOX_WIDTH, MATCH_COMMENTARY_BOX_HEIGHT);
-  addMatchCommentaryText(MAC_INFO['aksiyonlar'][JSON_INDEX]['text'], textColor)
-  if ('minute' in MAC_INFO['aksiyonlar'][JSON_INDEX]) {
-    addMinute(MAC_INFO['aksiyonlar'][JSON_INDEX]['minute'])
+
+  // MAC_INFO ve JSON_INDEX'in doğru olup olmadığını kontrol et
+  if (MAC_INFO && MAC_INFO['aksiyonlar'] && MAC_INFO['aksiyonlar'][JSON_INDEX]) {
+    
+    addMatchCommentaryText(MAC_INFO['aksiyonlar'][JSON_INDEX]['text'], textColors[currenAnimsationIndex]);
+    
+    if ('minute' in MAC_INFO['aksiyonlar'][JSON_INDEX]) {
+      addMinute(MAC_INFO['aksiyonlar'][JSON_INDEX]['minute']);
+    }
   }
-  
 }
 
 function getMatchCommentaryBoxColor() {
