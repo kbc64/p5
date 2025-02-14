@@ -33,6 +33,18 @@
             "isSquad": false
         },
         {
+            "text": "Kadrolar açıklanıyor",
+            "w": 0,
+            "dc": 0,
+            "isSquad": true
+        },
+        {
+            "text": "Maç Başlıyor",
+            "w": 0,
+            "dc": 0,
+            "isSquad": false
+        },
+        {
             "text": "Gooolll",
             "w": 1,
             "dc": 0,
@@ -615,16 +627,16 @@
             "b": 0,
             "a": 25
         },
-        "homeBoxTextColor_bak": {
+        "homeBoxTextColor": {
             "r": 255,
             "g": 255,
-            "b": 255,
+            "b": 0,
             "a": 255
         },
-        "awayBoxTextColor_bak": {
+        "awayBoxTextColor": {
             "r": 255,
             "g": 255,
-            "b": 255,
+            "b": 0,
             "a": 255
         },
         "homeNameColor": {

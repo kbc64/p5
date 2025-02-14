@@ -9,6 +9,7 @@ let animating = false;
 let startTime = null
 let byPass = false
 let isAppendAction = true
+let isSquadAnimation = false
 
 let team1Logo, team2Logo;
 let homeScore = 0
@@ -125,9 +126,8 @@ function draw() {
 
   if (isSquadOnTheScreen) {
     drawFooterBox()
-    addSquadTeamName()
-    renderTeamRoster(0, MATCH_SQUAD_Y, 540, 800, homePlayers, rosterTextColor, homeCoach, homeSubstitutes);
-    renderTeamRoster(540, MATCH_SQUAD_Y, 540, 800, awayPlayers, rosterTextColor, awayCoach, awaySubstitutes);
+    renderTeamRoster(0, ACTION_BOX_Y, 540, 800, homePlayers, rosterTextColor, homeCoach, homeSubstitutes);
+    renderTeamRoster(540, ACTION_BOX_Y, 540, 800, awayPlayers, rosterTextColor, awayCoach, awaySubstitutes);
   }
 
 
@@ -308,7 +308,7 @@ function addActionTitle(t) {
 
 function addSquad() {
 
-
+console.log('sqaud')
   startSquadAnimation();
 }
 
@@ -324,14 +324,21 @@ function startSquadAnimation() {
 }
 
 function checkSquadAnimationEnd() {
+    startTime = millis()
+    console.log(startTime)
+
   if (isSquadAnimating && millis() >= animationSquadEndTime) {
     isSquadAnimating = false; // Animasyonu durdur
+    startTime = millis()  + 100000
+
+
     setTimeout(function () {
       isSquadOnTheScreen = false
-      MatchComentaryAnimation()
+   
       isActionBox = true
+      startTime =0
     }, 5000)
-  }
+  } 
 }
 
 function initializeFadeInValues(teamPlayers, substitutes, coach) {
@@ -449,8 +456,11 @@ function MatchComentaryAnimation() {
       awayScore = MAC_INFO['aksiyonlar'][JSON_INDEX]['awayScore'];
     }
   
-    if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isSquad']) {
+    if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isSquad'] && !isSquadAnimation) {
+      isSquadAnimation = true
       addSquad();
+      
+      console.log('çalışıyor')
     } else {
       if ('action' in MAC_INFO['aksiyonlar'][JSON_INDEX] && MAC_INFO['aksiyonlar'][JSON_INDEX]['action'] && isAppendAction) {
         isAppendAction = false
