@@ -187,11 +187,12 @@ function addAction() {
     let currentY = null
     let padding = 10
     const action = actions[i]
-    const alpha = 50
+    const alpha = 120
     let color = { r: 0, g: 0, b: 0, a: alpha }
     const minute = action.minute
     const name = action.player
-    const score = '3-1'
+    let score = action.isScore ? `${action.homeScore}-${action.awayScore}` : action.isScore
+    
 
     if (action.w == 1) {
       currentX = 10
@@ -209,7 +210,7 @@ function addAction() {
     }
 
 
-    addMatchAction(currentX + padding, currentY, HALF_X - (padding * 2), boxHeight, color, minute, name, 'kırmızı', score);
+    addMatchAction(currentX + padding, currentY, HALF_X - (padding * 2), boxHeight, color, minute, name, action.type, score);
 
   }
 
@@ -247,33 +248,36 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
   textX += playerLeftMargin
   text(playerName, textX, textY);
 
+  tintAlpha = 200
+
   if (actionType == 'gol') {
+    tint(255, 255, 255, 220); // %50 şeffaflık
     image(ballImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
   } else if (actionType == 'sarı') {
+    int(255, 255, 255, tintAlpha)
     image(yellowImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
   } else if (actionType == 'kırmızı') {
-    tint(255, 255, 255, 160); // %50 şeffaflık
+    tint(255, 255, 255, tintAlpha); // %50 şeffaflık
 
     image(redImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
-    noTint();
+    
   }
+  noTint();
 
 
 
 
 
 
-  /*
-    // Oyuncu adı
-    text(playerName, textX, textY);
-    let playerWidth = textWidth(playerName) + 40; // Oyuncu adına boşluk bırak
-    textX += playerWidth;
+
   
-    // Skor bilgisi
-    textAlign(RIGHT, CENTER);
-    text(score, WIDTH/2 -5, textY);
-  
-  */
+    if(score) {
+      textAlign(LEFT, CENTER);
+      text(score, x + width - imageSize - imageRightMargin-60, textY);
+    
+    }
+    
+ 
 
 }
 
