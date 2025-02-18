@@ -14,15 +14,15 @@ let isSquadAnimation = false
 let team1Logo, team2Logo;
 let homeScore = 0
 let awayScore = 0
-let INITIAL_DELAY = 1500;
+let INITIAL_DELAY = 800;
+const squadDelay = 3000;
 let counter = 0;
 
 let isDC = false
 
-
 const actions = []
 
-isRecord = false;
+isRecord = true;
 
 
 
@@ -166,7 +166,7 @@ function addActionBox() {
 }
 
 function addAction() {
-
+  drawFooterBox()
   let currentHomeY = null
   let currentAwayY = null
 
@@ -261,9 +261,9 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
     //tint(255, 255, 255, 240); // %50 şeffaflık
    
     image(exitImage, textX+playerWidth, y + (height - imageSize) / 2, imageSize, imageSize);
-    image(enterImage, x + 12 + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
+    image(enterImage, x + 5 + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
     textAlign(RIGHT, CENTER);
-    text(playerName, x + 12 +  width - imageSize - imageRightMargin, textY);
+    text(playerName, x + 5 +  width - imageSize - imageRightMargin, textY);
   }
   noTint();
 
@@ -313,14 +313,14 @@ function addActionTitle(t) {
 let squadIndex = 0;
 let isHomeSquad = true;
 let displayedSquad = [];
-let squadAlpha = 200;
-let squadBoxHeight = 40;
+let squadAlpha = 120;
+let squadBoxHeight = 48;
 let squadAnimationSpeed = 15;
-let squadPadding = 15;
+let squadPadding = 40;
 let numberAlpha = 255;
 let nameAlpha = 255;
-let numberBoxWidth = 100;
-let nameBoxWidth = 200;
+let numberBoxWidth = 60;
+let nameBoxWidth = 400;
 let numberColor = [255, 255, 255];
 let nameColor = [255, 255, 255];
 let subNumberColor = [200, 200, 200]; // Yedek oyuncu numara rengi
@@ -347,8 +347,9 @@ function setCoachNameColor(r, g, b) {
 // Mevcut set fonksiyonları aynı kalıyor...
 
 function addSquad() {
-  const homeSection = MAC_INFO.homePlayers.concat({ number: 'TD', name: `Coach: ${MAC_INFO.info.homeCoach}` }, MAC_INFO.homeSubstitutes);
-  const awaySection = MAC_INFO.awayPlayers.concat({ number: 'TD', name: `Coach: ${MAC_INFO.info.awayCoach}` }, MAC_INFO.awaySubstitutes);
+  drawFooterBox()
+  const homeSection = MAC_INFO.homePlayers.concat({ number: 'TD', name: `${MAC_INFO.info.homeCoach}` }, MAC_INFO.homeSubstitutes);
+  const awaySection = MAC_INFO.awayPlayers.concat({ number: 'TD', name: `${MAC_INFO.info.awayCoach}` }, MAC_INFO.awaySubstitutes);
 
   textSize(32);
 
@@ -366,7 +367,7 @@ function addSquad() {
       startTime = 0;
       isSquadAnimation = true;
       noLoop();
-      setTimeout(loop, 3000);
+      setTimeout(loop, squadDelay);
     }
   }
 
@@ -380,7 +381,7 @@ function addSquad() {
          isCoach ? coachNumberColor[1] : isSub ? subNumberColor[1] : numberColor[1],
          isCoach ? coachNumberColor[2] : isSub ? subNumberColor[2] : numberColor[2], numberAlpha);
     textAlign(CENTER, CENTER);
-    text(item.number, item.x + squadPadding + numberBoxWidth / 2, item.y + squadBoxHeight / 2);
+    text(item.number, item.x + squadPadding + numberBoxWidth / 2, item.y + squadBoxHeight / 2 -3);
 
     fill(0, 0, 0, squadAlpha);
     rect(item.x + squadPadding + numberBoxWidth + 5, item.y, nameBoxWidth, squadBoxHeight);
@@ -388,7 +389,7 @@ function addSquad() {
          isCoach ? coachNameColor[1] : isSub ? subNameColor[1] : nameColor[1],
          isCoach ? coachNameColor[2] : isSub ? subNameColor[2] : nameColor[2], nameAlpha);
     textAlign(LEFT, CENTER);
-    text(item.name, item.x + squadPadding + numberBoxWidth + 15, item.y + squadBoxHeight / 2);
+    text(item.name, item.x + squadPadding + numberBoxWidth + 15, item.y + squadBoxHeight / 2-3);
   }
 }
 
