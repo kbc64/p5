@@ -57,7 +57,11 @@ function preload() {
 
 }
 
-
+let fadeInValues = []; // Her eleman için opaklık değerleri
+let fadeInSpeed = 10; // Opaklık artış hızı
+let currentIndex = 0; // Şu anda beliren elemanın indeksi
+let lastUpdateTime = 0; // Son güncelleme zamanı
+let delayBetweenElements = 100; // Elemanlar arası gecikme (ms)
 
 const capturer = new CCapture({
   format: 'webm',
@@ -121,7 +125,18 @@ function draw() {
       text(counter, 10, 10);
     }
 
- 
+  if (isSquadAnimating) {
+
+    updateFadeInValues();
+    checkSquadAnimationEnd(); // Animasyonun bitip bitmediğini kontrol et
+  }
+
+  if (isSquadOnTheScreen) {
+    drawFooterBox()
+    renderTeamRoster(0, ACTION_BOX_Y-25, 540, 800, homePlayers, rosterTextColor, homeCoach, homeSubstitutes);
+    renderTeamRoster(540, ACTION_BOX_Y-25, 540, 800, awayPlayers, rosterTextColor, awayCoach, awaySubstitutes);
+  }
+
 
 
 
@@ -308,14 +323,13 @@ function addActionTitle(t) {
 }
 
 
-
 // p5.js'de her draw() çağrısında çalışan addSquad
 let squadIndex = 0;
 let isHomeSquad = true;
 let displayedSquad = [];
 let squadAlpha = 200;
 let squadBoxHeight = 40;
-let squadAnimationSpeed = 15;
+let squadAnimationSpeed = 20;
 let squadPadding = 15;
 let numberAlpha = 255;
 let nameAlpha = 255;
@@ -323,28 +337,11 @@ let numberBoxWidth = 100;
 let nameBoxWidth = 200;
 let numberColor = [255, 255, 255];
 let nameColor = [255, 255, 255];
-let subNumberColor = [200, 200, 200]; // Yedek oyuncu numara rengi
-let subNameColor = [200, 200, 200];   // Yedek oyuncu isim rengi
-let coachNumberColor = [255, 215, 0]; // Teknik direktör numara rengi
-let coachNameColor = [255, 215, 0];   // Teknik direktör isim rengi
+let fadeIncrement = 10;
 
-function setSubNumberColor(r, g, b) {
-  subNumberColor = [r, g, b];
+function setFadeIncrement(value) {
+  fadeIncrement = value;
 }
-
-function setSubNameColor(r, g, b) {
-  subNameColor = [r, g, b];
-}
-
-function setCoachNumberColor(r, g, b) {
-  coachNumberColor = [r, g, b];
-}
-
-function setCoachNameColor(r, g, b) {
-  coachNameColor = [r, g, b];
-}
-
-// Mevcut set fonksiyonları aynı kalıyor...
 
 function addSquad() {
   const homeSection = MAC_INFO.homePlayers.concat({ number: 'TD', name: `Coach: ${MAC_INFO.info.homeCoach}` }, MAC_INFO.homeSubstitutes);
@@ -357,41 +354,32 @@ function addSquad() {
 
   if (frameCount % squadAnimationSpeed === 0) {
     if (squadIndex < section.length) {
-      displayedSquad.push({ number: section[squadIndex].number || '', name: section[squadIndex].name, x: startX, y: MATCH_SQUAD_Y + squadIndex * (squadBoxHeight + 10) });
+      displayedSquad.push({ number: section[squadIndex].number || '', name: section[squadIndex].name, x: startX, y: MATCH_SQUAD_Y + squadIndex * (squadBoxHeight + 10), fade: 0 });
       squadIndex++;
     } else if (isHomeSquad) {
       isHomeSquad = false;
       squadIndex = 0;
     } else {
-      startTime = 0;
-      isSquadAnimation = true;
       noLoop();
-      setTimeout(loop, 3000);
     }
   }
 
   for (let item of displayedSquad) {
-    let isSub = MAC_INFO.homeSubstitutes.some(p => p.name === item.name) || MAC_INFO.awaySubstitutes.some(p => p.name === item.name);
-    let isCoach = item.number === 'TD';
+    if (item.fade < 255) item.fade += fadeIncrement;
 
-    fill(0, 0, 0, squadAlpha);
+    fill(0, 0, 0, squadAlpha * (item.fade / 255));
     rect(item.x + squadPadding, item.y, numberBoxWidth, squadBoxHeight);
-    fill(isCoach ? coachNumberColor[0] : isSub ? subNumberColor[0] : numberColor[0],
-         isCoach ? coachNumberColor[1] : isSub ? subNumberColor[1] : numberColor[1],
-         isCoach ? coachNumberColor[2] : isSub ? subNumberColor[2] : numberColor[2], numberAlpha);
+    fill(numberColor[0], numberColor[1], numberColor[2], numberAlpha * (item.fade / 255));
     textAlign(CENTER, CENTER);
     text(item.number, item.x + squadPadding + numberBoxWidth / 2, item.y + squadBoxHeight / 2);
 
-    fill(0, 0, 0, squadAlpha);
+    fill(0, 0, 0, squadAlpha * (item.fade / 255));
     rect(item.x + squadPadding + numberBoxWidth + 5, item.y, nameBoxWidth, squadBoxHeight);
-    fill(isCoach ? coachNameColor[0] : isSub ? subNameColor[0] : nameColor[0],
-         isCoach ? coachNameColor[1] : isSub ? subNameColor[1] : nameColor[1],
-         isCoach ? coachNameColor[2] : isSub ? subNameColor[2] : nameColor[2], nameAlpha);
+    fill(nameColor[0], nameColor[1], nameColor[2], nameAlpha * (item.fade / 255));
     textAlign(LEFT, CENTER);
     text(item.name, item.x + squadPadding + numberBoxWidth + 15, item.y + squadBoxHeight / 2);
   }
 }
-
 
 
 
@@ -429,7 +417,6 @@ function MatchComentaryAnimation() {
     if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isSquad'] && !isSquadAnimation) {
      
       startTime += 900000 
-      console.log('devam ediyor')
       addSquad();
       
       console.log('çalışıyor')
