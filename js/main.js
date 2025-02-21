@@ -164,7 +164,7 @@ function draw() {
 }
 
 function addBorder() {
-  addBox(0, MATCH_COMMENTARY_BOX_Y-MATCH_COMMENTARY_BOX_MARGIN_TOP, WIDTH, MATCH_COMMENTARY_BOX_MARGIN_TOP, { r: 0, g: 0, b: 0, a: 100 })
+  addBox(0, MATCH_COMMENTARY_BOX_Y-MATCH_COMMENTARY_BOX_MARGIN_TOP, WIDTH, MATCH_COMMENTARY_BOX_MARGIN_TOP, { r: 0, g: 0, b: 0, a: 80 })
 }
 
 function addActionBox() {
@@ -329,8 +329,8 @@ let numberBoxWidth = 60;
 let nameBoxWidth = 400;
 let numberColor = [255, 255, 255];
 let nameColor = [255, 255, 255];
-let subNumberColor = [200, 200, 200]; // Yedek oyuncu numara rengi
-let subNameColor = [200, 200, 200];   // Yedek oyuncu isim rengi
+let subNumberColor = [255, 255, 255]; // Yedek oyuncu numara rengi
+let subNameColor = [255, 255, 255];   // Yedek oyuncu isim rengi
 let coachNumberColor = [255, 215, 0]; // Teknik direktör numara rengi
 let coachNameColor = [255, 215, 0];   // Teknik direktör isim rengi
 
@@ -364,7 +364,7 @@ function addSquad() {
 
   if (frameCount % squadAnimationSpeed === 0) {
     if (squadIndex < section.length) {
-      displayedSquad.push({ number: section[squadIndex].number || '', name: section[squadIndex].name, x: startX, y: MATCH_SQUAD_Y + squadIndex * (squadBoxHeight + 10) });
+      displayedSquad.push({ number: section[squadIndex].number || '', name: section[squadIndex].name, x: startX, y: MATCH_SQUAD_Y + squadIndex * (squadBoxHeight + 10)+5});
       squadIndex++;
     } else if (isHomeSquad) {
       isHomeSquad = false;
