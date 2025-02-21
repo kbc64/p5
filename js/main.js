@@ -14,15 +14,16 @@ let isSquadAnimation = false
 let team1Logo, team2Logo;
 let homeScore = 0
 let awayScore = 0
-let INITIAL_DELAY = 800;
+let INITIAL_DELAY = 1000;
 const squadDelay = 3000;
+const goalAnimation = 1000;
 let counter = 0;
 
 let isDC = false
 
 const actions = []
 
-isRecord = true;
+isRecord = false;
 
 
 
@@ -144,11 +145,13 @@ function draw() {
 
   MatchComentaryAnimation()
 
-  if (frameCount < 60 * 60 && isRecord) {
+  addBorder()
+
+  if (frameCount < 60 * 120 && isRecord) {
 
     capturer.capture(canvas)
 
-  } else if (frameCount === 60 * 60 && isRecord) {
+  } else if (frameCount === 60 * 120 && isRecord) {
     capturer.save()
     capturer.stop()
 
@@ -160,6 +163,9 @@ function draw() {
 
 }
 
+function addBorder() {
+  addBox(0, MATCH_COMMENTARY_BOX_Y-MATCH_COMMENTARY_BOX_MARGIN_TOP, WIDTH, MATCH_COMMENTARY_BOX_MARGIN_TOP, { r: 0, g: 0, b: 0, a: 100 })
+}
 
 function addActionBox() {
   drawFooterBox()
@@ -345,7 +351,7 @@ function setCoachNameColor(r, g, b) {
 }
 
 // Mevcut set fonksiyonları aynı kalıyor...
-
+let squadTime = 0
 function addSquad() {
   drawFooterBox()
   const homeSection = MAC_INFO.homePlayers.concat({ number: 'TD', name: `${MAC_INFO.info.homeCoach}` }, MAC_INFO.homeSubstitutes);
@@ -364,12 +370,17 @@ function addSquad() {
       isHomeSquad = false;
       squadIndex = 0;
     } else {
-      startTime = 0;
-      isSquadAnimation = true;
-      noLoop();
-      setTimeout(loop, squadDelay);
+      
+        if(!isSquadAnimation) {
+          isSquadAnimation = true
+        }
+          
+        
     }
+  
+    
   }
+
 
   for (let item of displayedSquad) {
     let isSub = MAC_INFO.homeSubstitutes.some(p => p.name === item.name) || MAC_INFO.awaySubstitutes.some(p => p.name === item.name);
@@ -396,7 +407,9 @@ function addSquad() {
 
 
 
-
+let isFirstSqauad = true
+let firstStartTime = null
+let is_pass = false
 
 function MatchComentaryAnimation() {
   if (JSON_INDEX == null || (startTime + INITIAL_DELAY >= millis())) {
@@ -427,18 +440,56 @@ function MatchComentaryAnimation() {
       awayScore = MAC_INFO['aksiyonlar'][JSON_INDEX]['awayScore'];
     }
   
-    if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isSquad'] && !isSquadAnimation) {
+    if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isSquad']&&(firstStartTime == null|| firstStartTime+squadDelay>millis())&&!is_pass) {
      
-      startTime += 900000 
-      console.log('devam ediyor')
-      addSquad();
+      if(!isSquadAnimation) {
+        startTime += 50000000 
+    
+        addSquad();
+        
+      } else {
+        if (isFirstSqauad) {
+          isFirstSqauad = false
+          firstStartTime = millis()
+          setTimeout(()=>{is_pass=true; startTime=0}, squadDelay)
+        }
+
+        
+          drawFooterBox()
+          for (let item of displayedSquad) {
+            let isSub = MAC_INFO.homeSubstitutes.some(p => p.name === item.name) || MAC_INFO.awaySubstitutes.some(p => p.name === item.name);
+            let isCoach = item.number === 'TD';
+        
+            fill(0, 0, 0, squadAlpha);
+            rect(item.x + squadPadding, item.y, numberBoxWidth, squadBoxHeight);
+            fill(isCoach ? coachNumberColor[0] : isSub ? subNumberColor[0] : numberColor[0],
+                 isCoach ? coachNumberColor[1] : isSub ? subNumberColor[1] : numberColor[1],
+                 isCoach ? coachNumberColor[2] : isSub ? subNumberColor[2] : numberColor[2], numberAlpha);
+            textAlign(CENTER, CENTER);
+            text(item.number, item.x + squadPadding + numberBoxWidth / 2, item.y + squadBoxHeight / 2 -3);
+        
+            fill(0, 0, 0, squadAlpha);
+            rect(item.x + squadPadding + numberBoxWidth + 5, item.y, nameBoxWidth, squadBoxHeight);
+            fill(isCoach ? coachNameColor[0] : isSub ? subNameColor[0] : nameColor[0],
+                 isCoach ? coachNameColor[1] : isSub ? subNameColor[1] : nameColor[1],
+                 isCoach ? coachNameColor[2] : isSub ? subNameColor[2] : nameColor[2], nameAlpha);
+            textAlign(LEFT, CENTER);
+            text(item.name, item.x + squadPadding + numberBoxWidth + 15, item.y + squadBoxHeight / 2-3);
+          
+        }
+        
+       
+          
+        
+      }
       
-      console.log('çalışıyor')
+   
+   
     } else {
       if ('action' in MAC_INFO['aksiyonlar'][JSON_INDEX] && MAC_INFO['aksiyonlar'][JSON_INDEX]['action'] && isAppendAction) {
         isAppendAction = false
         actions.push(MAC_INFO['aksiyonlar'][JSON_INDEX]);
-        console.log('buradayım')
+        
       }
   
   }
@@ -511,7 +562,7 @@ function addMatchCommentary() {
     //JSON_INDEX++; // JSON_INDEX'i artır
     byPass = true
     
-    startTime -= (INITIAL_DELAY - ANIMATION_DURATION) - 2000; // Yeni animasyon için zamanı sıfırla
+    startTime -= (INITIAL_DELAY - ANIMATION_DURATION) - goalAnimation; // Yeni animasyon için zamanı sıfırla
     
 
       

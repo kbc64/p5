@@ -7,12 +7,40 @@
         "leagueName": "Türkiye Süper Ligi",
         "season": "2002/2003",
         "week": 6,
-        "matchDate": "6 Kasım 2002",
+        "matchDate": "06 KasÄ±m 2002 - 20:00",
         "stadium": "Ülker Stadyumu",
         "homeLogo": "logo/fenerbahçe.png",
         "awayLogo": "logo/galatasaray.png"
     },
     "aksiyonlar": [
+        {
+            "text": "Unutulmaz",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false
+        },
+        {
+            "text": "Fenerbahçe - Galatasaray",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false
+        },
+        {
+            "text": "maçları serisindeki",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false
+        },
+        {
+            "text": "bu karşılaşmada",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false
+        },
         {
             "text": "Türkiye Süper Ligi",
             "w": 0,
@@ -21,28 +49,28 @@
             "isSquad": false
         },
         {
-            "text": " 2002/2003 sezonunun ",
+            "text": "2002/2003 sezonunun",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
             "isSquad": false
         },
         {
-            "text": " 6 haftasında ",
+            "text": "6. haftasında",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
             "isSquad": false
         },
         {
-            "text": " Fenerbahçe ile Galatasaray ",
+            "text": "Fenerbahçe ile Galatasaray",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
             "isSquad": false
         },
         {
-            "text": "karşı karşıya geliyor.",
+            "text": "karşı karşıya geliyor!",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -56,9 +84,9 @@
             "isSquad": true
         },
         {
-            "text": "Maç başladı",
+            "text": "Maç başladı!",
             "w": 0,
-            "dc": 0,
+            "dc": 1000,
             "isAnimation": false,
             "isSquad": true
         },
@@ -81,7 +109,7 @@
         {
             "text": "9'  Tuncay Şanlı GOL",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Tuncay Şanlı",
             "player2": false,
             "isAnimation": false,
@@ -97,7 +125,7 @@
         {
             "text": "9'  Fenerbahçe 1-0 Galatasaray",
             "w": 1,
-            "dc": 0,
+            "dc": 750,
             "player": "Tuncay Şanlı",
             "player2": false,
             "isAnimation": false,
@@ -113,7 +141,7 @@
         {
             "text": "Santra yapıldı",
             "w": 2,
-            "dc": 0,
+            "dc": 500,
             "player": "Tuncay Şanlı",
             "player2": false,
             "isAnimation": false,
@@ -129,7 +157,7 @@
         {
             "text": "21'  Washington Stecanelo Sarı Kart",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Washington Stecanelo",
             "player2": false,
             "isAnimation": false,
@@ -161,7 +189,7 @@
         {
             "text": "38'  Ariel Ortega GOL",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Ariel Ortega",
             "player2": false,
             "isAnimation": false,
@@ -177,7 +205,7 @@
         {
             "text": "38'  Fenerbahçe 2-0 Galatasaray",
             "w": 1,
-            "dc": 0,
+            "dc": 750,
             "player": "Ariel Ortega",
             "player2": false,
             "isAnimation": false,
@@ -193,7 +221,7 @@
         {
             "text": "Santra yapıldı",
             "w": 2,
-            "dc": 0,
+            "dc": 500,
             "player": "Ariel Ortega",
             "player2": false,
             "isAnimation": false,
@@ -209,7 +237,7 @@
         {
             "text": "40'  Fatih Akyel Sarı Kart",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Fatih Akyel",
             "player2": false,
             "isAnimation": false,
@@ -223,23 +251,30 @@
             "type": "sarı"
         },
         {
-            "text": "İlk Yarı Bitti",
+            "text": "İlk Yarı Bitti!",
             "w": 0,
-            "dc": 0,
+            "dc": 750,
             "isAnimation": false,
             "isSquad": false
         },
         {
-            "text": "İY Fenerbahçe 2-0 Galatasaray",
+            "text": "İY: Fenerbahçe 2-0 Galatasaray",
             "w": 0,
-            "dc": 0,
+            "dc": 2000,
+            "isAnimation": false,
+            "isSquad": false
+        },
+        {
+            "text": "İkinci Yarı Başladı!",
+            "w": 0,
+            "dc": 1000,
             "isAnimation": false,
             "isSquad": false
         },
         {
             "text": "46'  Oyuncu Değişikliği",
             "w": 2,
-            "dc": 0,
+            "dc": 250,
             "player": "Arif Erdem",
             "player2": false,
             "isAnimation": false,
@@ -255,7 +290,7 @@
         {
             "text": "Çıkan Oyuncu, Ayhan Akman",
             "w": 2,
-            "dc": 0,
+            "dc": 200,
             "player": "Arif Erdem",
             "player2": false,
             "isAnimation": false,
@@ -271,7 +306,7 @@
         {
             "text": "Giren Oyuncu, Arif Erdem",
             "w": 2,
-            "dc": 0,
+            "dc": 500,
             "player": "Arif Erdem",
             "player2": "Ayhan Akman",
             "isAnimation": false,
@@ -287,7 +322,7 @@
         {
             "text": "57'  Oyuncu Değişikliği",
             "w": 1,
-            "dc": 0,
+            "dc": 250,
             "player": "Ceyhun Eriş",
             "player2": false,
             "isAnimation": false,
@@ -303,7 +338,7 @@
         {
             "text": "Çıkan Oyuncu, Washington Stecanelo",
             "w": 1,
-            "dc": 0,
+            "dc": 200,
             "player": "Ceyhun Eriş",
             "player2": false,
             "isAnimation": false,
@@ -319,7 +354,7 @@
         {
             "text": "Giren Oyuncu, Ceyhun Eriş",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Ceyhun Eriş",
             "player2": "Washington Stecanelo",
             "isAnimation": false,
@@ -335,7 +370,7 @@
         {
             "text": "58'  Ariel Ortega Doğrudan Kırmızı Kart",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Ariel Ortega",
             "player2": false,
             "isAnimation": false,
@@ -351,7 +386,7 @@
         {
             "text": "65'  Emre Aşık Sarı Kart",
             "w": 2,
-            "dc": 0,
+            "dc": 500,
             "player": "Emre Aşık",
             "player2": false,
             "isAnimation": false,
@@ -383,7 +418,7 @@
         {
             "text": "68'  Serhat Akın GOL",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Serhat Akın",
             "player2": false,
             "isAnimation": false,
@@ -399,7 +434,7 @@
         {
             "text": "68'  Fenerbahçe 3-0 Galatasaray",
             "w": 1,
-            "dc": 0,
+            "dc": 750,
             "player": "Serhat Akın",
             "player2": false,
             "isAnimation": false,
@@ -415,7 +450,7 @@
         {
             "text": "Santra yapıldı",
             "w": 2,
-            "dc": 0,
+            "dc": 500,
             "player": "Serhat Akın",
             "player2": false,
             "isAnimation": false,
@@ -431,7 +466,7 @@
         {
             "text": "70'  Serhat Akın Sarı Kart",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Serhat Akın",
             "player2": false,
             "isAnimation": false,
@@ -447,7 +482,7 @@
         {
             "text": "71'  Arif Erdem Sarı Kart",
             "w": 2,
-            "dc": 0,
+            "dc": 500,
             "player": "Arif Erdem",
             "player2": false,
             "isAnimation": false,
@@ -463,7 +498,7 @@
         {
             "text": "73'  Oyuncu Değişikliği",
             "w": 2,
-            "dc": 0,
+            "dc": 250,
             "player": "Ümit Karan",
             "player2": false,
             "isAnimation": false,
@@ -479,7 +514,7 @@
         {
             "text": "Çıkan Oyuncu, Joao Batista",
             "w": 2,
-            "dc": 0,
+            "dc": 200,
             "player": "Ümit Karan",
             "player2": false,
             "isAnimation": false,
@@ -495,7 +530,7 @@
         {
             "text": "Giren Oyuncu, Ümit Karan",
             "w": 2,
-            "dc": 0,
+            "dc": 500,
             "player": "Ümit Karan",
             "player2": "Joao Batista",
             "isAnimation": false,
@@ -527,7 +562,7 @@
         {
             "text": "75'  Serhat Akın GOL",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Serhat Akın",
             "player2": false,
             "isAnimation": false,
@@ -543,7 +578,7 @@
         {
             "text": "75'  Fenerbahçe 4-0 Galatasaray",
             "w": 1,
-            "dc": 0,
+            "dc": 750,
             "player": "Serhat Akın",
             "player2": false,
             "isAnimation": false,
@@ -559,7 +594,7 @@
         {
             "text": "Santra yapıldı",
             "w": 2,
-            "dc": 0,
+            "dc": 500,
             "player": "Serhat Akın",
             "player2": false,
             "isAnimation": false,
@@ -575,7 +610,7 @@
         {
             "text": "77'  Oyuncu Değişikliği",
             "w": 2,
-            "dc": 0,
+            "dc": 250,
             "player": "Vedat İnceefe",
             "player2": false,
             "isAnimation": false,
@@ -591,7 +626,7 @@
         {
             "text": "Çıkan Oyuncu, Bülent Korkmaz",
             "w": 2,
-            "dc": 0,
+            "dc": 200,
             "player": "Vedat İnceefe",
             "player2": false,
             "isAnimation": false,
@@ -607,7 +642,7 @@
         {
             "text": "Giren Oyuncu, Vedat İnceefe",
             "w": 2,
-            "dc": 0,
+            "dc": 500,
             "player": "Vedat İnceefe",
             "player2": "Bülent Korkmaz",
             "isAnimation": false,
@@ -639,7 +674,7 @@
         {
             "text": "78'  Ceyhun Eriş GOL",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Ceyhun Eriş",
             "player2": false,
             "isAnimation": false,
@@ -655,7 +690,7 @@
         {
             "text": "78'  Fenerbahçe 5-0 Galatasaray",
             "w": 1,
-            "dc": 0,
+            "dc": 750,
             "player": "Ceyhun Eriş",
             "player2": false,
             "isAnimation": false,
@@ -671,7 +706,7 @@
         {
             "text": "Santra yapıldı",
             "w": 2,
-            "dc": 0,
+            "dc": 500,
             "player": "Ceyhun Eriş",
             "player2": false,
             "isAnimation": false,
@@ -687,7 +722,7 @@
         {
             "text": "80'  Oyuncu Değişikliği",
             "w": 1,
-            "dc": 0,
+            "dc": 250,
             "player": "Ali Güneş",
             "player2": false,
             "isAnimation": false,
@@ -703,7 +738,7 @@
         {
             "text": "Çıkan Oyuncu, Serhat Akın",
             "w": 1,
-            "dc": 0,
+            "dc": 200,
             "player": "Ali Güneş",
             "player2": false,
             "isAnimation": false,
@@ -719,7 +754,7 @@
         {
             "text": "Giren Oyuncu, Ali Güneş",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Ali Güneş",
             "player2": "Serhat Akın",
             "isAnimation": false,
@@ -735,7 +770,7 @@
         {
             "text": "83'  Yusuf Şimşek Sarı Kart",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Yusuf Şimşek",
             "player2": false,
             "isAnimation": false,
@@ -751,7 +786,7 @@
         {
             "text": "84'  Emre Aşık İkinci Sart Kart",
             "w": 2,
-            "dc": 0,
+            "dc": 250,
             "player": "Emre Aşık",
             "player2": false,
             "isAnimation": false,
@@ -767,7 +802,7 @@
         {
             "text": "84'  Emre Aşık ve Kırmızı Kart",
             "w": 2,
-            "dc": 0,
+            "dc": 500,
             "player": "Emre Aşık",
             "player2": false,
             "isAnimation": false,
@@ -783,7 +818,7 @@
         {
             "text": "85'  Oyuncu Değişikliği",
             "w": 1,
-            "dc": 0,
+            "dc": 250,
             "player": "Erman Yıldırım",
             "player2": false,
             "isAnimation": false,
@@ -799,7 +834,7 @@
         {
             "text": "Çıkan Oyuncu, Yusuf Şimşek",
             "w": 1,
-            "dc": 0,
+            "dc": 200,
             "player": "Erman Yıldırım",
             "player2": false,
             "isAnimation": false,
@@ -815,7 +850,7 @@
         {
             "text": "Giren Oyuncu, Erman Yıldırım",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Erman Yıldırım",
             "player2": "Yusuf Şimşek",
             "isAnimation": false,
@@ -847,7 +882,7 @@
         {
             "text": "86'  Ümit Özat GOL",
             "w": 1,
-            "dc": 0,
+            "dc": 500,
             "player": "Ümit Özat",
             "player2": false,
             "isAnimation": false,
@@ -863,7 +898,7 @@
         {
             "text": "86'  Fenerbahçe 6-0 Galatasaray",
             "w": 1,
-            "dc": 0,
+            "dc": 750,
             "player": "Ümit Özat",
             "player2": false,
             "isAnimation": false,
@@ -879,7 +914,7 @@
         {
             "text": "Santra yapıldı",
             "w": 2,
-            "dc": 0,
+            "dc": 500,
             "player": "Ümit Özat",
             "player2": false,
             "isAnimation": false,
@@ -894,14 +929,14 @@
         },
         {
             "text": "Maç Bitti",
-            "isAnimation": true,
+            "isAnimation": false,
             "isScore": false,
             "w": 0,
-            "dc": 0,
+            "dc": 750,
             "isSquad": false
         },
         {
-            "text": "MS Sonucu: Fenerbahçe 6-0 Galatasaray",
+            "text": "MS: Fenerbahçe 6-0 Galatasaray",
             "isAnimation": false,
             "isScore": false,
             "w": 0,
@@ -1108,13 +1143,13 @@
             "r": 0,
             "g": 0,
             "b": 255,
-            "a": 160
+            "a": 180
         },
         "awayBoxColor": {
             "r": 255,
             "g": 0,
             "b": 0,
-            "a": 160
+            "a": 180
         },
         "homeBoxTextColor": {
             "r": 255,
