@@ -7,10 +7,12 @@
         "leagueName": "Türkiye Süper Ligi",
         "season": "2002/2003",
         "week": 6,
-        "matchDate": "06 KasÄ±m 2002 - 20:00",
-        "stadium": "Ülker Stadyumu",
-        "homeLogo": "logo/fenerbahçe.png",
-        "awayLogo": "logo/galatasaray.png"
+        "matchDate": "6 Kasım 2002",
+        "matchTime": "20:05",
+        "stadium": "Fenerbahçe Şükrü Saracoğlu Stadyumu",
+        "homeLogo": "/media/logo/fenerbahce_171.png",
+        "awayLogo": "/media/logo/galatasaray_170.png",
+        "bgImage": "http://127.0.0.1:8000/media/video_background_images/Ultra-photorealistic_football_stadium_under_overc_ac064e3c-c590-_O9rgCpb.jpg"
     },
     "aksiyonlar": [
         {
@@ -21,21 +23,21 @@
             "isSquad": false
         },
         {
-            "text": "Fenerbahçe - Galatasaray",
+            "text": "Fenerbahçe-Galatasaray",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
             "isSquad": false
         },
         {
-            "text": "maçları serisindeki",
+            "text": "derbilerinden",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
             "isSquad": false
         },
         {
-            "text": "bu karşılaşmada",
+            "text": "biriyle karşındayız!",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -63,6 +65,27 @@
             "isSquad": false
         },
         {
+            "text": "Şükrü Saracoğlu Stadyumu'nda",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false
+        },
+        {
+            "text": "6 Kasım 2002",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false
+        },
+        {
+            "text": "saat 20:05'de",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false
+        },
+        {
             "text": "Fenerbahçe ile Galatasaray",
             "w": 0,
             "dc": 0,
@@ -77,11 +100,39 @@
             "isSquad": false
         },
         {
-            "text": "Kadrolar açıklanıyor",
+            "text": "Kadrolar açıklanıyor!",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
             "isSquad": true
+        },
+        {
+            "text": "Maçın hakemleri",
+            "w": 0,
+            "dc": 750,
+            "isAnimation": false,
+            "isSquad": true
+        },
+        {
+            "text": "Mustafa Çulcu (Orta Hakem)",
+            "w": 0,
+            "dc": 400,
+            "isAnimation": false,
+            "isSquad": false
+        },
+        {
+            "text": "Münir Takpak (Yan Hakem)",
+            "w": 0,
+            "dc": 400,
+            "isAnimation": false,
+            "isSquad": false
+        },
+        {
+            "text": "Koray Gençerler (Yan Hakem)",
+            "w": 0,
+            "dc": 400,
+            "isAnimation": false,
+            "isSquad": false
         },
         {
             "text": "Maç başladı!",
@@ -155,10 +206,10 @@
             "type": false
         },
         {
-            "text": "21'  Washington Stecanelo Sarı Kart",
+            "text": "21'  Washington Sarı Kart",
             "w": 1,
             "dc": 500,
-            "player": "Washington Stecanelo",
+            "player": "Washington",
             "player2": false,
             "isAnimation": false,
             "homeScore": 1,
@@ -336,7 +387,7 @@
             "type": false
         },
         {
-            "text": "Çıkan Oyuncu, Washington Stecanelo",
+            "text": "Çıkan Oyuncu, Washington",
             "w": 1,
             "dc": 200,
             "player": "Ceyhun Eriş",
@@ -356,7 +407,7 @@
             "w": 1,
             "dc": 500,
             "player": "Ceyhun Eriş",
-            "player2": "Washington Stecanelo",
+            "player2": "Washington",
             "isAnimation": false,
             "homeScore": 2,
             "awayScore": 0,
@@ -368,7 +419,7 @@
             "type": "oyuncu değişikliği"
         },
         {
-            "text": "58'  Ariel Ortega Doğrudan Kırmızı Kart",
+            "text": "58'  Ariel Ortega Kırmızı Kart",
             "w": 1,
             "dc": 500,
             "player": "Ariel Ortega",
@@ -576,6 +627,22 @@
             "type": "gol"
         },
         {
+            "text": "Maçtaki 2. Golü!",
+            "w": 1,
+            "dc": 750,
+            "player": "Serhat Akın",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "type": false
+        },
+        {
             "text": "75'  Fenerbahçe 4-0 Galatasaray",
             "w": 1,
             "dc": 750,
@@ -643,7 +710,7 @@
             "text": "Giren Oyuncu, Vedat İnceefe",
             "w": 2,
             "dc": 500,
-            "player": "Vedat İnceefe",
+            "player": "Vedat İn.",
             "player2": "Bülent Korkmaz",
             "isAnimation": false,
             "homeScore": 4,
@@ -851,7 +918,7 @@
             "text": "Giren Oyuncu, Erman Yıldırım",
             "w": 1,
             "dc": 500,
-            "player": "Erman Yıldırım",
+            "player": "Erman Yıl.",
             "player2": "Yusuf Şimşek",
             "isAnimation": false,
             "homeScore": 5,
@@ -1143,13 +1210,13 @@
             "r": 0,
             "g": 0,
             "b": 255,
-            "a": 180
+            "a": 210
         },
         "awayBoxColor": {
             "r": 255,
             "g": 0,
             "b": 0,
-            "a": 180
+            "a": 210
         },
         "homeBoxTextColor": {
             "r": 255,

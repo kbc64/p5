@@ -23,9 +23,12 @@ let isDC = false
 
 const actions = []
 
-isRecord = false;
+isRecord = true;
+videoTime = 130
 
 
+
+const remoteServer = 'http://127.0.0.1:8000';
 
 let homePlayers = null;
 let awayPlayers = null;
@@ -42,7 +45,11 @@ let isActionBox = false
 
 function preload() {
   
-  MAC_INFO = loadJSON('./json/mac.json');
+  MAC_INFO = loadJSON('./json/mac.json', ()=>{
+    team1Logo = loadImage(remoteServer + MAC_INFO['info']['homeLogo']);
+    team2Logo = loadImage(remoteServer + MAC_INFO['info']['awayLogo']);
+    backgroundImage = loadImage(MAC_INFO['info']['bgImage']);
+  });
   
   ballImage = loadImage("../images/assets/ball.png");
   yellowImage = loadImage("../images/assets/yellow.png");
@@ -50,11 +57,11 @@ function preload() {
   yellowRedImage = loadImage("../images/assets/yellow_red.png");
   enterImage = loadImage("../images/assets/enter.png");
   exitImage = loadImage("../images/assets/exit.png");
-  backgroundImage = loadImage("images/assets/stadyum.png");
+  
   
  
   roboto = loadFont('fonts/Roboto-Regular.ttf');
-  
+
 
 }
 
@@ -68,8 +75,7 @@ const capturer = new CCapture({
 })
 
 function setup() {
-  team1Logo = loadImage("images/" + MAC_INFO['info']['homeLogo']);
-  team2Logo = loadImage("images/" + MAC_INFO['info']['awayLogo']);
+
   let canvas = createCanvas(WIDTH, HEIGTH);
   canvas.elt.getContext('2d', { willReadFrequently: true });
 
@@ -83,6 +89,7 @@ function setup() {
   awayCoach = MAC_INFO['info']['awayCoach'];
   homeSubstitutes = MAC_INFO['homeSubstitutes'];
   awaySubstitutes = MAC_INFO['awaySubstitutes'];
+  
 
   Settings()
   textFont(roboto); // Varsayılan font olarak ayarla
@@ -107,6 +114,9 @@ function draw() {
 
   noStroke();
   background(backgroundImage);
+
+
+ 
 
   if(!isRecord) {
     let elapsedTime = millis() - starTime;
@@ -137,9 +147,6 @@ function draw() {
   addMatchDate(MATCH_DATE_BOX_X, MATCH_DATE_BOX_Y, MATCH_DATE_BOX_WIDTH, MATCH_DATE_BOX_HEIGHT, MATCH_DATE_BOX_COLOR);
 
 
-  if (isActionBox) {
-    addActionBox()
-  }
 
   addAction()
 
@@ -147,44 +154,45 @@ function draw() {
 
   addBorder()
 
-  if (frameCount < 60 * 120 && isRecord) {
+  if (frameCount < 60 * videoTime && isRecord) {
 
     capturer.capture(canvas)
 
-  } else if (frameCount === 60 * 120 && isRecord) {
+  } else if (frameCount === 60 * videoTime && isRecord) {
     capturer.save()
     capturer.stop()
 
   }
 
-
+ 
 
 
 
 }
 
 function addBorder() {
-  addBox(0, MATCH_COMMENTARY_BOX_Y-MATCH_COMMENTARY_BOX_MARGIN_TOP, WIDTH, MATCH_COMMENTARY_BOX_MARGIN_TOP, { r: 0, g: 0, b: 0, a: 80 })
+  addBox(0, MATCH_COMMENTARY_BOX_Y-MATCH_COMMENTARY_BOX_MARGIN_TOP, WIDTH, MATCH_COMMENTARY_BOX_MARGIN_TOP, BORDER_COLOR)
 }
 
-function addActionBox() {
-  drawFooterBox()
-}
 
 function addAction() {
-  drawFooterBox()
+ 
   let currentHomeY = null
   let currentAwayY = null
 
   const boxHeight = 60
   const marginTop = 10
 
+  if(actions.length) {
+    drawFooterBox()
+  }
+
   for (let i = 0; i < actions.length; i++) {
     let currentX = null
     let currentY = null
     let padding = 20
     const action = actions[i]
-    const alpha = 120
+    const alpha = ACTION_ALPHA
     let color = { r: 0, g: 0, b: 0, a: alpha }
     const minute = action.minute
     const name = action.player
@@ -294,7 +302,7 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
 
 
 function drawFooterBox() {
-  addBox(0, ACTION_BOX_Y, WIDTH, HEIGTH - ACTION_BOX_Y, { r: 0, g: 0, b: 0, a: 60 })
+  addBox(0, ACTION_BOX_Y, WIDTH, HEIGTH - ACTION_BOX_Y, FOOTER_BG_COLOR)
 }
 
 function addSquadTeamName() {
@@ -319,7 +327,7 @@ function addActionTitle(t) {
 let squadIndex = 0;
 let isHomeSquad = true;
 let displayedSquad = [];
-let squadAlpha = 120;
+let squadAlpha = SQUAD_ALPHA;
 let squadBoxHeight = 48;
 let squadAnimationSpeed = 15;
 let squadPadding = 40;
@@ -364,7 +372,7 @@ function addSquad() {
 
   if (frameCount % squadAnimationSpeed === 0) {
     if (squadIndex < section.length) {
-      displayedSquad.push({ number: section[squadIndex].number || '', name: section[squadIndex].name, x: startX, y: MATCH_SQUAD_Y + squadIndex * (squadBoxHeight + 10)+5});
+      displayedSquad.push({ number: section[squadIndex].number || '', name: section[squadIndex].name, x: startX, y: MATCH_SQUAD_Y + squadIndex * (squadBoxHeight + 10)+SQUAD_PADDING_TOP});
       squadIndex++;
     } else if (isHomeSquad) {
       isHomeSquad = false;
