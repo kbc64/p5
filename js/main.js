@@ -16,14 +16,16 @@ let homeScore = 0
 let awayScore = 0
 let INITIAL_DELAY = 1000;
 const squadDelay = 3000;
-const goalAnimation = 1000;
+const goalAnimation = 750;
 let counter = 0;
 
+
+let isNumberingSquad = true
 let isDC = false
 
 const actions = []
 
-isRecord = true;
+isRecord = false;
 videoTime = 130
 
 
@@ -136,10 +138,27 @@ function draw() {
 
 
 
-  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, HOME_BOX_COLOR);
-  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, AWAY_BOX_COLOR);
-  image(team1Logo, LOGO_HOME_IMAGE_X, LOGO_IMAGE_Y, LOGO_IMAGE_WIDTH, LOGO_IMAGE_HEIGHT);
-  image(team2Logo, LOGO_AWAY_IMAGE_X, LOGO_IMAGE_Y, LOGO_IMAGE_WIDTH, LOGO_IMAGE_HEIGHT);
+  // addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, HOME_BOX_COLOR);
+  //addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, AWAY_BOX_COLOR);
+
+  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:TOP_MIDDLE_ALPHA});
+  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:TOP_MIDDLE_ALPHA});
+  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 25, HOME_BOX_COLOR);
+  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 25, AWAY_BOX_COLOR);
+
+  //addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y+410, LOGO_BOX_WIDTH, 10, {'r':0, 'g':0, 'b':0, a:190});
+ // addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y+410, LOGO_BOX_WIDTH, 10, {'r':0, 'g':0, 'b':0, a:190});
+
+  //addBox(LOGO_AWAY_BOX_X-20, LOGO_BOX_Y, 20, LOGO_BOX_HEIGHT, HOME_BOX_COLOR);
+  //addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, 20, LOGO_BOX_HEIGHT, AWAY_BOX_COLOR);
+
+  //addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y+420, LOGO_BOX_WIDTH, 30, HOME_BOX_COLOR);
+  //addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y+420, LOGO_BOX_WIDTH, 30, AWAY_BOX_COLOR);
+
+  let homeSize = resizeLogo(team1Logo)
+  image(team1Logo,  HALF_X/2 - homeSize.width/2, LOGO_IMAGE_Y, homeSize.width, homeSize.height);
+  let awaySize = resizeLogo(team2Logo)
+  image(team2Logo, HALF_X + HALF_X/2 - awaySize.width/2, LOGO_IMAGE_Y, awaySize.width, awaySize.height);
   addTeamName(MAC_INFO['info']['homeTeam'], HOME_NAME_X, TEAM_NAME_Y, HOME_NAME_COLOR);
   addTeamName(MAC_INFO['info']['awayTeam'], AWAY_NAME_X, TEAM_NAME_Y, AWAY_NAME_COLOR);
   addTeamScore(homeScore, SCORE_HOME_X, SCORE_TEAM_Y, SCORE_HOME_COLOR);
@@ -171,7 +190,22 @@ function draw() {
 }
 
 function addBorder() {
-  addBox(0, MATCH_COMMENTARY_BOX_Y-MATCH_COMMENTARY_BOX_MARGIN_TOP, WIDTH, MATCH_COMMENTARY_BOX_MARGIN_TOP, BORDER_COLOR)
+  //addBox(0, MATCH_COMMENTARY_BOX_Y-MATCH_COMMENTARY_BOX_MARGIN_TOP, WIDTH, MATCH_COMMENTARY_BOX_MARGIN_TOP, BORDER_COLOR)
+}
+
+function addNotice() {
+  if(isNumberingSquad) {
+    textSize(32);
+    fill(255, 0, 0)
+    textAlign(LEFT, CENTER);
+    text('*Oyuncu forma numarları temsilen eklenmiştir.', 60, 1880)
+  }
+}
+
+function resizeLogo(image) {
+  let aspectRatio = image.width / image.height; // Orijinal en-boy oranı
+  let newWidth = LOGO_IMAGE_HEIGHT * aspectRatio; // Yeni genişliği hesapla
+  return { width: newWidth, height: LOGO_IMAGE_HEIGHT }; // Yeni boyutları döndür
 }
 
 
@@ -239,7 +273,7 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
   let textSizeVal = 32
 
   let textX = x
-  let textY = y + height / 2;
+  let textY = y + height / 2 -2;
 
   fill(255);
   textSize(textSizeVal);
@@ -261,7 +295,7 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
   if (actionType == 'gol') {
     tint(255, 255, 255, 220); // %50 şeffaflık
     imageSize = 38
-    image(ballImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2 +3, imageSize, imageSize);
+    image(ballImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2 +2, imageSize, imageSize);
   } else if (actionType == 'sarı') {
     int(255, 255, 255, tintAlpha)
     image(yellowImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
@@ -342,6 +376,7 @@ let subNameColor = [255, 255, 255];   // Yedek oyuncu isim rengi
 let coachNumberColor = [255, 215, 0]; // Teknik direktör numara rengi
 let coachNameColor = [255, 215, 0];   // Teknik direktör isim rengi
 
+
 function setSubNumberColor(r, g, b) {
   subNumberColor = [r, g, b];
 }
@@ -362,6 +397,8 @@ function setCoachNameColor(r, g, b) {
 let squadTime = 0
 function addSquad() {
   drawFooterBox()
+  addNotice()
+  
   const homeSection = MAC_INFO.homePlayers.concat({ number: 'TD', name: `${MAC_INFO.info.homeCoach}` }, MAC_INFO.homeSubstitutes);
   const awaySection = MAC_INFO.awayPlayers.concat({ number: 'TD', name: `${MAC_INFO.info.awayCoach}` }, MAC_INFO.awaySubstitutes);
 
@@ -372,7 +409,7 @@ function addSquad() {
 
   if (frameCount % squadAnimationSpeed === 0) {
     if (squadIndex < section.length) {
-      displayedSquad.push({ number: section[squadIndex].number || '', name: section[squadIndex].name, x: startX, y: MATCH_SQUAD_Y + squadIndex * (squadBoxHeight + 10)+SQUAD_PADDING_TOP});
+      displayedSquad.push({ number: section[squadIndex].number || '-', name: section[squadIndex].name, x: startX, y: MATCH_SQUAD_Y + squadIndex * (squadBoxHeight + 10)+SQUAD_PADDING_TOP});
       squadIndex++;
     } else if (isHomeSquad) {
       isHomeSquad = false;
@@ -465,6 +502,7 @@ function MatchComentaryAnimation() {
         
           drawFooterBox()
           for (let item of displayedSquad) {
+            textSize(32)
             let isSub = MAC_INFO.homeSubstitutes.some(p => p.name === item.name) || MAC_INFO.awaySubstitutes.some(p => p.name === item.name);
             let isCoach = item.number === 'TD';
         
@@ -483,8 +521,9 @@ function MatchComentaryAnimation() {
                  isCoach ? coachNameColor[2] : isSub ? subNameColor[2] : nameColor[2], nameAlpha);
             textAlign(LEFT, CENTER);
             text(item.name, item.x + squadPadding + numberBoxWidth + 15, item.y + squadBoxHeight / 2-3);
-          
-        }
+            addNotice()
+        
+          }
         
        
           
@@ -594,9 +633,9 @@ function addMatchCommentary() {
 function getMatchCommentaryBoxColor() {
   let color = MATCH_COMMENTARY_BOX_COLOR
   if (MAC_INFO['aksiyonlar'][JSON_INDEX]['w'] == 1) {
-    color = HOME_BOX_COLOR
+    color = MATCH_COMMENTARY_HOME_COLOR 
   } else if (MAC_INFO['aksiyonlar'][JSON_INDEX]['w'] == 2) {
-    color = AWAY_BOX_COLOR
+    color = MATCH_COMMENTARY_AWAY_COLOR 
   }
   return color
 }
@@ -620,7 +659,7 @@ function addMatchCommentaryText(boxText, color) {
   textSize(MATCH_COMMENTARY_BOX_TEXT_SIZE);
 
   textAlign(CENTER, CENTER);
-  text(boxText, HALF_X, MATCH_COMMENTARY_TEXT_Y)
+  text(boxText, HALF_X, MATCH_COMMENTARY_TEXT_Y )
 }
 
 function addTeamName(teamName, x, y, color) {
@@ -640,7 +679,7 @@ function addTeamScore(score, x, y, color) {
 function addMatchDate(x, y, w, h, color) {
   addBox(x, y, w, h, color);
   fill(255, 255, 255);
-  textSize(32);
+  textSize(40);
   textAlign(CENTER, TOP);
   //let macInfo = `${MAC_INFO['info']['leagueName']} - ${MAC_INFO['info']['matchDate']} (${MAC_INFO['info']['week']}. Hafta, ${MAC_INFO['info']['season']})`
   let macInfo = `${MAC_INFO['info']['leagueName']} (${MAC_INFO['info']['season']} Sezonu)`
@@ -661,4 +700,6 @@ function Settings() {
   AWAY_NAME_COLOR = 'awayNameColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['awayNameColor'] : AWAY_NAME_COLOR;
   SCORE_HOME_COLOR = 'homeScoreColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['homeScorColor'] : SCORE_HOME_COLOR;
   SCORE_AWAY_COLOR = 'awayScoreColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['homeScorColor'] : SCORE_AWAY_COLOR;
+  MATCH_COMMENTARY_HOME_COLOR = MAC_INFO['settings']['matchCommentaryHomeColor'];
+  MATCH_COMMENTARY_AWAY_COLOR = MAC_INFO['settings']['matchCommentaryAwayColor']
 } 

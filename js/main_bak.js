@@ -14,24 +14,23 @@ let isSquadAnimation = false
 let team1Logo, team2Logo;
 let homeScore = 0
 let awayScore = 0
-let INITIAL_DELAY = 1500;
+let INITIAL_DELAY = 1000;
+const squadDelay = 3000;
+const goalAnimation = 1500;
 let counter = 0;
 
-let isDC = false
 
+let isNumberingSquad = true
+let isDC = false
 
 const actions = []
 
 isRecord = false;
+videoTime = 10
 
-const rosterLeftColor = { r: 0, g: 0, b: 0, a: 70 };
-const rosterRightColor = { r: 0, g: 0, b: 0, a: 70 };
-const rosterTextColor = { r: 255, g: 255, b: 255, a: 255 };
-// Forma numarası (jersey) kutusu için renkler:
-const jerseyBoxColor = { r: 30, g: 30, b: 30, a: 180 };
-const jerseyTextColor = { r: 255, g: 255, b: 255, a: 255 };
-let homeFadeStartTime = null;
-let awayFadeStartTime = null;
+
+
+const remoteServer = 'http://127.0.0.1:8000';
 
 let homePlayers = null;
 let awayPlayers = null;
@@ -43,14 +42,16 @@ let playerPositions = {};
 
 
 let isSquadAnimating = false; // Animasyonun aktif olup olmadığını belirtir
-let animationSquaStartTime = 0; // Animasyonun başlangıç zamanı
-let animationSquadEndTime = 0;
 let isSquadOnTheScreen = false;
 let isActionBox = false
 
 function preload() {
   
-  MAC_INFO = loadJSON('./json/mac.json');
+  MAC_INFO = loadJSON('./json/mac.json', ()=>{
+    team1Logo = loadImage(remoteServer + MAC_INFO['info']['homeLogo']);
+    team2Logo = loadImage(remoteServer + MAC_INFO['info']['awayLogo']);
+    backgroundImage = loadImage(MAC_INFO['info']['bgImage']);
+  });
   
   ballImage = loadImage("../images/assets/ball.png");
   yellowImage = loadImage("../images/assets/yellow.png");
@@ -58,19 +59,15 @@ function preload() {
   yellowRedImage = loadImage("../images/assets/yellow_red.png");
   enterImage = loadImage("../images/assets/enter.png");
   exitImage = loadImage("../images/assets/exit.png");
-  backgroundImage = loadImage("images/assets/stadyum.png");
+  
   
  
   roboto = loadFont('fonts/Roboto-Regular.ttf');
-  
+
 
 }
 
-let fadeInValues = []; // Her eleman için opaklık değerleri
-let fadeInSpeed = 10; // Opaklık artış hızı
-let currentIndex = 0; // Şu anda beliren elemanın indeksi
-let lastUpdateTime = 0; // Son güncelleme zamanı
-let delayBetweenElements = 100; // Elemanlar arası gecikme (ms)
+
 
 const capturer = new CCapture({
   format: 'webm',
@@ -80,8 +77,7 @@ const capturer = new CCapture({
 })
 
 function setup() {
-  team1Logo = loadImage("images/" + MAC_INFO['info']['homeLogo']);
-  team2Logo = loadImage("images/" + MAC_INFO['info']['awayLogo']);
+
   let canvas = createCanvas(WIDTH, HEIGTH);
   canvas.elt.getContext('2d', { willReadFrequently: true });
 
@@ -95,6 +91,7 @@ function setup() {
   awayCoach = MAC_INFO['info']['awayCoach'];
   homeSubstitutes = MAC_INFO['homeSubstitutes'];
   awaySubstitutes = MAC_INFO['awaySubstitutes'];
+  
 
   Settings()
   textFont(roboto); // Varsayılan font olarak ayarla
@@ -120,6 +117,9 @@ function draw() {
   noStroke();
   background(backgroundImage);
 
+
+ 
+
   if(!isRecord) {
     let elapsedTime = millis() - starTime;
 
@@ -134,76 +134,99 @@ function draw() {
       text(counter, 10, 10);
     }
 
-  if (isSquadAnimating) {
-
-    updateFadeInValues();
-    checkSquadAnimationEnd(); // Animasyonun bitip bitmediğini kontrol et
-  }
-
-  if (isSquadOnTheScreen) {
-    drawFooterBox()
-    renderTeamRoster(0, ACTION_BOX_Y-25, 540, 800, homePlayers, rosterTextColor, homeCoach, homeSubstitutes);
-    renderTeamRoster(540, ACTION_BOX_Y-25, 540, 800, awayPlayers, rosterTextColor, awayCoach, awaySubstitutes);
-  }
+ 
 
 
 
+  // addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, HOME_BOX_COLOR);
+  //addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, AWAY_BOX_COLOR);
 
-  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, HOME_BOX_COLOR);
-  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, AWAY_BOX_COLOR);
-  image(team1Logo, LOGO_HOME_IMAGE_X, LOGO_IMAGE_Y, LOGO_IMAGE_WIDTH, LOGO_IMAGE_HEIGHT);
-  image(team2Logo, LOGO_AWAY_IMAGE_X, LOGO_IMAGE_Y, LOGO_IMAGE_WIDTH, LOGO_IMAGE_HEIGHT);
+  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:130});
+  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:130});
+  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 10, HOME_BOX_COLOR);
+  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 10, AWAY_BOX_COLOR);
+
+  //addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y+410, LOGO_BOX_WIDTH, 10, {'r':0, 'g':0, 'b':0, a:190});
+ // addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y+410, LOGO_BOX_WIDTH, 10, {'r':0, 'g':0, 'b':0, a:190});
+
+  //addBox(LOGO_AWAY_BOX_X-20, LOGO_BOX_Y, 20, LOGO_BOX_HEIGHT, HOME_BOX_COLOR);
+  //addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, 20, LOGO_BOX_HEIGHT, AWAY_BOX_COLOR);
+
+  //addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y+420, LOGO_BOX_WIDTH, 30, HOME_BOX_COLOR);
+  //addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y+420, LOGO_BOX_WIDTH, 30, AWAY_BOX_COLOR);
+
+  let homeSize = resizeLogo(team1Logo)
+  image(team1Logo,  HALF_X/2 - homeSize.width/2, LOGO_IMAGE_Y, homeSize.width, homeSize.height);
+  let awaySize = resizeLogo(team2Logo)
+  image(team2Logo, HALF_X + HALF_X/2 - awaySize.width/2, LOGO_IMAGE_Y, awaySize.width, awaySize.height);
   addTeamName(MAC_INFO['info']['homeTeam'], HOME_NAME_X, TEAM_NAME_Y, HOME_NAME_COLOR);
   addTeamName(MAC_INFO['info']['awayTeam'], AWAY_NAME_X, TEAM_NAME_Y, AWAY_NAME_COLOR);
   addTeamScore(homeScore, SCORE_HOME_X, SCORE_TEAM_Y, SCORE_HOME_COLOR);
   addTeamScore(awayScore, SCORE_AWAY_X, SCORE_TEAM_Y, SCORE_AWAY_COLOR);
   addMatchDate(MATCH_DATE_BOX_X, MATCH_DATE_BOX_Y, MATCH_DATE_BOX_WIDTH, MATCH_DATE_BOX_HEIGHT, MATCH_DATE_BOX_COLOR);
-  //addAction()
-  //addSquad()
 
-  if (isActionBox) {
-    addActionBox()
-  }
+
 
   addAction()
 
   MatchComentaryAnimation()
 
-  if (frameCount < 60 * 60 && isRecord) {
+  addBorder()
+
+  if (frameCount < 60 * videoTime && isRecord) {
 
     capturer.capture(canvas)
 
-  } else if (frameCount === 60 * 60 && isRecord) {
+  } else if (frameCount === 60 * videoTime && isRecord) {
     capturer.save()
     capturer.stop()
 
   }
 
-
+ 
 
 
 
 }
 
-
-function addActionBox() {
-  drawFooterBox()
+function addBorder() {
+  addBox(0, MATCH_COMMENTARY_BOX_Y-MATCH_COMMENTARY_BOX_MARGIN_TOP, WIDTH, MATCH_COMMENTARY_BOX_MARGIN_TOP, BORDER_COLOR)
 }
+
+function addNotice() {
+  if(isNumberingSquad) {
+    textSize(32);
+    fill(255, 0, 0)
+    textAlign(LEFT, CENTER);
+    text('*Oyuncu forma numarları temsilen eklenmiştir.', 60, 1880)
+  }
+}
+
+function resizeLogo(image) {
+  let aspectRatio = image.width / image.height; // Orijinal en-boy oranı
+  let newWidth = LOGO_IMAGE_HEIGHT * aspectRatio; // Yeni genişliği hesapla
+  return { width: newWidth, height: LOGO_IMAGE_HEIGHT }; // Yeni boyutları döndür
+}
+
 
 function addAction() {
-
+ 
   let currentHomeY = null
   let currentAwayY = null
 
   const boxHeight = 60
   const marginTop = 10
 
+  if(actions.length) {
+    drawFooterBox()
+  }
+
   for (let i = 0; i < actions.length; i++) {
     let currentX = null
     let currentY = null
     let padding = 20
     const action = actions[i]
-    const alpha = 120
+    const alpha = ACTION_ALPHA
     let color = { r: 0, g: 0, b: 0, a: alpha }
     const minute = action.minute
     const name = action.player
@@ -250,7 +273,7 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
   let textSizeVal = 32
 
   let textX = x
-  let textY = y + height / 2;
+  let textY = y + height / 2 -2;
 
   fill(255);
   textSize(textSizeVal);
@@ -272,7 +295,7 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
   if (actionType == 'gol') {
     tint(255, 255, 255, 220); // %50 şeffaflık
     imageSize = 38
-    image(ballImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2 +3, imageSize, imageSize);
+    image(ballImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2 +2, imageSize, imageSize);
   } else if (actionType == 'sarı') {
     int(255, 255, 255, tintAlpha)
     image(yellowImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
@@ -286,9 +309,9 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
     //tint(255, 255, 255, 240); // %50 şeffaflık
    
     image(exitImage, textX+playerWidth, y + (height - imageSize) / 2, imageSize, imageSize);
-    image(enterImage, x + 12 + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
+    image(enterImage, x + 5 + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
     textAlign(RIGHT, CENTER);
-    text(playerName, x + 12 +  width - imageSize - imageRightMargin, textY);
+    text(playerName, x + 5 +  width - imageSize - imageRightMargin, textY);
   }
   noTint();
 
@@ -313,7 +336,7 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
 
 
 function drawFooterBox() {
-  addBox(0, ACTION_BOX_Y, WIDTH, HEIGTH - ACTION_BOX_Y, { r: 0, g: 0, b: 0, a: 60 })
+  addBox(0, ACTION_BOX_Y, WIDTH, HEIGTH - ACTION_BOX_Y, FOOTER_BG_COLOR)
 }
 
 function addSquadTeamName() {
@@ -334,131 +357,104 @@ function addActionTitle(t) {
 
 
 
+// p5.js'de her draw() çağrısında çalışan addSquad
+let squadIndex = 0;
+let isHomeSquad = true;
+let displayedSquad = [];
+let squadAlpha = SQUAD_ALPHA;
+let squadBoxHeight = 48;
+let squadAnimationSpeed = 15;
+let squadPadding = 40;
+let numberAlpha = 255;
+let nameAlpha = 255;
+let numberBoxWidth = 60;
+let nameBoxWidth = 400;
+let numberColor = [255, 255, 255];
+let nameColor = [255, 255, 255];
+let subNumberColor = [255, 255, 255]; // Yedek oyuncu numara rengi
+let subNameColor = [255, 255, 255];   // Yedek oyuncu isim rengi
+let coachNumberColor = [255, 215, 0]; // Teknik direktör numara rengi
+let coachNameColor = [255, 215, 0];   // Teknik direktör isim rengi
+
+
+function setSubNumberColor(r, g, b) {
+  subNumberColor = [r, g, b];
+}
+
+function setSubNameColor(r, g, b) {
+  subNameColor = [r, g, b];
+}
+
+function setCoachNumberColor(r, g, b) {
+  coachNumberColor = [r, g, b];
+}
+
+function setCoachNameColor(r, g, b) {
+  coachNameColor = [r, g, b];
+}
+
+// Mevcut set fonksiyonları aynı kalıyor...
+let squadTime = 0
 function addSquad() {
+  drawFooterBox()
+  addNotice()
+  
+  const homeSection = MAC_INFO.homePlayers.concat({ number: 'TD', name: `${MAC_INFO.info.homeCoach}` }, MAC_INFO.homeSubstitutes);
+  const awaySection = MAC_INFO.awayPlayers.concat({ number: 'TD', name: `${MAC_INFO.info.awayCoach}` }, MAC_INFO.awaySubstitutes);
 
+  textSize(32);
 
-  startSquadAnimation();
-}
+  let section = isHomeSquad ? homeSection : awaySection;
+  let startX = isHomeSquad ? 0 : HALF_X;
 
-function startSquadAnimation() {
-  isSquadAnimating = true; // Animasyonu başlat
-  isSquadOnTheScreen = true
-  animationSquadStartTime = millis(); // Başlangıç zamanını kaydet
-  currentIndex = 0; // Eleman indeksini sıfırla
-  fadeInValues.fill(0); // Tüm opaklık değerlerini sıfırla
-  initializeFadeInValues(homePlayers, homeSubstitutes, homeCoach); // Opaklık değerlerini başlat
-  initializeFadeInValues(awayPlayers, awaySubstitutes, awayCoach); // Opaklık değerlerini başlat
-  animationSquadEndTime = animationSquadStartTime + (fadeInValues.length * delayBetweenElements); // Bitiş zamanını hesapla
-}
-
-function checkSquadAnimationEnd() {
-    startTime = millis()
-    console.log(startTime)
-
-  if (isSquadAnimating && millis() >= animationSquadEndTime) {
-    isSquadAnimating = false; // Animasyonu durdur
-    startTime = millis()  + 100000
-
-
-    setTimeout(function () {
-      isSquadOnTheScreen = false
-   
-      isActionBox = true
-      startTime =0
-    }, 5000)
-  } 
-}
-
-function initializeFadeInValues(teamPlayers, substitutes, coach) {
-  fadeInValues = [];
-  for (let i = 0; i < teamPlayers.length; i++) {
-    fadeInValues.push(0); // Başlangıçta opaklık 0
-  }
-  if (coach) {
-    fadeInValues.push(0); // Teknik direktör için opaklık
-  }
-  for (let i = 0; i < substitutes.length; i++) {
-    fadeInValues.push(0); // Yedek oyuncular için opaklık
-  }
-}
-
-function updateFadeInValues() {
-  if (millis() - lastUpdateTime > delayBetweenElements && currentIndex < fadeInValues.length) {
-    fadeInValues[currentIndex] = 255; // Şu anki elemanın opaklığını 255 yap
-    currentIndex++; // Bir sonraki elemana geç
-    lastUpdateTime = millis(); // Son güncelleme zamanını kaydet
-  }
-}
-
-function renderTeamRoster(x, y, boxWidth, boxHeight, teamPlayers, textColor, coach, substitutes) {
-  let rowHeight = MATCH_SQUAD_ROW_HEIGHT;
-  let padding = MATCH_SQUAD_PADDING;
-  let jerseyBoxWidth =  MATCH_SQUAD_JERSEY_BOX_WIDTH;
-  let currentY = y + padding + rowHeight / 2;
-  textSize(36);
-  for (let i = 0; i < teamPlayers.length; i++) {
-    let player = teamPlayers[i];
-    let jerseyX = x + padding;
-    let jerseyY = currentY - rowHeight / 2;
-
-
-
-    // Opaklık değerini kullan
-    let opacity = fadeInValues[i] || 0;
-    fill(jerseyBoxColor.r, jerseyBoxColor.g, jerseyBoxColor.b, opacity);
-    rect(jerseyX, jerseyY, jerseyBoxWidth, rowHeight);
-
-    push();
-    textAlign(CENTER, CENTER);
-    fill(jerseyTextColor.r, jerseyTextColor.g, jerseyTextColor.b, opacity);
-    text(player.number, jerseyX + jerseyBoxWidth / 2, jerseyY + rowHeight / 2);
-    pop();
-
-    fill(textColor.r, textColor.g, textColor.b, opacity);
-    textAlign(LEFT, CENTER);
-    let nameX = jerseyX + jerseyBoxWidth + 10;
-    text(player.name, nameX, currentY);
-
-    currentY += rowHeight;
-  }
-
-  // Teknik direktörü ekle
-  if (coach) {
-    let opacity = fadeInValues[teamPlayers.length] || 0;
-    fill(textColor.r, textColor.g, textColor.b, opacity);
-    textAlign(LEFT, CENTER);
+  if (frameCount % squadAnimationSpeed === 0) {
+    if (squadIndex < section.length) {
+      displayedSquad.push({ number: section[squadIndex].number || '-', name: section[squadIndex].name, x: startX, y: MATCH_SQUAD_Y + squadIndex * (squadBoxHeight + 10)+SQUAD_PADDING_TOP});
+      squadIndex++;
+    } else if (isHomeSquad) {
+      isHomeSquad = false;
+      squadIndex = 0;
+    } else {
+      
+        if(!isSquadAnimation) {
+          isSquadAnimation = true
+        }
+          
+        
+    }
+  
     
-    text(`Teknik Direktör: ${coach}`, x + padding, currentY );
-    currentY += rowHeight;
   }
 
-  currentY += 10;
 
-  // Yedek oyuncuları ekle
-  for (let i = 0; i < substitutes.length; i++) {
-    let player = substitutes[i];
-    let jerseyX = x + padding;
-    let jerseyY = currentY - rowHeight / 2;
-    let opacity = fadeInValues[teamPlayers.length + (coach ? 1 : 0) + i] || 0;
-    fill(jerseyBoxColor.r, jerseyBoxColor.g, jerseyBoxColor.b, opacity);
-    rect(jerseyX, jerseyY, jerseyBoxWidth, rowHeight);
+  for (let item of displayedSquad) {
+    let isSub = MAC_INFO.homeSubstitutes.some(p => p.name === item.name) || MAC_INFO.awaySubstitutes.some(p => p.name === item.name);
+    let isCoach = item.number === 'TD';
 
-    push();
+    fill(0, 0, 0, squadAlpha);
+    rect(item.x + squadPadding, item.y, numberBoxWidth, squadBoxHeight);
+    fill(isCoach ? coachNumberColor[0] : isSub ? subNumberColor[0] : numberColor[0],
+         isCoach ? coachNumberColor[1] : isSub ? subNumberColor[1] : numberColor[1],
+         isCoach ? coachNumberColor[2] : isSub ? subNumberColor[2] : numberColor[2], numberAlpha);
     textAlign(CENTER, CENTER);
-    fill(jerseyTextColor.r, jerseyTextColor.g, jerseyTextColor.b, opacity);
-    text(player.number, jerseyX + jerseyBoxWidth / 2, jerseyY + rowHeight / 2);
-    pop();
+    text(item.number, item.x + squadPadding + numberBoxWidth / 2, item.y + squadBoxHeight / 2 -3);
 
-    fill(textColor.r, textColor.g, textColor.b, opacity);
+    fill(0, 0, 0, squadAlpha);
+    rect(item.x + squadPadding + numberBoxWidth + 5, item.y, nameBoxWidth, squadBoxHeight);
+    fill(isCoach ? coachNameColor[0] : isSub ? subNameColor[0] : nameColor[0],
+         isCoach ? coachNameColor[1] : isSub ? subNameColor[1] : nameColor[1],
+         isCoach ? coachNameColor[2] : isSub ? subNameColor[2] : nameColor[2], nameAlpha);
     textAlign(LEFT, CENTER);
-    let nameX = jerseyX + jerseyBoxWidth + 10;
-    text(player.name, nameX, currentY);
-
-    currentY += rowHeight;
+    text(item.name, item.x + squadPadding + numberBoxWidth + 15, item.y + squadBoxHeight / 2-3);
   }
 }
 
 
+
+
+let isFirstSqauad = true
+let firstStartTime = null
+let is_pass = false
 
 function MatchComentaryAnimation() {
   if (JSON_INDEX == null || (startTime + INITIAL_DELAY >= millis())) {
@@ -489,16 +485,58 @@ function MatchComentaryAnimation() {
       awayScore = MAC_INFO['aksiyonlar'][JSON_INDEX]['awayScore'];
     }
   
-    if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isSquad'] && !isSquadAnimation) {
-      isSquadAnimation = true
-      addSquad();
+    if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isSquad']&&(firstStartTime == null|| firstStartTime+squadDelay>millis())&&!is_pass) {
+     
+      if(!isSquadAnimation) {
+        startTime += 50000000 
+    
+        addSquad();
+        
+      } else {
+        if (isFirstSqauad) {
+          isFirstSqauad = false
+          firstStartTime = millis()
+          setTimeout(()=>{is_pass=true; startTime=0}, squadDelay)
+        }
+
+        
+          drawFooterBox()
+          for (let item of displayedSquad) {
+            textSize(32)
+            let isSub = MAC_INFO.homeSubstitutes.some(p => p.name === item.name) || MAC_INFO.awaySubstitutes.some(p => p.name === item.name);
+            let isCoach = item.number === 'TD';
+        
+            fill(0, 0, 0, squadAlpha);
+            rect(item.x + squadPadding, item.y, numberBoxWidth, squadBoxHeight);
+            fill(isCoach ? coachNumberColor[0] : isSub ? subNumberColor[0] : numberColor[0],
+                 isCoach ? coachNumberColor[1] : isSub ? subNumberColor[1] : numberColor[1],
+                 isCoach ? coachNumberColor[2] : isSub ? subNumberColor[2] : numberColor[2], numberAlpha);
+            textAlign(CENTER, CENTER);
+            text(item.number, item.x + squadPadding + numberBoxWidth / 2, item.y + squadBoxHeight / 2 -3);
+        
+            fill(0, 0, 0, squadAlpha);
+            rect(item.x + squadPadding + numberBoxWidth + 5, item.y, nameBoxWidth, squadBoxHeight);
+            fill(isCoach ? coachNameColor[0] : isSub ? subNameColor[0] : nameColor[0],
+                 isCoach ? coachNameColor[1] : isSub ? subNameColor[1] : nameColor[1],
+                 isCoach ? coachNameColor[2] : isSub ? subNameColor[2] : nameColor[2], nameAlpha);
+            textAlign(LEFT, CENTER);
+            text(item.name, item.x + squadPadding + numberBoxWidth + 15, item.y + squadBoxHeight / 2-3);
+            addNotice()
+        
+          }
+        
+       
+          
+        
+      }
       
-      console.log('çalışıyor')
+   
+   
     } else {
       if ('action' in MAC_INFO['aksiyonlar'][JSON_INDEX] && MAC_INFO['aksiyonlar'][JSON_INDEX]['action'] && isAppendAction) {
         isAppendAction = false
         actions.push(MAC_INFO['aksiyonlar'][JSON_INDEX]);
-        console.log('buradayım')
+        
       }
   
   }
@@ -555,6 +593,7 @@ function addMatchCommentary() {
 
 
   if (animating) {
+    console.log('animating', millis())
     let elapsedTime = millis() - animationStartTime;
 
     if (elapsedTime < animationDuration) {
@@ -564,14 +603,14 @@ function addMatchCommentary() {
       }
     } else {
       
-
+      lastChangeTime = millis();
       animationStartTime  = 0
       animating = false; // Animasyonu durdur
     currenAnimsationIndex = 1; // Beyazda kalsın
     //JSON_INDEX++; // JSON_INDEX'i artır
     byPass = true
     
-    startTime -= (INITIAL_DELAY - ANIMATION_DURATION) - 2000; // Yeni animasyon için zamanı sıfırla
+    startTime -= (INITIAL_DELAY - animationDuration) - goalAnimation; // Yeni animasyon için zamanı sıfırla
     
 
       
@@ -595,9 +634,9 @@ function addMatchCommentary() {
 function getMatchCommentaryBoxColor() {
   let color = MATCH_COMMENTARY_BOX_COLOR
   if (MAC_INFO['aksiyonlar'][JSON_INDEX]['w'] == 1) {
-    color = HOME_BOX_COLOR
+    color = MATCH_COMMENTARY_HOME_COLOR 
   } else if (MAC_INFO['aksiyonlar'][JSON_INDEX]['w'] == 2) {
-    color = AWAY_BOX_COLOR
+    color = MATCH_COMMENTARY_AWAY_COLOR 
   }
   return color
 }
@@ -621,7 +660,7 @@ function addMatchCommentaryText(boxText, color) {
   textSize(MATCH_COMMENTARY_BOX_TEXT_SIZE);
 
   textAlign(CENTER, CENTER);
-  text(boxText, HALF_X, MATCH_COMMENTARY_TEXT_Y)
+  text(boxText, HALF_X, MATCH_COMMENTARY_TEXT_Y )
 }
 
 function addTeamName(teamName, x, y, color) {
@@ -662,4 +701,6 @@ function Settings() {
   AWAY_NAME_COLOR = 'awayNameColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['awayNameColor'] : AWAY_NAME_COLOR;
   SCORE_HOME_COLOR = 'homeScoreColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['homeScorColor'] : SCORE_HOME_COLOR;
   SCORE_AWAY_COLOR = 'awayScoreColor' in MAC_INFO['settings'] ? MAC_INFO['settings']['homeScorColor'] : SCORE_AWAY_COLOR;
+  MATCH_COMMENTARY_HOME_COLOR = MAC_INFO['settings']['matchCommentaryHomeColor'];
+  MATCH_COMMENTARY_AWAY_COLOR = MAC_INFO['settings']['matchCommentaryAwayColor']
 } 

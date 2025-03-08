@@ -8,11 +8,11 @@
         "season": "2002/2003",
         "week": 6,
         "matchDate": "6 Kasım 2002",
-        "matchTime": "20:05",
-        "stadium": "Fenerbahçe Şükrü Saracoğlu Stadyumu",
+        "matchTime": "20:00",
+        "stadium": "Ülker Stadyumu",
         "homeLogo": "/media/logo/fenerbahce_171.png",
         "awayLogo": "/media/logo/galatasaray_170.png",
-        "bgImage": "http://127.0.0.1:8000/media/video_background_images/Ultra-photorealistic_football_stadium_under_overc_ac064e3c-c590-_O9rgCpb.jpg"
+        "bgImage": "http://127.0.0.1:8000/media/video_background_images/Ultra-photorealistic_football_stadium_under_overc_ac064e3c-c590-_mwccBaE.jpg"
     },
     "aksiyonlar": [
         {
@@ -23,21 +23,21 @@
             "isSquad": false
         },
         {
-            "text": "Fenerbahçe-Galatasaray",
+            "text": "Süper Lig",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
             "isSquad": false
         },
         {
-            "text": "derbilerinden",
+            "text": "karşılaşmalarından",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
             "isSquad": false
         },
         {
-            "text": "biriyle karşındayız!",
+            "text": "biriyle karşınızdayız!",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -65,7 +65,7 @@
             "isSquad": false
         },
         {
-            "text": "Şükrü Saracoğlu Stadyumu'nda",
+            "text": "Ülker Stadyumu Stadyumu'nda",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -79,7 +79,7 @@
             "isSquad": false
         },
         {
-            "text": "saat 20:05'de",
+            "text": "saat 20:00'de",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -109,9 +109,9 @@
         {
             "text": "Maçın hakemleri",
             "w": 0,
-            "dc": 750,
+            "dc": 400,
             "isAnimation": false,
-            "isSquad": true
+            "isSquad": false
         },
         {
             "text": "Mustafa Çulcu (Orta Hakem)",
@@ -135,11 +135,11 @@
             "isSquad": false
         },
         {
-            "text": "Maç başladı!",
+            "text": "Maç Başladı!",
             "w": 0,
             "dc": 1000,
             "isAnimation": false,
-            "isSquad": true
+            "isSquad": false
         },
         {
             "text": "GOOOLLLL!",
@@ -160,7 +160,7 @@
         {
             "text": "9'  Tuncay Şanlı GOL",
             "w": 1,
-            "dc": 500,
+            "dc": 400,
             "player": "Tuncay Şanlı",
             "player2": false,
             "isAnimation": false,
@@ -172,6 +172,22 @@
             "minute": "9'",
             "action": true,
             "type": "gol"
+        },
+        {
+            "text": "Asist, Ariel Ortega",
+            "w": 1,
+            "dc": 400,
+            "player": "Tuncay Şanlı",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "9'",
+            "action": false,
+            "type": "asist"
         },
         {
             "text": "9'  Fenerbahçe 1-0 Galatasaray",
@@ -190,7 +206,7 @@
             "type": false
         },
         {
-            "text": "Santra yapıldı",
+            "text": "Santra yapıldı.",
             "w": 2,
             "dc": 500,
             "player": "Tuncay Şanlı",
@@ -206,10 +222,26 @@
             "type": false
         },
         {
-            "text": "21'  Washington Sarı Kart",
+            "text": "Oyun hareketlendi.",
+            "w": 2,
+            "dc": 500,
+            "player": "Tuncay Şanlı",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "9'",
+            "action": false,
+            "type": false
+        },
+        {
+            "text": "21'  Washington Stecanelo Sarı Kart",
             "w": 1,
             "dc": 500,
-            "player": "Washington",
+            "player": "Washington Stecanelo",
             "player2": false,
             "isAnimation": false,
             "homeScore": 1,
@@ -240,7 +272,7 @@
         {
             "text": "38'  Ariel Ortega GOL",
             "w": 1,
-            "dc": 500,
+            "dc": 400,
             "player": "Ariel Ortega",
             "player2": false,
             "isAnimation": false,
@@ -252,6 +284,22 @@
             "minute": "38'",
             "action": true,
             "type": "gol"
+        },
+        {
+            "text": "Asist, Ümit Özat",
+            "w": 1,
+            "dc": 400,
+            "player": "Ariel Ortega",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "38'",
+            "action": false,
+            "type": "asist"
         },
         {
             "text": "38'  Fenerbahçe 2-0 Galatasaray",
@@ -270,7 +318,23 @@
             "type": false
         },
         {
-            "text": "Santra yapıldı",
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Ariel Ortega",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "38'",
+            "action": false,
+            "type": false
+        },
+        {
+            "text": "Oyun hareketlendi.",
             "w": 2,
             "dc": 500,
             "player": "Ariel Ortega",
@@ -387,7 +451,7 @@
             "type": false
         },
         {
-            "text": "Çıkan Oyuncu, Washington",
+            "text": "Çıkan Oyuncu, Washington Stecanelo",
             "w": 1,
             "dc": 200,
             "player": "Ceyhun Eriş",
@@ -407,7 +471,7 @@
             "w": 1,
             "dc": 500,
             "player": "Ceyhun Eriş",
-            "player2": "Washington",
+            "player2": "Washington Stecanelo",
             "isAnimation": false,
             "homeScore": 2,
             "awayScore": 0,
@@ -469,7 +533,7 @@
         {
             "text": "68'  Serhat Akın GOL",
             "w": 1,
-            "dc": 500,
+            "dc": 400,
             "player": "Serhat Akın",
             "player2": false,
             "isAnimation": false,
@@ -481,6 +545,22 @@
             "minute": "68'",
             "action": true,
             "type": "gol"
+        },
+        {
+            "text": "Asist, Miroslav Stevic",
+            "w": 1,
+            "dc": 400,
+            "player": "Serhat Akın",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "type": "asist"
         },
         {
             "text": "68'  Fenerbahçe 3-0 Galatasaray",
@@ -499,7 +579,23 @@
             "type": false
         },
         {
-            "text": "Santra yapıldı",
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Serhat Akın",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "type": false
+        },
+        {
+            "text": "Oyun hareketlendi.",
             "w": 2,
             "dc": 500,
             "player": "Serhat Akın",
@@ -613,7 +709,7 @@
         {
             "text": "75'  Serhat Akın GOL",
             "w": 1,
-            "dc": 500,
+            "dc": 400,
             "player": "Serhat Akın",
             "player2": false,
             "isAnimation": false,
@@ -627,7 +723,7 @@
             "type": "gol"
         },
         {
-            "text": "Maçtaki 2. Golü!",
+            "text": "Maçtaki 2. Golü",
             "w": 1,
             "dc": 750,
             "player": "Serhat Akın",
@@ -641,6 +737,22 @@
             "minute": "75'",
             "action": false,
             "type": false
+        },
+        {
+            "text": "Asist, Ümit Özat",
+            "w": 1,
+            "dc": 400,
+            "player": "Serhat Akın",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "type": "asist"
         },
         {
             "text": "75'  Fenerbahçe 4-0 Galatasaray",
@@ -659,7 +771,23 @@
             "type": false
         },
         {
-            "text": "Santra yapıldı",
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Serhat Akın",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "type": false
+        },
+        {
+            "text": "Oyun hareketlendi.",
             "w": 2,
             "dc": 500,
             "player": "Serhat Akın",
@@ -710,7 +838,7 @@
             "text": "Giren Oyuncu, Vedat İnceefe",
             "w": 2,
             "dc": 500,
-            "player": "Vedat İn.",
+            "player": "Vedat İnceefe",
             "player2": "Bülent Korkmaz",
             "isAnimation": false,
             "homeScore": 4,
@@ -741,7 +869,7 @@
         {
             "text": "78'  Ceyhun Eriş GOL",
             "w": 1,
-            "dc": 500,
+            "dc": 400,
             "player": "Ceyhun Eriş",
             "player2": false,
             "isAnimation": false,
@@ -753,6 +881,22 @@
             "minute": "78'",
             "action": true,
             "type": "gol"
+        },
+        {
+            "text": "Asist, Serhat Akın",
+            "w": 1,
+            "dc": 400,
+            "player": "Ceyhun Eriş",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "type": "asist"
         },
         {
             "text": "78'  Fenerbahçe 5-0 Galatasaray",
@@ -771,7 +915,23 @@
             "type": false
         },
         {
-            "text": "Santra yapıldı",
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Ceyhun Eriş",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "type": false
+        },
+        {
+            "text": "Oyun hareketlendi.",
             "w": 2,
             "dc": 500,
             "player": "Ceyhun Eriş",
@@ -918,7 +1078,7 @@
             "text": "Giren Oyuncu, Erman Yıldırım",
             "w": 1,
             "dc": 500,
-            "player": "Erman Yıl.",
+            "player": "Erman Yıldırım",
             "player2": "Yusuf Şimşek",
             "isAnimation": false,
             "homeScore": 5,
@@ -949,7 +1109,7 @@
         {
             "text": "86'  Ümit Özat GOL",
             "w": 1,
-            "dc": 500,
+            "dc": 400,
             "player": "Ümit Özat",
             "player2": false,
             "isAnimation": false,
@@ -961,6 +1121,22 @@
             "minute": "86'",
             "action": true,
             "type": "gol"
+        },
+        {
+            "text": "Asist, Miroslav Stevic",
+            "w": 1,
+            "dc": 400,
+            "player": "Ümit Özat",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "86'",
+            "action": false,
+            "type": "asist"
         },
         {
             "text": "86'  Fenerbahçe 6-0 Galatasaray",
@@ -979,7 +1155,7 @@
             "type": false
         },
         {
-            "text": "Santra yapıldı",
+            "text": "Santra yapıldı.",
             "w": 2,
             "dc": 500,
             "player": "Ümit Özat",
@@ -995,7 +1171,23 @@
             "type": false
         },
         {
-            "text": "Maç Bitti",
+            "text": "Oyun hareketlendi.",
+            "w": 2,
+            "dc": 500,
+            "player": "Ümit Özat",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "86'",
+            "action": false,
+            "type": false
+        },
+        {
+            "text": "Maç Bitti!",
             "isAnimation": false,
             "isScore": false,
             "w": 0,
@@ -1200,35 +1392,35 @@
         }
     ],
     "settings": {
-        "matchCommentaryBoxColor_bak": {
+        "matchCommentaryHomeColor": {
             "r": 0,
             "g": 0,
-            "b": 0,
-            "a": 255
+            "b": 245
+        },
+        "matchCommentaryAwayColor": {
+            "r": 245,
+            "g": 0,
+            "b": 0
         },
         "homeBoxColor": {
             "r": 0,
             "g": 0,
-            "b": 255,
-            "a": 210
+            "b": 255
         },
         "awayBoxColor": {
             "r": 255,
             "g": 0,
-            "b": 0,
-            "a": 210
+            "b": 0
         },
         "homeBoxTextColor": {
             "r": 255,
             "g": 255,
-            "b": 0,
-            "a": 255
+            "b": 0
         },
         "awayBoxTextColor": {
             "r": 255,
             "g": 255,
-            "b": 0,
-            "a": 255
+            "b": 0
         },
         "homeNameColor": {
             "r": 255,
