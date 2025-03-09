@@ -1,9 +1,10 @@
+p5.disableFriendlyErrors = true;
 let MAC_INFO;
 let colors;
 let currenAnimsationIndex = 1;
 let lastChangeTime = 0;
-let interval = 75; // 100ms'de bir renk değiştir (Hızlı yanıp sönme efekti)
-let animationDuration = 750; // Toplam 2 saniye boyunca devam edecek
+let interval = 80; // 100ms'de bir renk değiştir (Hızlı yanıp sönme efekti)
+let animationDuration = 800; // Toplam 2 saniye boyunca devam edecek
 let animationStartTime = null;
 let animating = false;
 let startTime = null
@@ -11,22 +12,25 @@ let byPass = false
 let isAppendAction = true
 let isSquadAnimation = false
 
+//const ANIMATION_DURATION = 6000;
+
+
 let team1Logo, team2Logo;
 let homeScore = 0
 let awayScore = 0
 let INITIAL_DELAY = 1000;
 const squadDelay = 3000;
-const goalAnimation = 750;
+const goalAnimation = 1500;
 let counter = 0;
 
 
-let isNumberingSquad = true
+let isNumberingSquad = false;
 let isDC = false
 
 const actions = []
 
 isRecord = false;
-videoTime = 130
+videoTime = 140
 
 
 
@@ -79,7 +83,10 @@ const capturer = new CCapture({
 function setup() {
 
   let canvas = createCanvas(WIDTH, HEIGTH);
-  canvas.elt.getContext('2d', { willReadFrequently: true });
+  let canvasElement = document.getElementById('defaultCanvas0'); // p5.js'in varsayılan canvas ID'si
+  canvasElement.getContext('2d', { willReadFrequently: true });
+  frameRate(60); // FPS'i 60 olarak sınırla
+
 
   if (isRecord) {
     capturer.start();
@@ -138,22 +145,12 @@ function draw() {
 
 
 
-  // addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, HOME_BOX_COLOR);
-  //addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, AWAY_BOX_COLOR);
-
   addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:TOP_MIDDLE_ALPHA});
   addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:TOP_MIDDLE_ALPHA});
   addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 25, HOME_BOX_COLOR);
   addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 25, AWAY_BOX_COLOR);
 
-  //addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y+410, LOGO_BOX_WIDTH, 10, {'r':0, 'g':0, 'b':0, a:190});
- // addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y+410, LOGO_BOX_WIDTH, 10, {'r':0, 'g':0, 'b':0, a:190});
 
-  //addBox(LOGO_AWAY_BOX_X-20, LOGO_BOX_Y, 20, LOGO_BOX_HEIGHT, HOME_BOX_COLOR);
-  //addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, 20, LOGO_BOX_HEIGHT, AWAY_BOX_COLOR);
-
-  //addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y+420, LOGO_BOX_WIDTH, 30, HOME_BOX_COLOR);
-  //addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y+420, LOGO_BOX_WIDTH, 30, AWAY_BOX_COLOR);
 
   let homeSize = resizeLogo(team1Logo)
   image(team1Logo,  HALF_X/2 - homeSize.width/2, LOGO_IMAGE_Y, homeSize.width, homeSize.height);
@@ -195,7 +192,7 @@ function addBorder() {
 
 function addNotice() {
   if(isNumberingSquad) {
-    textSize(32);
+    textSize(34);
     fill(255, 0, 0)
     textAlign(LEFT, CENTER);
     text('*Oyuncu forma numarları temsilen eklenmiştir.', 60, 1880)
@@ -266,11 +263,11 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
   let name = (playerName2) ? playerName2 : playerName
   let imageRightMargin = 10;
   let minuteLeftMargin = 10;
-  let playerLeftMargin = 55;
+  let playerLeftMargin = 58;
 
 
   let imageSize = 38
-  let textSizeVal = 32
+  let textSizeVal = 34
 
   let textX = x
   let textY = y + height / 2 -2;
@@ -308,8 +305,8 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
   } else if (actionType == 'oyuncu değişikliği') {
     //tint(255, 255, 255, 240); // %50 şeffaflık
    
-    image(exitImage, textX+playerWidth, y + (height - imageSize) / 2, imageSize, imageSize);
-    image(enterImage, x + 5 + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
+    image(exitImage, textX+playerWidth-3, y + (height - imageSize) / 2, imageSize, imageSize);
+    image(enterImage, x +3 + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
     textAlign(RIGHT, CENTER);
     text(playerName, x + 5 +  width - imageSize - imageRightMargin, textY);
   }
@@ -323,8 +320,8 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
 
   
     if(score) {
-      textAlign(LEFT, CENTER);
-      text(score, x + width - imageSize - imageRightMargin-60, textY);
+      textAlign(RIGHT, CENTER);
+      text(score, x + width - imageSize - imageRightMargin-10, textY);
     
     }
     
@@ -402,7 +399,7 @@ function addSquad() {
   const homeSection = MAC_INFO.homePlayers.concat({ number: 'TD', name: `${MAC_INFO.info.homeCoach}` }, MAC_INFO.homeSubstitutes);
   const awaySection = MAC_INFO.awayPlayers.concat({ number: 'TD', name: `${MAC_INFO.info.awayCoach}` }, MAC_INFO.awaySubstitutes);
 
-  textSize(32);
+  textSize(34);
 
   let section = isHomeSquad ? homeSection : awaySection;
   let startX = isHomeSquad ? 0 : HALF_X;
@@ -469,16 +466,7 @@ function MatchComentaryAnimation() {
     }
     
 
-    if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isAnimation']) {
-      
-      if (!animating && !byPass) {
-        animating = true;
-        animationStartTime = millis(); // **Yeni başlangıç zamanı**
-        currenAnimsationIndex = 0; // **İlk renk (kırmızı) ile başlasın**
-        lastChangeTime = millis(); // **Son değişim zamanını sıfırla**
-      }
-        
-    }
+  
   
     if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isScoreChange']) {
       homeScore = MAC_INFO['aksiyonlar'][JSON_INDEX]['homeScore'];
@@ -502,7 +490,7 @@ function MatchComentaryAnimation() {
         
           drawFooterBox()
           for (let item of displayedSquad) {
-            textSize(32)
+            textSize(34)
             let isSub = MAC_INFO.homeSubstitutes.some(p => p.name === item.name) || MAC_INFO.awaySubstitutes.some(p => p.name === item.name);
             let isCoach = item.number === 'TD';
         
@@ -575,60 +563,24 @@ function addMinute(minute) {
 
 
 function addMatchCommentary() {
-  let textColor = getMatchCommentaryTextColor();
-  let boxColor = getMatchCommentaryBoxColor();
-  let colors = [
-    color(textColor.r, textColor.g, textColor.b),
-    color(boxColor.r, boxColor.g, boxColor.b)
-  ];
+  let bgColor = MAC_INFO['aksiyonlar'][JSON_INDEX]['bgColor']
+  let textColor = MAC_INFO['aksiyonlar'][JSON_INDEX]['color']
+  let boxText = MAC_INFO['aksiyonlar'][JSON_INDEX]['text']
 
-  let textColors = [
-    boxColor,
-    textColor
-
-
-  ];
-
-
-
-
-  if (animating) {
-    let elapsedTime = millis() - animationStartTime;
-
-    if (elapsedTime < animationDuration) {
-      if (millis() - lastChangeTime > interval) {
-        currenAnimsationIndex = (currenAnimsationIndex + 1) % colors.length;
-        lastChangeTime = millis();
-      }
-    } else {
-      
-
-      animationStartTime  = 0
-      animating = false; // Animasyonu durdur
-    currenAnimsationIndex = 1; // Beyazda kalsın
-    //JSON_INDEX++; // JSON_INDEX'i artır
-    byPass = true
-    
-    startTime -= (INITIAL_DELAY - ANIMATION_DURATION) - goalAnimation; // Yeni animasyon için zamanı sıfırla
-    
-
-      
-    }
-  }
-
-  fill(colors[currenAnimsationIndex]);
+  fill(bgColor.r, bgColor.g, bgColor.b);
   rect(MATCH_COMMENTARY_BOX_X, MATCH_COMMENTARY_BOX_Y, MATCH_COMMENTARY_BOX_WIDTH, MATCH_COMMENTARY_BOX_HEIGHT);
 
-  // MAC_INFO ve JSON_INDEX'in doğru olup olmadığını kontrol et
-  if (MAC_INFO && MAC_INFO['aksiyonlar'] && MAC_INFO['aksiyonlar'][JSON_INDEX]) {
+  fill(textColor.r, textColor.g, textColor.b)
+  textSize(MATCH_COMMENTARY_BOX_TEXT_SIZE);
 
-    addMatchCommentaryText(MAC_INFO['aksiyonlar'][JSON_INDEX]['text'], textColors[currenAnimsationIndex]);
+  textAlign(CENTER, CENTER);
+  text(boxText, HALF_X, MATCH_COMMENTARY_TEXT_Y )
 
-    if ('minute' in MAC_INFO['aksiyonlar'][JSON_INDEX]) {
-      addMinute(MAC_INFO['aksiyonlar'][JSON_INDEX]['minute']);
-    }
-  }
+   
+  
 }
+
+
 
 function getMatchCommentaryBoxColor() {
   let color = MATCH_COMMENTARY_BOX_COLOR

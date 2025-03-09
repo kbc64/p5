@@ -2,14 +2,17 @@ let MAC_INFO;
 let colors;
 let currenAnimsationIndex = 1;
 let lastChangeTime = 0;
-let interval = 75; // 100ms'de bir renk değiştir (Hızlı yanıp sönme efekti)
-let animationDuration = 750; // Toplam 2 saniye boyunca devam edecek
+let interval = 80; // 100ms'de bir renk değiştir (Hızlı yanıp sönme efekti)
+let animationDuration = 800; // Toplam 2 saniye boyunca devam edecek
 let animationStartTime = null;
 let animating = false;
 let startTime = null
 let byPass = false
 let isAppendAction = true
 let isSquadAnimation = false
+
+//const ANIMATION_DURATION = 6000;
+
 
 let team1Logo, team2Logo;
 let homeScore = 0
@@ -26,7 +29,7 @@ let isDC = false
 const actions = []
 
 isRecord = false;
-videoTime = 10
+videoTime = 130
 
 
 
@@ -79,7 +82,10 @@ const capturer = new CCapture({
 function setup() {
 
   let canvas = createCanvas(WIDTH, HEIGTH);
-  canvas.elt.getContext('2d', { willReadFrequently: true });
+  let canvasElement = document.getElementById('defaultCanvas0'); // p5.js'in varsayılan canvas ID'si
+  canvasElement.getContext('2d', { willReadFrequently: true });
+  frameRate(60); // FPS'i 60 olarak sınırla
+
 
   if (isRecord) {
     capturer.start();
@@ -141,10 +147,10 @@ function draw() {
   // addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, HOME_BOX_COLOR);
   //addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, AWAY_BOX_COLOR);
 
-  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:130});
-  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:130});
-  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 10, HOME_BOX_COLOR);
-  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 10, AWAY_BOX_COLOR);
+  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:TOP_MIDDLE_ALPHA});
+  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:TOP_MIDDLE_ALPHA});
+  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 25, HOME_BOX_COLOR);
+  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 25, AWAY_BOX_COLOR);
 
   //addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y+410, LOGO_BOX_WIDTH, 10, {'r':0, 'g':0, 'b':0, a:190});
  // addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y+410, LOGO_BOX_WIDTH, 10, {'r':0, 'g':0, 'b':0, a:190});
@@ -190,7 +196,7 @@ function draw() {
 }
 
 function addBorder() {
-  addBox(0, MATCH_COMMENTARY_BOX_Y-MATCH_COMMENTARY_BOX_MARGIN_TOP, WIDTH, MATCH_COMMENTARY_BOX_MARGIN_TOP, BORDER_COLOR)
+  //addBox(0, MATCH_COMMENTARY_BOX_Y-MATCH_COMMENTARY_BOX_MARGIN_TOP, WIDTH, MATCH_COMMENTARY_BOX_MARGIN_TOP, BORDER_COLOR)
 }
 
 function addNotice() {
@@ -472,10 +478,12 @@ function MatchComentaryAnimation() {
     if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isAnimation']) {
       
       if (!animating && !byPass) {
-        animating = true;
+        
         animationStartTime = millis(); // **Yeni başlangıç zamanı**
         currenAnimsationIndex = 0; // **İlk renk (kırmızı) ile başlasın**
         lastChangeTime = millis(); // **Son değişim zamanını sıfırla**
+        startTime = millis()
+        animating = true;
       }
         
     }
@@ -578,51 +586,42 @@ function addMatchCommentary() {
   let textColor = getMatchCommentaryTextColor();
   let boxColor = getMatchCommentaryBoxColor();
   let colors = [
-    color(textColor.r, textColor.g, textColor.b),
-    color(boxColor.r, boxColor.g, boxColor.b)
+    color(textColor.r, textColor.g, textColor.b),  // Beyaz metin rengi
+    color(boxColor.r, boxColor.g, boxColor.b) // Arkaplan rengi (gol attığında değişecek!)
   ];
 
   let textColors = [
-    boxColor,
-    textColor
-
-
+    boxColor, // Kutunun rengi
+    textColor // Metin rengi
   ];
 
-
-
-
   if (animating) {
-    console.log('animating', millis())
     let elapsedTime = millis() - animationStartTime;
 
     if (elapsedTime < animationDuration) {
       if (millis() - lastChangeTime > interval) {
         currenAnimsationIndex = (currenAnimsationIndex + 1) % colors.length;
         lastChangeTime = millis();
+        console.log("Animasyon Renk Değişti:", currenAnimsationIndex);
       }
     } else {
+      console.log("Gol Animasyonu Bitti!");
       
-      lastChangeTime = millis();
-      animationStartTime  = 0
-      animating = false; // Animasyonu durdur
-    currenAnimsationIndex = 1; // Beyazda kalsın
-    //JSON_INDEX++; // JSON_INDEX'i artır
-    byPass = true
-    
-    startTime -= (INITIAL_DELAY - animationDuration) - goalAnimation; // Yeni animasyon için zamanı sıfırla
-    
-
-      
+      // **Sıfırlama Yapıyoruz Ki Son Animasyonlar Çakışmasın**
+      animating = false;
+      byPass = true;
+      animationStartTime = millis(); // **Yeniden başlatmak için sıfırla**
+      lastChangeTime = millis(); 
+      currenAnimsationIndex = 1; // **Beyazda kalsın**
+      startTime -= (INITIAL_DELAY - animationDuration) - goalAnimation; 
     }
   }
 
+  // Burada kutunun animasyonlu rengini ayarla
   fill(colors[currenAnimsationIndex]);
   rect(MATCH_COMMENTARY_BOX_X, MATCH_COMMENTARY_BOX_Y, MATCH_COMMENTARY_BOX_WIDTH, MATCH_COMMENTARY_BOX_HEIGHT);
 
-  // MAC_INFO ve JSON_INDEX'in doğru olup olmadığını kontrol et
-  if (MAC_INFO && MAC_INFO['aksiyonlar'] && MAC_INFO['aksiyonlar'][JSON_INDEX]) {
-
+  if (MAC_INFO && MAC_INFO['aksiyonlar'][JSON_INDEX]) {
     addMatchCommentaryText(MAC_INFO['aksiyonlar'][JSON_INDEX]['text'], textColors[currenAnimsationIndex]);
 
     if ('minute' in MAC_INFO['aksiyonlar'][JSON_INDEX]) {
@@ -630,6 +629,8 @@ function addMatchCommentary() {
     }
   }
 }
+
+
 
 function getMatchCommentaryBoxColor() {
   let color = MATCH_COMMENTARY_BOX_COLOR
@@ -680,7 +681,7 @@ function addTeamScore(score, x, y, color) {
 function addMatchDate(x, y, w, h, color) {
   addBox(x, y, w, h, color);
   fill(255, 255, 255);
-  textSize(32);
+  textSize(40);
   textAlign(CENTER, TOP);
   //let macInfo = `${MAC_INFO['info']['leagueName']} - ${MAC_INFO['info']['matchDate']} (${MAC_INFO['info']['week']}. Hafta, ${MAC_INFO['info']['season']})`
   let macInfo = `${MAC_INFO['info']['leagueName']} (${MAC_INFO['info']['season']} Sezonu)`
