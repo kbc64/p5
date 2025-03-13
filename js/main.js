@@ -34,7 +34,7 @@ videoTime = 140
 
 
 
-const remoteServer = 'http://127.0.0.1:8000';
+const remoteServer = 'http://192.168.1.35:8000';
 
 let homePlayers = null;
 let awayPlayers = null;
@@ -54,7 +54,7 @@ function preload() {
   MAC_INFO = loadJSON('./json/mac.json', ()=>{
     team1Logo = loadImage(remoteServer + MAC_INFO['info']['homeLogo']);
     team2Logo = loadImage(remoteServer + MAC_INFO['info']['awayLogo']);
-    backgroundImage = loadImage(MAC_INFO['info']['bgImage']);
+    backgroundImage = loadImage(remoteServer + MAC_INFO['info']['bgImage']);
   });
   
   ballImage = loadImage("../images/assets/ball.png");
@@ -168,7 +168,7 @@ function draw() {
 
   MatchComentaryAnimation()
 
-  addBorder()
+
 
   if (frameCount < 60 * videoTime && isRecord) {
 
@@ -233,7 +233,7 @@ function addAction() {
 
     if (action.w == 1) {
       currentX = 10
-      currentHomeY = currentHomeY == null ? MATCH_SQUAD_Y : currentHomeY + boxHeight + marginTop
+      currentHomeY = currentHomeY == null ? MATCH_SQUAD_Y  : currentHomeY + boxHeight + marginTop
       currentY = currentHomeY
 
       //color = {r: HOME_BOX_COLOR.r, g: HOME_BOX_COLOR.g, b: HOME_BOX_COLOR.b, a: alpha}
@@ -248,7 +248,7 @@ function addAction() {
 
 
     addMatchAction(currentX + padding, currentY, HALF_X - (padding * 2), boxHeight, color, minute, name, action.type, score, name2);
-
+    
   }
 
 
@@ -321,7 +321,7 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
   
     if(score) {
       textAlign(RIGHT, CENTER);
-      text(score, x + width - imageSize - imageRightMargin-10, textY);
+      text(score, x + width - imageSize - imageRightMargin-13, textY);
     
     }
     
@@ -548,14 +548,32 @@ function MatchComentaryAnimation() {
 }
 
 
+function addIY(iy) {
+
+  if(iy.ilk_yari_skor) {
+    console.log('saay')
+    iy = `İY : ${iy.ilk_yari_skor[0]} - ${iy.ilk_yari_skor[1]}`
+  } else {
+    console.log('saay')
+    iy = MAC_INFO.info.matchTime
+  }
+
+  
+  textAlign(CENTER, TOP);
+  fill(255)
+  textSize(36);
+  
+  text(iy, WIDTH / 2, LOGO_BOX_Y+40);
+
+}
 
 function addMinute(minute) {
 
-  //addBox(WIDTH/2, LOGO_BOX_Y + LOGO_BOX_HEIGHT, 80, 40, {r:0, g:0, b:0, a:100})
+  
   textAlign(CENTER, TOP);
   fill(255)
-  textSize(32);
-  //text(minute, WIDTH / 2, ACTION_BOX_Y-75);
+  textSize(36);
+  text(minute, WIDTH / 2, LOGO_BOX_Y+320);
 
 }
 
@@ -566,6 +584,7 @@ function addMatchCommentary() {
   let bgColor = MAC_INFO['aksiyonlar'][JSON_INDEX]['bgColor']
   let textColor = MAC_INFO['aksiyonlar'][JSON_INDEX]['color']
   let boxText = MAC_INFO['aksiyonlar'][JSON_INDEX]['text']
+  //let minute = MAC_INFO['aksiyonlar'][JSON_INDEX]['minute']
 
   fill(bgColor.r, bgColor.g, bgColor.b);
   rect(MATCH_COMMENTARY_BOX_X, MATCH_COMMENTARY_BOX_Y, MATCH_COMMENTARY_BOX_WIDTH, MATCH_COMMENTARY_BOX_HEIGHT);
@@ -576,6 +595,10 @@ function addMatchCommentary() {
   textAlign(CENTER, CENTER);
   text(boxText, HALF_X, MATCH_COMMENTARY_TEXT_Y )
 
+   //addMinute(minute)
+
+   
+    //addIY(MAC_INFO['aksiyonlar'][JSON_INDEX])
    
   
 }
