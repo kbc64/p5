@@ -34,7 +34,7 @@ videoTime = 140
 
 
 
-const remoteServer = 'http://192.168.1.35:8000';
+const remoteServer = 'http://192.168.1.55:8000';
 
 let homePlayers = null;
 let awayPlayers = null;

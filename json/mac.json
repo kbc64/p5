@@ -1,17 +1,17 @@
 {
     "info": {
-        "homeTeam": "FENERBAHÇE",
-        "awayTeam": "GALATASARAY",
-        "homeCoach": "Werner Lorant",
-        "awayCoach": "Fatih Terim",
+        "homeTeam": "GALATASARAY",
+        "awayTeam": "DEMEMEMEEM",
+        "homeCoach": "Mircea Lucescu",
+        "awayCoach": "Ruslan Abdullajev",
         "leagueName": "Türkiye Süper Ligi",
-        "season": "2002/2003",
-        "week": 6,
-        "matchDate": "6 Kasım 2002",
-        "matchTime": "20:00",
-        "stadium": "Ülker Stadyumu",
-        "homeLogo": "/media/logo/fenerbahce_171.png",
-        "awayLogo": "/media/logo/galatasaray_170.png",
+        "season": "2000/2001",
+        "week": 2,
+        "matchDate": "19 Ağustos 2000",
+        "matchTime": "19:00",
+        "stadium": "Ali Sami Yen",
+        "homeLogo": "/media/logo/galatasaray_170.png",
+        "awayLogo": "/media/logo/erzurumspor_219.png",
         "bgImage": "/media/video_background_images/Ultra-photorealistic_football_stadium_under_overc_ac064e3c-c590-_mwccBaE.png"
     },
     "aksiyonlar": [
@@ -32,10 +32,10 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
-            "text": "Fenerbahçe - Galatasaray",
+            "text": "Süper Lig",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -51,10 +51,10 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
-            "text": "derbilerinden",
+            "text": "karşılaşmalarından",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -70,7 +70,7 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
             "text": "biriyle karşınızdayız!",
@@ -89,7 +89,7 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
             "text": "Türkiye Süper Ligi",
@@ -108,10 +108,10 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
-            "text": "2002/2003 sezonunun",
+            "text": "2000/2001 sezonunun",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -127,10 +127,10 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
-            "text": "6. haftasında",
+            "text": "2. haftasında",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -146,10 +146,10 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
-            "text": "Ülker Stadyumu Stadyumu'nda",
+            "text": "Ali Sami Yen Stadyumu'nda",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -165,10 +165,10 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
-            "text": "6 Kasım 2002",
+            "text": "19 Ağustos 2000",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -184,10 +184,10 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
-            "text": "saat 20:00'de",
+            "text": "saat 19:00'de",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -203,10 +203,10 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
-            "text": "Fenerbahçe ile Galatasaray",
+            "text": "Galatasaray ile Erzurumspor",
             "w": 0,
             "dc": 0,
             "isAnimation": false,
@@ -222,7 +222,7 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
             "text": "karşı karşıya geliyor!",
@@ -241,7 +241,7 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
             "text": "Kadrolar açıklanıyor!",
@@ -260,7 +260,7 @@
                 "b": 0
             },
             "ilk_yari_skor": null,
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
             "text": "Maçın hakemleri",
@@ -278,10 +278,10 @@
                 "g": 0,
                 "b": 0
             },
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
-            "text": "Mustafa Çulcu (Orta Hakem)",
+            "text": "Murat Ilgaz (Orta Hakem)",
             "w": 0,
             "dc": 200,
             "isAnimation": false,
@@ -296,43 +296,7 @@
                 "g": 0,
                 "b": 0
             },
-            "minute": "20:00"
-        },
-        {
-            "text": "Münir Takpak (Yan Hakem)",
-            "w": 0,
-            "dc": 200,
-            "isAnimation": false,
-            "isSquad": false,
-            "bgColor": {
-                "r": 255,
-                "g": 208,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 0
-            },
-            "minute": "20:00"
-        },
-        {
-            "text": "Koray Gençerler (Yan Hakem)",
-            "w": 0,
-            "dc": 200,
-            "isAnimation": false,
-            "isSquad": false,
-            "bgColor": {
-                "r": 255,
-                "g": 208,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 0
-            },
-            "minute": "20:00"
+            "minute": "19:00"
         },
         {
             "text": "Maç Başladı!",
@@ -353,25 +317,25 @@
             "minute": "1'"
         },
         {
-            "text": "GOOOLLLL!",
+            "text": "5'  Gheorghe Popescu Sarı Kart",
             "w": 1,
-            "dc": -900,
-            "player": "Tuncay Şanlı",
+            "dc": 500,
+            "player": "Gheorghe Popescu",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 1,
+            "homeScore": 0,
             "awayScore": 0,
             "isScore": false,
-            "isScoreChange": true,
+            "isScoreChange": false,
             "isSquad": false,
-            "minute": "9'",
-            "action": false,
+            "minute": "5'",
+            "action": true,
             "ilk_yari_skor": null,
-            "type": false,
+            "type": "sarı",
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -383,7 +347,7 @@
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": -900,
-            "player": "Tuncay Şanlı",
+            "player": "Gheorghe Hagi",
             "player2": false,
             "isAnimation": false,
             "homeScore": 1,
@@ -391,41 +355,14 @@
             "isScore": false,
             "isScoreChange": true,
             "isSquad": false,
-            "minute": "9'",
+            "minute": "8'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
             "bgColor": {
-                "r": 255,
-                "g": 255,
+                "r": 235,
+                "g": 0,
                 "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Tuncay Şanlı",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 1,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "9'",
-            "action": false,
-            "ilk_yari_skor": null,
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
             },
             "color": {
                 "r": 255,
@@ -437,7 +374,7 @@
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": -900,
-            "player": "Tuncay Şanlı",
+            "player": "Gheorghe Hagi",
             "player2": false,
             "isAnimation": false,
             "homeScore": 1,
@@ -445,7 +382,7 @@
             "isScore": false,
             "isScoreChange": true,
             "isSquad": false,
-            "minute": "9'",
+            "minute": "8'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
@@ -455,35 +392,8 @@
                 "b": 0
             },
             "color": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Tuncay Şanlı",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 1,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "9'",
-            "action": false,
-            "ilk_yari_skor": null,
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
                 "b": 0
             }
         },
@@ -491,7 +401,7 @@
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": -900,
-            "player": "Tuncay Şanlı",
+            "player": "Gheorghe Hagi",
             "player2": false,
             "isAnimation": false,
             "homeScore": 1,
@@ -499,7 +409,34 @@
             "isScore": false,
             "isScoreChange": true,
             "isSquad": false,
-            "minute": "9'",
+            "minute": "8'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "8'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
@@ -509,16 +446,70 @@
                 "b": 0
             },
             "color": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "8'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "8'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
             }
         },
         {
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": 400,
-            "player": "Tuncay Şanlı",
+            "player": "Gheorghe Hagi",
             "player2": false,
             "isAnimation": false,
             "homeScore": 1,
@@ -526,14 +517,14 @@
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "9'",
+            "minute": "8'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -542,10 +533,10 @@
             }
         },
         {
-            "text": "9'  Tuncay Şanlı GOL",
+            "text": "8'  Gheorghe Hagi GOL",
             "w": 1,
             "dc": 400,
-            "player": "Tuncay Şanlı",
+            "player": "Gheorghe Hagi",
             "player2": false,
             "isAnimation": false,
             "homeScore": 1,
@@ -553,14 +544,14 @@
             "isScore": true,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "9'",
+            "minute": "8'",
             "action": true,
             "ilk_yari_skor": null,
             "type": "gol",
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -569,37 +560,10 @@
             }
         },
         {
-            "text": "Asist, Ariel Ortega",
-            "w": 1,
-            "dc": 400,
-            "player": "Tuncay Şanlı",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 1,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "9'",
-            "action": false,
-            "ilk_yari_skor": null,
-            "type": "asist",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "9'  Fenerbahçe 1-0 Galatasaray",
+            "text": "8'  Galatasaray 1-0 Erzurumspor",
             "w": 1,
             "dc": 500,
-            "player": "Tuncay Şanlı",
+            "player": "Gheorghe Hagi",
             "player2": false,
             "isAnimation": false,
             "homeScore": 1,
@@ -607,14 +571,14 @@
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "9'",
+            "minute": "8'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -626,7 +590,7 @@
             "text": "Santra yapıldı.",
             "w": 2,
             "dc": 500,
-            "player": "Tuncay Şanlı",
+            "player": "Gheorghe Hagi",
             "player2": false,
             "isAnimation": false,
             "homeScore": 1,
@@ -634,26 +598,26 @@
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "9'",
+            "minute": "8'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
             "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
+                "r": 0,
+                "g": 149,
+                "b": 217
             },
             "color": {
                 "r": 255,
                 "g": 255,
-                "b": 0
+                "b": 255
             }
         },
         {
             "text": "Oyun hareketlendi.",
             "w": 2,
             "dc": 500,
-            "player": "Tuncay Şanlı",
+            "player": "Gheorghe Hagi",
             "player2": false,
             "isAnimation": false,
             "homeScore": 1,
@@ -661,7 +625,34 @@
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "9'",
+            "minute": "8'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "22'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
@@ -677,25 +668,52 @@
             }
         },
         {
-            "text": "21'  Washington Stecanelo Sarı Kart",
+            "text": "GOOOLLLL!",
             "w": 1,
-            "dc": 500,
-            "player": "Washington Stecanelo",
+            "dc": -900,
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 1,
+            "homeScore": 2,
             "awayScore": 0,
             "isScore": false,
-            "isScoreChange": false,
+            "isScoreChange": true,
             "isSquad": false,
-            "minute": "21'",
-            "action": true,
+            "minute": "22'",
+            "action": false,
             "ilk_yari_skor": null,
-            "type": "sarı",
+            "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "22'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -707,7 +725,7 @@
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": -900,
-            "player": "Ariel Ortega",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
             "homeScore": 2,
@@ -715,14 +733,41 @@
             "isScore": false,
             "isScoreChange": true,
             "isSquad": false,
-            "minute": "38'",
+            "minute": "22'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "22'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -734,7 +779,7 @@
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": -900,
-            "player": "Ariel Ortega",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
             "homeScore": 2,
@@ -742,7 +787,7 @@
             "isScore": false,
             "isScoreChange": true,
             "isSquad": false,
-            "minute": "38'",
+            "minute": "22'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
@@ -752,124 +797,16 @@
                 "b": 0
             },
             "color": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ariel Ortega",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 2,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "38'",
-            "action": false,
-            "ilk_yari_skor": null,
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
                 "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ariel Ortega",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 2,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "38'",
-            "action": false,
-            "ilk_yari_skor": null,
-            "type": false,
-            "bgColor": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ariel Ortega",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 2,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "38'",
-            "action": false,
-            "ilk_yari_skor": null,
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ariel Ortega",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 2,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "38'",
-            "action": false,
-            "ilk_yari_skor": null,
-            "type": false,
-            "bgColor": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
             }
         },
         {
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": 400,
-            "player": "Ariel Ortega",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
             "homeScore": 2,
@@ -877,14 +814,14 @@
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "38'",
+            "minute": "22'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -893,10 +830,10 @@
             }
         },
         {
-            "text": "38'  Ariel Ortega GOL",
+            "text": "22'  Jardel GOL",
             "w": 1,
             "dc": 400,
-            "player": "Ariel Ortega",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
             "homeScore": 2,
@@ -904,14 +841,14 @@
             "isScore": true,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "38'",
+            "minute": "22'",
             "action": true,
             "ilk_yari_skor": null,
             "type": "gol",
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -920,37 +857,10 @@
             }
         },
         {
-            "text": "Asist, Ümit Özat",
-            "w": 1,
-            "dc": 400,
-            "player": "Ariel Ortega",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 2,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "38'",
-            "action": false,
-            "ilk_yari_skor": null,
-            "type": "asist",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "38'  Fenerbahçe 2-0 Galatasaray",
+            "text": "22'  Galatasaray 2-0 Erzurumspor",
             "w": 1,
             "dc": 500,
-            "player": "Ariel Ortega",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
             "homeScore": 2,
@@ -958,14 +868,14 @@
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "38'",
+            "minute": "22'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -977,7 +887,7 @@
             "text": "Santra yapıldı.",
             "w": 2,
             "dc": 500,
-            "player": "Ariel Ortega",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
             "homeScore": 2,
@@ -985,26 +895,26 @@
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "38'",
+            "minute": "22'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
             "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
+                "r": 0,
+                "g": 149,
+                "b": 217
             },
             "color": {
                 "r": 255,
                 "g": 255,
-                "b": 0
+                "b": 255
             }
         },
         {
             "text": "Oyun hareketlendi.",
             "w": 2,
             "dc": 500,
-            "player": "Ariel Ortega",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
             "homeScore": 2,
@@ -1012,7 +922,34 @@
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "38'",
+            "minute": "22'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "26'",
             "action": false,
             "ilk_yari_skor": null,
             "type": false,
@@ -1028,30 +965,543 @@
             }
         },
         {
-            "text": "40'  Fatih Akyel Sarı Kart",
+            "text": "GOOOLLLL!",
             "w": 1,
-            "dc": 500,
-            "player": "Fatih Akyel",
+            "dc": -900,
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 2,
+            "homeScore": 3,
             "awayScore": 0,
             "isScore": false,
-            "isScoreChange": false,
+            "isScoreChange": true,
             "isSquad": false,
-            "minute": "40'",
-            "action": true,
+            "minute": "26'",
+            "action": false,
             "ilk_yari_skor": null,
-            "type": "sarı",
+            "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
             },
             "color": {
                 "r": 255,
                 "g": 255,
                 "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 400,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "26'  Jardel GOL",
+            "w": 1,
+            "dc": 400,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "26'",
+            "action": true,
+            "ilk_yari_skor": null,
+            "type": "gol",
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "Maçtaki 2. Golü",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "26'  Galatasaray 3-0 Erzurumspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "Oyun hareketlendi.",
+            "w": 2,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "30'  Oyuncu Değişikliği",
+            "w": 2,
+            "dc": 250,
+            "player": "Zafer Demir",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "30'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "Çıkan Oyuncu, Vidadi Rzayev",
+            "w": 2,
+            "dc": 200,
+            "player": "Zafer Demir",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "30'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "Giren Oyuncu, Zafer Demir",
+            "w": 2,
+            "dc": 500,
+            "player": "Zafer Demir",
+            "player2": "Vidadi Rzayev",
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "30'",
+            "action": true,
+            "ilk_yari_skor": null,
+            "type": "oyuncu değişikliği",
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "33'  Oyuncu Değişikliği",
+            "w": 1,
+            "dc": 250,
+            "player": "Ümit Davala",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "33'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "Çıkan Oyuncu, Okan Buruk",
+            "w": 1,
+            "dc": 200,
+            "player": "Ümit Davala",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "33'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "Giren Oyuncu, Ümit Davala",
+            "w": 1,
+            "dc": 500,
+            "player": "Ümit Davala",
+            "player2": "Okan Buruk",
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "33'",
+            "action": true,
+            "ilk_yari_skor": null,
+            "type": "oyuncu değişikliği",
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "35'  Oyuncu Değişikliği",
+            "w": 2,
+            "dc": 250,
+            "player": "Mustafa Acar",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "35'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "Çıkan Oyuncu, Sasa Kovacevic",
+            "w": 2,
+            "dc": 200,
+            "player": "Mustafa Acar",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "35'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "Giren Oyuncu, Mustafa Acar",
+            "w": 2,
+            "dc": 500,
+            "player": "Mustafa Acar",
+            "player2": "Sasa Kovacevic",
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "35'",
+            "action": true,
+            "ilk_yari_skor": null,
+            "type": "oyuncu değişikliği",
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
             }
         },
         {
@@ -1059,7 +1509,7 @@
             "w": 0,
             "dc": 750,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "bgColor": {
@@ -1075,11 +1525,11 @@
             "minute": "İY"
         },
         {
-            "text": "İY: Fenerbahçe 2-0 Galatasaray",
+            "text": "İY: Galatasaray 3-0 Erzurumspor",
             "w": 0,
             "dc": 2000,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "bgColor": {
@@ -1099,7 +1549,7 @@
             "w": 0,
             "dc": 1000,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "bgColor": {
@@ -1116,12 +1566,12 @@
         },
         {
             "text": "46'  Oyuncu Değişikliği",
-            "w": 2,
+            "w": 1,
             "dc": 250,
-            "player": "Arif Erdem",
+            "player": "Hasan Şaş",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 2,
+            "homeScore": 3,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
@@ -1129,7 +1579,7 @@
             "minute": "46'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
@@ -1145,13 +1595,13 @@
             }
         },
         {
-            "text": "Çıkan Oyuncu, Ayhan Akman",
-            "w": 2,
+            "text": "Çıkan Oyuncu, Gheorghe Popescu",
+            "w": 1,
             "dc": 200,
-            "player": "Arif Erdem",
+            "player": "Hasan Şaş",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 2,
+            "homeScore": 3,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
@@ -1159,7 +1609,7 @@
             "minute": "46'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
@@ -1175,13 +1625,13 @@
             }
         },
         {
-            "text": "Giren Oyuncu, Arif Erdem",
-            "w": 2,
+            "text": "Giren Oyuncu, Hasan Şaş",
+            "w": 1,
             "dc": 500,
-            "player": "Arif Erdem",
-            "player2": "Ayhan Akman",
+            "player": "Hasan Şaş",
+            "player2": "Gheorghe Popescu",
             "isAnimation": false,
-            "homeScore": 2,
+            "homeScore": 3,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
@@ -1189,7 +1639,7 @@
             "minute": "46'",
             "action": true,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": "oyuncu değişikliği",
@@ -1205,28 +1655,28 @@
             }
         },
         {
-            "text": "57'  Oyuncu Değişikliği",
+            "text": "46'  Oyuncu Değişikliği",
             "w": 1,
             "dc": 250,
-            "player": "Ceyhun Eriş",
+            "player": "Hakan Ünsal",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 2,
+            "homeScore": 3,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "57'",
+            "minute": "46'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -1235,28 +1685,28 @@
             }
         },
         {
-            "text": "Çıkan Oyuncu, Washington Stecanelo",
+            "text": "Çıkan Oyuncu, Ergün Penbe",
             "w": 1,
             "dc": 200,
-            "player": "Ceyhun Eriş",
+            "player": "Hakan Ünsal",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 2,
+            "homeScore": 3,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "57'",
+            "minute": "46'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -1265,84 +1715,24 @@
             }
         },
         {
-            "text": "Giren Oyuncu, Ceyhun Eriş",
+            "text": "Giren Oyuncu, Hakan Ünsal",
             "w": 1,
             "dc": 500,
-            "player": "Ceyhun Eriş",
-            "player2": "Washington Stecanelo",
+            "player": "Hakan Ünsal",
+            "player2": "Ergün Penbe",
             "isAnimation": false,
-            "homeScore": 2,
+            "homeScore": 3,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "57'",
+            "minute": "46'",
             "action": true,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": "oyuncu değişikliği",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "58'  Ariel Ortega Kırmızı Kart",
-            "w": 1,
-            "dc": 500,
-            "player": "Ariel Ortega",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 2,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "58'",
-            "action": true,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "kırmızı",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "65'  Emre Aşık Sarı Kart",
-            "w": 2,
-            "dc": 500,
-            "player": "Emre Aşık",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 2,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "65'",
-            "action": true,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "sarı",
             "bgColor": {
                 "r": 235,
                 "g": 0,
@@ -1358,25 +1748,25 @@
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": -900,
-            "player": "Serhat Akın",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 4,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": true,
             "isSquad": false,
-            "minute": "68'",
+            "minute": "52'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -1388,18 +1778,18 @@
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": -900,
-            "player": "Serhat Akın",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 4,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": true,
             "isSquad": false,
-            "minute": "68'",
+            "minute": "52'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
@@ -1409,38 +1799,8 @@
                 "b": 0
             },
             "color": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Serhat Akın",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 3,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "68'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
                 "b": 0
             }
         },
@@ -1448,55 +1808,25 @@
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": -900,
-            "player": "Serhat Akın",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 4,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": true,
             "isSquad": false,
-            "minute": "68'",
+            "minute": "52'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
             "bgColor": {
-                "r": 255,
-                "g": 255,
+                "r": 235,
+                "g": 0,
                 "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Serhat Akın",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 3,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "68'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
             },
             "color": {
                 "r": 255,
@@ -1508,18 +1838,18 @@
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": -900,
-            "player": "Serhat Akın",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 4,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": true,
             "isSquad": false,
-            "minute": "68'",
+            "minute": "52'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
@@ -1529,34 +1859,94 @@
                 "b": 0
             },
             "color": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "52'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "52'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
             }
         },
         {
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": 400,
-            "player": "Serhat Akın",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 4,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "68'",
+            "minute": "52'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -1565,28 +1955,28 @@
             }
         },
         {
-            "text": "68'  Serhat Akın GOL",
+            "text": "52'  Jardel GOL",
             "w": 1,
             "dc": 400,
-            "player": "Serhat Akın",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 4,
             "awayScore": 0,
             "isScore": true,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "68'",
+            "minute": "52'",
             "action": true,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": "gol",
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -1595,58 +1985,58 @@
             }
         },
         {
-            "text": "Asist, Miroslav Stevic",
-            "w": 1,
-            "dc": 400,
-            "player": "Serhat Akın",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 3,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "68'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "asist",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "68'  Fenerbahçe 3-0 Galatasaray",
+            "text": "Maçtaki 3. Golü",
             "w": 1,
             "dc": 500,
-            "player": "Serhat Akın",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 4,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "68'",
+            "minute": "52'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "52'  Galatasaray 4-0 Erzurumspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "52'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -1658,48 +2048,78 @@
             "text": "Santra yapıldı.",
             "w": 2,
             "dc": 500,
-            "player": "Serhat Akın",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 4,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "68'",
+            "minute": "52'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
             "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
+                "r": 0,
+                "g": 149,
+                "b": 217
             },
             "color": {
                 "r": 255,
                 "g": 255,
-                "b": 0
+                "b": 255
             }
         },
         {
             "text": "Oyun hareketlendi.",
             "w": 2,
             "dc": 500,
-            "player": "Serhat Akın",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 4,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "68'",
+            "minute": "52'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
                 0
             ],
             "type": false,
@@ -1715,81 +2135,51 @@
             }
         },
         {
-            "text": "70'  Serhat Akın Sarı Kart",
+            "text": "GOOOLLLL!",
             "w": 1,
-            "dc": 500,
-            "player": "Serhat Akın",
+            "dc": -900,
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 5,
             "awayScore": 0,
             "isScore": false,
-            "isScoreChange": false,
+            "isScoreChange": true,
             "isSquad": false,
-            "minute": "70'",
-            "action": true,
+            "minute": "75'",
+            "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
-            "type": "sarı",
+            "type": false,
             "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
                 "r": 255,
                 "g": 255,
                 "b": 0
-            }
-        },
-        {
-            "text": "71'  Arif Erdem Sarı Kart",
-            "w": 2,
-            "dc": 500,
-            "player": "Arif Erdem",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 3,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "71'",
-            "action": true,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "sarı",
-            "bgColor": {
+            },
+            "color": {
                 "r": 235,
                 "g": 0,
                 "b": 0
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
             }
         },
         {
-            "text": "73'  Oyuncu Değişikliği",
-            "w": 2,
-            "dc": 250,
-            "player": "Ümit Karan",
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 5,
             "awayScore": 0,
             "isScore": false,
-            "isScoreChange": false,
+            "isScoreChange": true,
             "isSquad": false,
-            "minute": "73'",
+            "minute": "75'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
@@ -1805,21 +2195,51 @@
             }
         },
         {
-            "text": "Çıkan Oyuncu, Joao Batista",
-            "w": 2,
-            "dc": 200,
-            "player": "Ümit Karan",
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 5,
             "awayScore": 0,
             "isScore": false,
-            "isScoreChange": false,
+            "isScoreChange": true,
             "isSquad": false,
-            "minute": "73'",
+            "minute": "75'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
                 0
             ],
             "type": false,
@@ -1835,223 +2255,43 @@
             }
         },
         {
-            "text": "Giren Oyuncu, Ümit Karan",
-            "w": 2,
-            "dc": 500,
-            "player": "Ümit Karan",
-            "player2": "Joao Batista",
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
             "isAnimation": false,
-            "homeScore": 3,
+            "homeScore": 5,
             "awayScore": 0,
             "isScore": false,
-            "isScoreChange": false,
+            "isScoreChange": true,
             "isSquad": false,
-            "minute": "73'",
-            "action": true,
+            "minute": "75'",
+            "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
-            "type": "oyuncu değişikliği",
+            "type": false,
             "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
                 "r": 235,
                 "g": 0,
                 "b": 0
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Serhat Akın",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 4,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "75'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Serhat Akın",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 4,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "75'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Serhat Akın",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 4,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "75'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Serhat Akın",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 4,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "75'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Serhat Akın",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 4,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "75'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Serhat Akın",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 4,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "75'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
             }
         },
         {
             "text": "GOOOLLLL!",
             "w": 1,
             "dc": 400,
-            "player": "Serhat Akın",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 4,
+            "homeScore": 5,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
@@ -2059,14 +2299,14 @@
             "minute": "75'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -2075,13 +2315,13 @@
             }
         },
         {
-            "text": "75'  Serhat Akın GOL",
+            "text": "75'  Jardel GOL",
             "w": 1,
             "dc": 400,
-            "player": "Serhat Akın",
+            "player": "Jardel",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 4,
+            "homeScore": 5,
             "awayScore": 0,
             "isScore": true,
             "isScoreChange": false,
@@ -2089,14 +2329,734 @@
             "minute": "75'",
             "action": true,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": "gol",
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "Maçtaki 4. Golü",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "75'  Galatasaray 5-0 Erzurumspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "Oyun hareketlendi.",
+            "w": 2,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 400,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "87'  Jardel GOL",
+            "w": 1,
+            "dc": 400,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "87'",
+            "action": true,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": "gol",
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "Maçtaki 5. Golü",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "87'  Galatasaray 6-0 Erzurumspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "Oyun hareketlendi.",
+            "w": 2,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 149,
+                "b": 217
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 400,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            }
+        },
+        {
+            "text": "90'  Gheorghe Hagi GOL",
+            "w": 1,
+            "dc": 400,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "90'",
+            "action": true,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": "gol",
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -2108,25 +3068,25 @@
             "text": "Maçtaki 2. Golü",
             "w": 1,
             "dc": 500,
-            "player": "Serhat Akın",
+            "player": "Gheorghe Hagi",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 4,
+            "homeScore": 7,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "75'",
+            "minute": "90'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -2135,58 +3095,28 @@
             }
         },
         {
-            "text": "Asist, Ümit Özat",
-            "w": 1,
-            "dc": 400,
-            "player": "Serhat Akın",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 4,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "75'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "asist",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "75'  Fenerbahçe 4-0 Galatasaray",
+            "text": "90'  Galatasaray 7-0 Erzurumspor",
             "w": 1,
             "dc": 500,
-            "player": "Serhat Akın",
+            "player": "Gheorghe Hagi",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 4,
+            "homeScore": 7,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "75'",
+            "minute": "90'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
             "bgColor": {
-                "r": 0,
+                "r": 235,
                 "g": 0,
-                "b": 235
+                "b": 0
             },
             "color": {
                 "r": 255,
@@ -2198,1140 +3128,60 @@
             "text": "Santra yapıldı.",
             "w": 2,
             "dc": 500,
-            "player": "Serhat Akın",
+            "player": "Gheorghe Hagi",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 4,
+            "homeScore": 7,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "75'",
+            "minute": "90'",
             "action": false,
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
             "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
+                "r": 0,
+                "g": 149,
+                "b": 217
             },
             "color": {
                 "r": 255,
                 "g": 255,
-                "b": 0
+                "b": 255
             }
         },
         {
             "text": "Oyun hareketlendi.",
             "w": 2,
             "dc": 500,
-            "player": "Serhat Akın",
+            "player": "Gheorghe Hagi",
             "player2": false,
             "isAnimation": false,
-            "homeScore": 4,
+            "homeScore": 7,
             "awayScore": 0,
             "isScore": false,
             "isScoreChange": false,
             "isSquad": false,
-            "minute": "75'",
+            "minute": "90'",
             "action": false,
             "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "77'  Oyuncu Değişikliği",
-            "w": 2,
-            "dc": 250,
-            "player": "Vedat İnceefe",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 4,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "77'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "Çıkan Oyuncu, Bülent Korkmaz",
-            "w": 2,
-            "dc": 200,
-            "player": "Vedat İnceefe",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 4,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "77'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "Giren Oyuncu, Vedat İnceefe",
-            "w": 2,
-            "dc": 500,
-            "player": "Vedat İnceefe",
-            "player2": "Bülent Korkmaz",
-            "isAnimation": false,
-            "homeScore": 4,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "77'",
-            "action": true,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "oyuncu değişikliği",
-            "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ceyhun Eriş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "78'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "type": false,
             "bgColor": {
                 "r": 0,
-                "g": 0,
-                "b": 235
+                "g": 149,
+                "b": 217
             },
             "color": {
                 "r": 255,
                 "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ceyhun Eriş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "78'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ceyhun Eriş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "78'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ceyhun Eriş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "78'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ceyhun Eriş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "78'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ceyhun Eriş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "78'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": 400,
-            "player": "Ceyhun Eriş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "78'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "78'  Ceyhun Eriş GOL",
-            "w": 1,
-            "dc": 400,
-            "player": "Ceyhun Eriş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": true,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "78'",
-            "action": true,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "gol",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "Asist, Serhat Akın",
-            "w": 1,
-            "dc": 400,
-            "player": "Ceyhun Eriş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "78'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "asist",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "78'  Fenerbahçe 5-0 Galatasaray",
-            "w": 1,
-            "dc": 500,
-            "player": "Ceyhun Eriş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "78'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "Santra yapıldı.",
-            "w": 2,
-            "dc": 500,
-            "player": "Ceyhun Eriş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "78'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "Oyun hareketlendi.",
-            "w": 2,
-            "dc": 500,
-            "player": "Ceyhun Eriş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "78'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "80'  Oyuncu Değişikliği",
-            "w": 1,
-            "dc": 250,
-            "player": "Ali Güneş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "80'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "Çıkan Oyuncu, Serhat Akın",
-            "w": 1,
-            "dc": 200,
-            "player": "Ali Güneş",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "80'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "Giren Oyuncu, Ali Güneş",
-            "w": 1,
-            "dc": 500,
-            "player": "Ali Güneş",
-            "player2": "Serhat Akın",
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "80'",
-            "action": true,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "oyuncu değişikliği",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "83'  Yusuf Şimşek Sarı Kart",
-            "w": 1,
-            "dc": 500,
-            "player": "Yusuf Şimşek",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "83'",
-            "action": true,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "sarı",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "84'  Emre Aşık İkinci Sart Kart",
-            "w": 2,
-            "dc": 250,
-            "player": "Emre Aşık",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "84'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "84'  Emre Aşık ve Kırmızı Kart",
-            "w": 2,
-            "dc": 500,
-            "player": "Emre Aşık",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "84'",
-            "action": true,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "ikinci sarı kırmızı",
-            "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "85'  Oyuncu Değişikliği",
-            "w": 1,
-            "dc": 250,
-            "player": "Erman Yıldırım",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "85'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "Çıkan Oyuncu, Yusuf Şimşek",
-            "w": 1,
-            "dc": 200,
-            "player": "Erman Yıldırım",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "85'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "Giren Oyuncu, Erman Yıldırım",
-            "w": 1,
-            "dc": 500,
-            "player": "Erman Yıldırım",
-            "player2": "Yusuf Şimşek",
-            "isAnimation": false,
-            "homeScore": 5,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "85'",
-            "action": true,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "oyuncu değişikliği",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ümit Özat",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 6,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "86'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ümit Özat",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 6,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "86'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ümit Özat",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 6,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "86'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ümit Özat",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 6,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "86'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ümit Özat",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 6,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "86'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": -900,
-            "player": "Ümit Özat",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 6,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": true,
-            "isSquad": false,
-            "minute": "86'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            },
-            "color": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            }
-        },
-        {
-            "text": "GOOOLLLL!",
-            "w": 1,
-            "dc": 400,
-            "player": "Ümit Özat",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 6,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "86'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "86'  Ümit Özat GOL",
-            "w": 1,
-            "dc": 400,
-            "player": "Ümit Özat",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 6,
-            "awayScore": 0,
-            "isScore": true,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "86'",
-            "action": true,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "gol",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "Asist, Miroslav Stevic",
-            "w": 1,
-            "dc": 400,
-            "player": "Ümit Özat",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 6,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "86'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": "asist",
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "86'  Fenerbahçe 6-0 Galatasaray",
-            "w": 1,
-            "dc": 500,
-            "player": "Ümit Özat",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 6,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "86'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 0,
-                "g": 0,
-                "b": 235
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "Santra yapıldı.",
-            "w": 2,
-            "dc": 500,
-            "player": "Ümit Özat",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 6,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "86'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
-            }
-        },
-        {
-            "text": "Oyun hareketlendi.",
-            "w": 2,
-            "dc": 500,
-            "player": "Ümit Özat",
-            "player2": false,
-            "isAnimation": false,
-            "homeScore": 6,
-            "awayScore": 0,
-            "isScore": false,
-            "isScoreChange": false,
-            "isSquad": false,
-            "minute": "86'",
-            "action": false,
-            "ilk_yari_skor": [
-                2,
-                0
-            ],
-            "type": false,
-            "bgColor": {
-                "r": 235,
-                "g": 0,
-                "b": 0
-            },
-            "color": {
-                "r": 255,
-                "g": 255,
-                "b": 0
+                "b": 255
             }
         },
         {
@@ -3352,13 +3202,13 @@
                 "b": 0
             },
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "minute": "MS"
         },
         {
-            "text": "MS: Fenerbahçe 6-0 Galatasaray",
+            "text": "MS: Galatasaray 7-0 Erzurumspor",
             "isAnimation": false,
             "isScore": false,
             "w": 0,
@@ -3375,7 +3225,7 @@
                 "b": 0
             },
             "ilk_yari_skor": [
-                2,
+                3,
                 0
             ],
             "minute": "MS"
@@ -3384,76 +3234,118 @@
     "homePlayers": [
         {
             "number": 1,
-            "name": "Rüştü Reçber",
-            "id": 13200
+            "name": "Claudio Taffarel",
+            "id": 13697
         },
         {
-            "number": 3,
-            "name": "Ogün Temizkanoğlu",
-            "id": 12608
+            "number": 4,
+            "name": "Gheorghe Popescu",
+            "id": 13527
         },
         {
-            "number": 5,
-            "name": "Ümit Özat",
-            "id": 13274
-        },
-        {
-            "number": 22,
+            "number": 14,
             "name": "Fatih Akyel",
             "id": 13526
         },
         {
-            "number": 28,
-            "name": "Samuel Johnson",
-            "id": 13704
+            "number": 26,
+            "name": "Emre Aşık",
+            "id": 13034
         },
         {
-            "number": 20,
-            "name": "Yusuf Şimşek",
-            "id": 13439
+            "number": 67,
+            "name": "Ergün Penbe",
+            "id": 12842
         },
         {
-            "number": 32,
-            "name": "Miroslav Stevic",
-            "id": 14352
+            "number": 5,
+            "name": "Emre Belözoğlu",
+            "id": 13516
+        },
+        {
+            "number": 7,
+            "name": "Okan Buruk",
+            "id": 12864
+        },
+        {
+            "number": 8,
+            "name": "Suat Kaya",
+            "id": 12261
+        },
+        {
+            "number": 10,
+            "name": "Gheorghe Hagi",
+            "id": 13375
         },
         {
             "number": 9,
-            "name": "Serhat Akın",
-            "id": 13988
+            "name": "Jardel",
+            "id": 14030
         },
         {
-            "number": 17,
-            "name": "Tuncay Şanlı",
-            "id": 14354
-        },
-        {
-            "number": 21,
-            "name": "Washington Stecanelo",
-            "id": 14291
-        },
-        {
-            "number": 23,
-            "name": "Ariel Ortega",
-            "id": 14292
+            "number": 20,
+            "name": "Serkan Aykut",
+            "id": 13051
         }
     ],
     "awayPlayers": [
         {
             "number": 1,
-            "name": "Faryd Mondragon",
-            "id": 14189
+            "name": "Milorad Korac",
+            "id": 14001
         },
         {
-            "number": 3,
-            "name": "Bülent Korkmaz",
-            "id": 12448
+            "number": 4,
+            "name": "Ömer Erdoğan",
+            "id": 13730
         },
         {
             "number": 5,
-            "name": "Emre Aşık",
-            "id": 13034
+            "name": "Hasan Vural",
+            "id": 14002
         },
+        {
+            "number": 6,
+            "name": "Sohrab Bakhtiarizadeh",
+            "id": 14003
+        },
+        {
+            "number": 9,
+            "name": "Ali Yılmaz",
+            "id": 13737
+        },
+        {
+            "number": 26,
+            "name": "Soner Neliker",
+            "id": 13590
+        },
+        {
+            "number": 7,
+            "name": "Ergin Yücetaş",
+            "id": 13857
+        },
+        {
+            "number": 18,
+            "name": "Vidadi Rzayev",
+            "id": 14004
+        },
+        {
+            "number": 20,
+            "name": "Selçuk Beyaz",
+            "id": 13930
+        },
+        {
+            "number": 10,
+            "name": "Alexander Löbe",
+            "id": 13898
+        },
+        {
+            "number": 19,
+            "name": "Sasa Kovacevic",
+            "id": 14005
+        }
+    ],
+    "homeSubstitutes": [
         {
             "number": 22,
             "name": "Ümit Davala",
@@ -3465,130 +3357,43 @@
             "id": 13004
         },
         {
-            "number": 67,
-            "name": "Ergün Penbe",
-            "id": 12842
-        },
-        {
-            "number": 4,
-            "name": "Joao Batista",
-            "id": 13415
-        },
-        {
             "number": 11,
             "name": "Hasan Şaş",
             "id": 13240
-        },
-        {
-            "number": 18,
-            "name": "Ayhan Akman",
-            "id": 13210
-        },
-        {
-            "number": 17,
-            "name": "Fabio Pinto",
-            "id": 14338
-        },
-        {
-            "number": 25,
-            "name": "Christian",
-            "id": 14360
-        }
-    ],
-    "homeSubstitutes": [
-        {
-            "number": 13,
-            "name": "Oğuz Dağlaroğlu",
-            "id": 13950
-        },
-        {
-            "number": 26,
-            "name": "Erman Yıldırım",
-            "id": 14366
-        },
-        {
-            "number": 14,
-            "name": "Ceyhun Eriş",
-            "id": 13334
-        },
-        {
-            "number": 16,
-            "name": "Cem Karaca",
-            "id": 13994
-        },
-        {
-            "number": 30,
-            "name": "Ali Güneş",
-            "id": 13984
-        },
-        {
-            "number": 8,
-            "name": "Milan Rapaic",
-            "id": 14053
-        },
-        {
-            "number": 10,
-            "name": "Haim Revivo",
-            "id": 13986
         }
     ],
     "awaySubstitutes": [
         {
-            "number": 16,
-            "name": "Kerem İnan",
-            "id": 13924
+            "number": 25,
+            "name": "Zafer Demir",
+            "id": 13732
         },
         {
-            "number": 21,
-            "name": "Suat Usta",
-            "id": 14367
-        },
-        {
-            "number": 23,
-            "name": "Vedat İnceefe",
-            "id": 13374
-        },
-        {
-            "number": 7,
-            "name": "Berkant Göktan",
-            "id": 14190
-        },
-        {
-            "number": 8,
-            "name": "Suat Kaya",
-            "id": 12261
-        },
-        {
-            "number": 6,
-            "name": "Arif Erdem",
-            "id": 12763
-        },
-        {
-            "number": 9,
-            "name": "Ümit Karan",
-            "id": 13485
+            "number": 24,
+            "name": "Mustafa Acar",
+            "id": 14042
         }
     ],
     "settings": {
         "matchCommentaryHomeColor": {
-            "r": 0,
+            "r": 235,
             "g": 0,
-            "b": 235
+            "b": 0
         },
         "matchCommentaryAwayColor": {
-            "r": 235,
-            "g": 0,
-            "b": 0
+            "r": 0,
+            "g": 149,
+            "b": 217
         },
         "homeBoxColor": {
-            "r": 0,
-            "g": 0,
-            "b": 235
-        },
-        "awayBoxColor": {
             "r": 235,
             "g": 0,
             "b": 0
+        },
+        "awayBoxColor": {
+            "r": 0,
+            "g": 149,
+            "b": 217
         },
         "homeBoxTextColor": {
             "r": 255,
@@ -3598,7 +3403,7 @@
         "awayBoxTextColor": {
             "r": 255,
             "g": 255,
-            "b": 0
+            "b": 255
         },
         "homeNameColor": {
             "r": 255,
