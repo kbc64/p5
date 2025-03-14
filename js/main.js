@@ -263,7 +263,7 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
   let name = (playerName2) ? playerName2 : playerName
   let imageRightMargin = 10;
   let minuteLeftMargin = 10;
-  let playerLeftMargin = 60;
+  let playerLeftMargin = 58;
 
 
   let imageSize = 38
