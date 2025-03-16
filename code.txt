@@ -1,3 +1,7 @@
+
+
+ipconfig getifaddr en0
+
 ffmpeg -i input.webm -f lavfi -i anullsrc=channel_layout=stereo:sample_rate=44100 -shortest -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 192k output.mp4
 
 

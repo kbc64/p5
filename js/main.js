@@ -24,17 +24,19 @@ const goalAnimation = 1500;
 let counter = 0;
 
 
-let isNumberingSquad = false;
 let isDC = false
+let videoTime = null;
 
 const actions = []
 
 isRecord = false;
-videoTime = 140
 
 
 
-const remoteServer = 'http://192.168.1.55:8000';
+
+const remoteServer = '192.168.1.103:8000';
+// const remoteServer = 'http://127.0.0.1:8000';
+
 
 let homePlayers = null;
 let awayPlayers = null;
@@ -83,6 +85,7 @@ const capturer = new CCapture({
 function setup() {
 
   let canvas = createCanvas(WIDTH, HEIGTH);
+  videoTime = MAC_INFO['videoDuration']
   let canvasElement = document.getElementById('defaultCanvas0'); // p5.js'in varsayılan canvas ID'si
   canvasElement.getContext('2d', { willReadFrequently: true });
   frameRate(60); // FPS'i 60 olarak sınırla
@@ -191,7 +194,7 @@ function addBorder() {
 }
 
 function addNotice() {
-  if(isNumberingSquad) {
+  if(MAC_INFO['isNumberingSquad']) {
     textSize(34);
     fill(255, 0, 0)
     textAlign(LEFT, CENTER);
@@ -305,8 +308,8 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
   } else if (actionType == 'oyuncu değişikliği') {
     //tint(255, 255, 255, 240); // %50 şeffaflık
    
-    image(exitImage, textX+playerWidth-3, y + (height - imageSize) / 2, imageSize, imageSize);
-    image(enterImage, x +3 + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
+    image(exitImage, textX+playerWidth, y + (height - imageSize) / 2, imageSize, imageSize);
+    image(enterImage, x + 6 + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
     textAlign(RIGHT, CENTER);
     text(playerName, x + 5 +  width - imageSize - imageRightMargin, textY);
   }
@@ -594,6 +597,10 @@ function addMatchCommentary() {
 
   textAlign(CENTER, CENTER);
   text(boxText, HALF_X, MATCH_COMMENTARY_TEXT_Y )
+
+  if (boxText=='Maç Bitti!') {
+    console.log(counter)
+  }
 
    //addMinute(minute)
 
