@@ -1,5 +1,5 @@
 {
-    "videoDuration": 176,
+    "videoDuration": 120,
     "info": {
         "homeTeam": "GALATASARAY",
         "awayTeam": "ADANA DEMİRSPOR",
@@ -2007,7 +2007,7 @@
             "text": "Giren Oyuncu, Mustafa Ergücü",
             "w": 1,
             "dc": 500,
-            "player": "M. Ergücü",
+            "player": "Mustafa Ergücü",
             "player2": "M. Denizli",
             "isAnimation": false,
             "homeScore": 4,
@@ -3717,7 +3717,7 @@
             "text": "Giren Oyuncu, İbrahim Çolak",
             "w": 2,
             "dc": 500,
-            "player": "İ. Çolak",
+            "player": "İbrahim Çolak",
             "player2": "A. Dürüst",
             "isAnimation": false,
             "homeScore": 8,
@@ -3807,7 +3807,7 @@
             "text": "Giren Oyuncu, İbrahim Uzunca",
             "w": 2,
             "dc": 500,
-            "player": "İ. Uzunca",
+            "player": "İbrahim Uzunca",
             "player2": "T. İncebaldır",
             "isAnimation": false,
             "homeScore": 8,

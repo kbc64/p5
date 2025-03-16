@@ -34,7 +34,7 @@ isRecord = false;
 
 
 
-const remoteServer = '192.168.1.103:8000';
+const remoteServer = 'http://192.168.1.103:8000';
 // const remoteServer = 'http://127.0.0.1:8000';
 
 
@@ -198,7 +198,7 @@ function addNotice() {
     textSize(34);
     fill(255, 0, 0)
     textAlign(LEFT, CENTER);
-    text('*Oyuncu forma numarları temsilen eklenmiştir.', 60, 1880)
+    text('* Oyuncu forma numarları temsilen eklenmiştir.', 60, 1880)
   }
 }
 
