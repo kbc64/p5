@@ -198,7 +198,7 @@ function addNotice() {
     textSize(34);
     fill(255, 0, 0)
     textAlign(LEFT, CENTER);
-    text('* Oyuncu forma numaraları temsilen eklenmiştir.', 60, 1880)
+    text('* Oyuncu forma numaraları temsilen belirtilmiştir.', 60, 1880)
   }
 }
 
@@ -512,9 +512,11 @@ function MatchComentaryAnimation() {
                  isCoach ? coachNameColor[2] : isSub ? subNameColor[2] : nameColor[2], nameAlpha);
             textAlign(LEFT, CENTER);
             text(item.name, item.x + squadPadding + numberBoxWidth + 15, item.y + squadBoxHeight / 2-3);
-            addNotice()
+            
         
           }
+
+          addNotice()
         
        
           
