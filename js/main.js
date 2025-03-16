@@ -198,7 +198,7 @@ function addNotice() {
     textSize(34);
     fill(255, 0, 0)
     textAlign(LEFT, CENTER);
-    text('* Oyuncu forma numarları temsilen eklenmiştir.', 60, 1880)
+    text('* Oyuncu forma numaraları temsilen eklenmiştir.', 60, 1880)
   }
 }
 
