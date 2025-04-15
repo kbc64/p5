@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>🎥 Babacığımın Video Oynatıcısı</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 20px; }
+    video { width: 640px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto; }
+    canvas { display: none; }
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    input[type="number"] {
+      width: 80px;
+      padding: 4px;
+    }
+    button {
+      padding: 6px 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🎬 Babacığımın Özel Oynatıcısı</h2>
+  
+  <div class="controls">
+    <input type="file" id="videoInput" accept="video/*">
+    <input type="number" id="secondsInput" placeholder="Saniye" step="1" min="0">
+    <input type="number" id="msInput" placeholder="ms" step="1" min="0" max="999">
+    <button onclick="jumpToTime()">⏩ Git</button>
+    <button onclick="takeScreenshot()">📸 Görüntü Al</button>
+    <button onclick="changeSpeed(0.5)">0.5x</button>
+    <button onclick="changeSpeed(1)">1x</button>
+    <button onclick="changeSpeed(2)">2x</button>
+  </div>
+
+  <video id="video" controls></video>
+  <canvas id="canvas"></canvas>
+
+  <script>
+    const video = document.getElementById("video");
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    document.getElementById("videoInput").addEventListener("change", function () {
+      const file = this.files[0];
+      if (file) {
+        const url = URL.createObjectURL(file);
+        video.src = url;
+      }
+    });
+
+    function jumpToTime() {
+      const sec = parseInt(document.getElementById("secondsInput").value) || 0;
+      const ms = parseInt(document.getElementById("msInput").value) || 0;
+      const total = sec + ms / 1000;
+      video.currentTime = total;
+      video.pause();
+    }
+
+    function takeScreenshot() {
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      ctx.drawImage(video, 0, 0);
+      const imgData = canvas.toDataURL("image/png");
+      const a = document.createElement("a");
+      a.href = imgData;
+      a.download = `görüntü_${video.currentTime.toFixed(3)}s.png`;
+      a.click();
+    }
+
+    function changeSpeed(rate) {
+      video.playbackRate = rate;
+    }
+  </script>
+
+</body>
+</html>

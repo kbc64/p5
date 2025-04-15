@@ -2,16 +2,19 @@
 
 ipconfig getifaddr en0
 
-ffmpeg -i input.webm -f lavfi -i anullsrc=channel_layout=stereo:sample_rate=44100 -shortest -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 192k output.mp4
-
-
-ffmpeg -i input.mp4 -ss 00:00:00.000 -to 00:02:06.000 -c:v libx264 -preset slow -crf 18 -c:a aac output.mp4
-
-
-ffmpeg -ss 00:00:17.000 -i input.mp3 -to 00:02:23.000 -c:a libmp3lame output.mp3
-
-
-ffmpeg -i output.mp4 -i output.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest final_output.mp4
+ffmpeg -i 37787.webm -f lavfi -i anullsrc=channel_layout=stereo:sample_rate=44100 -shortest -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 192k 37787.mp4
 
 
 
+ffmpeg -ss 00:00:00.000 -i ras.mp3 -t 00:02:23.000 -c copy ras_output.mp3
+
+ffmpeg -i 47950.mp4 -i ras_output.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest final_47950.mp4
+
+
+ffmpeg -ss 00:00:00.000 -i ras.mp3 -to 00:02:23.000 -c:a libmp3lame ras_output.mp3
+
+ffmpeg -i 47950.mp4 -i ras_output.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest final_47950.mp4
+
+
+
+ffmpeg -i 37787.mp4 -i ses.wav -shortest -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 output.mp4

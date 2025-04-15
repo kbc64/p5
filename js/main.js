@@ -1,4 +1,7 @@
 p5.disableFriendlyErrors = true;
+
+isRecord = true;
+
 let MAC_INFO;
 let colors;
 let currenAnimsationIndex = 1;
@@ -13,7 +16,7 @@ let isAppendAction = true
 let isSquadAnimation = false
 
 //const ANIMATION_DURATION = 6000;
-
+let mySound;
 
 let team1Logo, team2Logo;
 let homeScore = 0
@@ -29,8 +32,11 @@ let videoTime = null;
 
 const actions = []
 
-isRecord = false;
 
+let startFrameTime;
+
+
+let soundStarted = false;
 
 
 
@@ -52,7 +58,7 @@ let isSquadOnTheScreen = false;
 let isActionBox = false
 
 function preload() {
-  
+
   MAC_INFO = loadJSON('./json/mac.json', ()=>{
     team1Logo = loadImage(remoteServer + MAC_INFO['info']['homeLogo']);
     team2Logo = loadImage(remoteServer + MAC_INFO['info']['awayLogo']);
@@ -107,7 +113,6 @@ function setup() {
   textFont(roboto); // Varsayılan font olarak ayarla
   starTime = millis()
 
-  
 
 }
 
@@ -586,10 +591,12 @@ function addMinute(minute) {
 
 
 function addMatchCommentary() {
+  
   let bgColor = MAC_INFO['aksiyonlar'][JSON_INDEX]['bgColor']
   let textColor = MAC_INFO['aksiyonlar'][JSON_INDEX]['color']
   let boxText = MAC_INFO['aksiyonlar'][JSON_INDEX]['text']
-  //let minute = MAC_INFO['aksiyonlar'][JSON_INDEX]['minute']
+
+
 
   fill(bgColor.r, bgColor.g, bgColor.b);
   rect(MATCH_COMMENTARY_BOX_X, MATCH_COMMENTARY_BOX_Y, MATCH_COMMENTARY_BOX_WIDTH, MATCH_COMMENTARY_BOX_HEIGHT);
@@ -604,10 +611,7 @@ function addMatchCommentary() {
     console.log(counter)
   }
 
-   //addMinute(minute)
 
-   
-    //addIY(MAC_INFO['aksiyonlar'][JSON_INDEX])
    
   
 }
