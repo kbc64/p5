@@ -18,3 +18,7 @@ ffmpeg -i 47950.mp4 -i ras_output.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -
 
 
 ffmpeg -i 37787.mp4 -i ses.wav -shortest -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 output.mp4
+
+
+ffmpeg -i 45077.mp4 -i mac.wav -shortest -c:v copy -c:a aac -b:a 192k output.mp4
+ffmpeg -i 45077.mp4 -i export.wav -map 0:v:0 -map 1:a:0 -shortest -c:v copy -c:a aac -b:a 192k output_youtube.mp4

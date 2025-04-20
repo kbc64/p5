@@ -1,0 +1,3965 @@
+{
+    "videoDuration": 150,
+    "info": {
+        "homeTeam": "TRABZONSPOR",
+        "awayTeam": "ESKİŞEHİRSPOR",
+        "homeCoach": "Şenol Güneş",
+        "awayCoach": "Güvenç Kurtar",
+        "leagueName": "Türkiye Süper Ligi",
+        "season": "1995/1996",
+        "week": 34,
+        "matchDate": "19 Mayıs 1996",
+        "matchTime": "16:00",
+        "stadium": "Hüseyin Avni Aker",
+        "homeLogo": "/media/logo/trabzonspor_195.png",
+        "awayLogo": "/media/logo/eskisehirspor_187.png",
+        "bgImage": "/media/video_background_images/Ultra-photorealistic_football_stadium_under_overc_ac064e3c-c590-_mwccBaE.png"
+    },
+    "aksiyonlar": [
+        {
+            "text": "Unutulmaz",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "Süper Lig",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "karşılaşmalarından",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "biriyle karşınızdayız!",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "Türkiye Süper Ligi",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "1995/1996 sezonunun",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "34. haftasında",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "Hüseyin Avni Aker Stadyumu'nda",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "19 Mayıs 1996",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "saat 16:00'da",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "Trabzonspor ile Eskişehirspor",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "karşı karşıya geliyor!",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "Kadrolar açıklanıyor!",
+            "w": 0,
+            "dc": 0,
+            "isAnimation": false,
+            "isSquad": true,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": null,
+            "minute": "16:00"
+        },
+        {
+            "text": "Maçın hakemi",
+            "w": 0,
+            "dc": 200,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "minute": "16:00"
+        },
+        {
+            "text": "Ayhan Yücebilgiç",
+            "w": 0,
+            "dc": 200,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "minute": "16:00"
+        },
+        {
+            "text": "Maç Başladı!",
+            "w": 0,
+            "dc": 1000,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "minute": "1'"
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Cengiz Atila",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "10'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Cengiz Atila",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "10'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Cengiz Atila",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "10'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Cengiz Atila",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "10'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Cengiz Atila",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "10'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Cengiz Atila",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "10'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Cengiz Atila",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "10'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "10'  Cengiz Atila GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Cengiz Atila",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "10'",
+            "action": true,
+            "ilk_yari_skor": null,
+            "type": "gol",
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "10'  Trabzonspor 1-0 Eskişehirspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Cengiz Atila",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "10'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Cengiz Atila",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "10'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Oyun hareketlendi.",
+            "w": 2,
+            "dc": 500,
+            "player": "Cengiz Atila",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "10'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Ünal Karaman",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "44'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Ünal Karaman",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "44'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Ünal Karaman",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "44'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Ünal Karaman",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "44'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Ünal Karaman",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "44'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Ünal Karaman",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "44'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Ünal Karaman",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "44'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "44'  Ünal Karaman GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Ünal Karaman",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "44'",
+            "action": true,
+            "ilk_yari_skor": null,
+            "type": "gol",
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "44'  Trabzonspor 2-0 Eskişehirspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Ünal Karaman",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "44'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Ünal Karaman",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "44'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Oyun hareketlendi.",
+            "w": 2,
+            "dc": 500,
+            "player": "Ünal Karaman",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "44'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "İlk Yarı Bitti!",
+            "w": 0,
+            "dc": 750,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "minute": "İY"
+        },
+        {
+            "text": "İY: Trabzonspor 2-0 Eskişehirspor",
+            "w": 0,
+            "dc": 2000,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "minute": "İY"
+        },
+        {
+            "text": "İkinci Yarı Başladı!",
+            "w": 0,
+            "dc": 1000,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "minute": "46'"
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "47'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "47'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "47'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "47'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "47'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "47'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "47'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "47'  Shota Arveladze GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "47'",
+            "action": true,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": "gol",
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "47'  Trabzonspor 3-0 Eskişehirspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "47'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "47'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Oyun hareketlendi.",
+            "w": 2,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "47'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "50'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "50'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "50'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "50'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "50'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "50'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "50'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "50'  Shota Arveladze GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "50'",
+            "action": true,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": "gol",
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Maçtaki 2. Golü",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "50'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "50'  Trabzonspor 4-0 Eskişehirspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "50'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "50'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Oyun hareketlendi.",
+            "w": 2,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "50'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "53'  Oyuncu Değişikliği",
+            "w": 1,
+            "dc": 250,
+            "player": "Fatih Tekke",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "53'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Çıkan Oyuncu, Abdullah Ercan",
+            "w": 1,
+            "dc": 200,
+            "player": "Fatih Tekke",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "53'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Giren Oyuncu, Fatih Tekke",
+            "w": 1,
+            "dc": 500,
+            "player": "Fatih Tekke",
+            "player2": "A. Ercan",
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "53'",
+            "action": true,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": "oyuncu değişikliği",
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "65'  Oyuncu Değişikliği",
+            "w": 1,
+            "dc": 250,
+            "player": "Mehmet İpek",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "65'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Çıkan Oyuncu, Cengiz Atila",
+            "w": 1,
+            "dc": 200,
+            "player": "Mehmet İpek",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "65'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Giren Oyuncu, Mehmet İpek",
+            "w": 1,
+            "dc": 500,
+            "player": "Mehmet İpek",
+            "player2": "C. Atila",
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "65'",
+            "action": true,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": "oyuncu değişikliği",
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "68'  Shota Arveladze GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "68'",
+            "action": true,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": "gol",
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Maçtaki 3. Golü",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "68'  Trabzonspor 5-0 Eskişehirspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Oyun hareketlendi.",
+            "w": 2,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "68'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "69'  Oyuncu Değişikliği",
+            "w": 2,
+            "dc": 250,
+            "player": "Engin Çalışır",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "69'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Çıkan Oyuncu, Ali Akdeniz",
+            "w": 2,
+            "dc": 200,
+            "player": "Engin Çalışır",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "69'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Giren Oyuncu, Engin Çalışır",
+            "w": 2,
+            "dc": 500,
+            "player": "Engin Çalışır",
+            "player2": "Ali A.",
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "69'",
+            "action": true,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": "oyuncu değişikliği",
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "70'  Oyuncu Değişikliği",
+            "w": 1,
+            "dc": 250,
+            "player": "Soner Boz",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Çıkan Oyuncu, Hami Mandıralı",
+            "w": 1,
+            "dc": 200,
+            "player": "Soner Boz",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Giren Oyuncu, Soner Boz",
+            "w": 1,
+            "dc": 500,
+            "player": "Soner Boz",
+            "player2": "Hami M.",
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "70'",
+            "action": true,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": "oyuncu değişikliği",
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "70'  Shota Arveladze GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "70'",
+            "action": true,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": "gol",
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Maçtaki 4. Golü",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "70'  Trabzonspor 6-0 Eskişehirspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Oyun hareketlendi.",
+            "w": 2,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "70'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            },
+            "color": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "75'  Shota Arveladze GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": true,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": "gol",
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Maçtaki 5. Golü",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "75'  Trabzonspor 7-0 Eskişehirspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Santra yapıldı.",
+            "w": 2,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Oyun hareketlendi.",
+            "w": 2,
+            "dc": 500,
+            "player": "Shota Arveladze",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "77'  Oyuncu Değişikliği",
+            "w": 2,
+            "dc": 250,
+            "player": "Sefer Yılmaz",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "77'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Çıkan Oyuncu, Volkan Şahinkol",
+            "w": 2,
+            "dc": 200,
+            "player": "Sefer Yılmaz",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "77'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Giren Oyuncu, Sefer Yılmaz",
+            "w": 2,
+            "dc": 500,
+            "player": "Sefer Yılmaz",
+            "player2": "Volkan Ş.",
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "77'",
+            "action": true,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": "oyuncu değişikliği",
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "78'  Oyuncu Değişikliği",
+            "w": 2,
+            "dc": 250,
+            "player": "Veysel Kupan",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Çıkan Oyuncu, Benhur Babaoğlu",
+            "w": 2,
+            "dc": 200,
+            "player": "Veysel Kupan",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Giren Oyuncu, Veysel Kupan",
+            "w": 2,
+            "dc": 500,
+            "player": "Veysel Kupan",
+            "player2": "Benhur B.",
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "78'",
+            "action": true,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": "oyuncu değişikliği",
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 2,
+            "dc": -900,
+            "player": "Benhur Babaoğlu",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 1,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 2,
+            "dc": -900,
+            "player": "Benhur Babaoğlu",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 1,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 2,
+            "dc": -900,
+            "player": "Benhur Babaoğlu",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 1,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 2,
+            "dc": -900,
+            "player": "Benhur Babaoğlu",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 1,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 2,
+            "dc": -900,
+            "player": "Benhur Babaoğlu",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 1,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 2,
+            "dc": -900,
+            "player": "Benhur Babaoğlu",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 1,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 2,
+            "dc": 1300,
+            "player": "Benhur Babaoğlu",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 1,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "78'  Benhur Babaoğlu GOL",
+            "w": 2,
+            "dc": 500,
+            "player": "Benhur Babaoğlu",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 1,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "78'",
+            "action": true,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": "gol",
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "78'  Trabzonspor 7-1 Eskişehirspor",
+            "w": 2,
+            "dc": 500,
+            "player": "Benhur Babaoğlu",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 1,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "color": {
+                "r": 255,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Santra yapıldı.",
+            "w": 1,
+            "dc": 500,
+            "player": "Benhur Babaoğlu",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 1,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Oyun hareketlendi.",
+            "w": 1,
+            "dc": 500,
+            "player": "Benhur Babaoğlu",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 1,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "78'",
+            "action": false,
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 91,
+                "g": 17,
+                "b": 40,
+                "a": 200
+            },
+            "color": {
+                "r": 118,
+                "g": 182,
+                "b": 230
+            }
+        },
+        {
+            "text": "Maç Bitti!",
+            "isAnimation": false,
+            "isScore": false,
+            "w": 0,
+            "dc": 750,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "minute": "MS"
+        },
+        {
+            "text": "MS: Trabzonspor 7-1 Eskişehirspor",
+            "isAnimation": false,
+            "isScore": false,
+            "w": 0,
+            "dc": 0,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": [
+                2,
+                0
+            ],
+            "minute": "MS"
+        }
+    ],
+    "homePlayers": [
+        {
+            "number": 1,
+            "name": "Nihat Tümkaya",
+            "id": 13099
+        },
+        {
+            "number": 3,
+            "name": "Ogün Temizkanoğlu",
+            "id": 12608
+        },
+        {
+            "number": 9,
+            "name": "Cengiz Atila",
+            "id": 12773
+        },
+        {
+            "number": 4,
+            "name": "Osman Özköylü",
+            "id": 12778
+        },
+        {
+            "number": 5,
+            "name": "Tolunay Kafkas",
+            "id": 12880
+        },
+        {
+            "number": 2,
+            "name": "Okan Özke",
+            "id": 13242
+        },
+        {
+            "number": 6,
+            "name": "Abdullah Ercan",
+            "id": 12703
+        },
+        {
+            "number": 8,
+            "name": "Ünal Karaman",
+            "id": 12303
+        },
+        {
+            "number": 11,
+            "name": "Orhan Çıkırıkçı",
+            "id": 12414
+        },
+        {
+            "number": 7,
+            "name": "Shota Arveladze",
+            "id": 13065
+        },
+        {
+            "number": 10,
+            "name": "Hami Mandıralı",
+            "id": 12049
+        }
+    ],
+    "awayPlayers": [
+        {
+            "number": 1,
+            "name": "Ömer Çatkıç",
+            "id": 13259
+        },
+        {
+            "number": 5,
+            "name": "Stevica Kuzmanovski",
+            "id": 12909
+        },
+        {
+            "number": 6,
+            "name": "Erol Usta",
+            "id": 12910
+        },
+        {
+            "number": 3,
+            "name": "Ali Akdeniz",
+            "id": 13262
+        },
+        {
+            "number": 7,
+            "name": "Volkan Şahinkol",
+            "id": 13261
+        },
+        {
+            "number": 2,
+            "name": "Yahya Ünal",
+            "id": 13260
+        },
+        {
+            "number": 4,
+            "name": "Ülken Durak",
+            "id": 12271
+        },
+        {
+            "number": 11,
+            "name": "Nana Eshun",
+            "id": 13349
+        },
+        {
+            "number": 9,
+            "name": "Hakan Şimşek",
+            "id": 12874
+        },
+        {
+            "number": 10,
+            "name": "Ümit Birol",
+            "id": 11811
+        },
+        {
+            "number": 8,
+            "name": "Benhur Babaoğlu",
+            "id": 13054
+        }
+    ],
+    "homeSubstitutes": [
+        {
+            "number": 12,
+            "name": "Metin Mert",
+            "id": 12603
+        },
+        {
+            "number": 16,
+            "name": "Hamdi Aslan",
+            "id": 12032
+        },
+        {
+            "number": 14,
+            "name": "Soner Boz",
+            "id": 12358
+        },
+        {
+            "number": 15,
+            "name": "Mehmet İpek",
+            "id": 13235
+        },
+        {
+            "number": 13,
+            "name": "Fatih Tekke",
+            "id": 13236
+        }
+    ],
+    "awaySubstitutes": [
+        {
+            "number": 12,
+            "name": "Aydın Barın",
+            "id": 19028
+        },
+        {
+            "number": 13,
+            "name": "Engin Çalışır",
+            "id": 13211
+        },
+        {
+            "number": 14,
+            "name": "Sefer Yılmaz",
+            "id": 12942
+        },
+        {
+            "number": 15,
+            "name": "Veysel Kupan",
+            "id": 13263
+        },
+        {
+            "number": 16,
+            "name": "Melih Gürbüztürk",
+            "id": 12251
+        }
+    ],
+    "isNumberingSquad": false,
+    "settings": {
+        "matchCommentaryHomeColor": {
+            "r": 91,
+            "g": 17,
+            "b": 40,
+            "a": 200
+        },
+        "matchCommentaryAwayColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+        },
+        "homeBoxColor": {
+            "r": 90,
+            "g": 18,
+            "b": 40
+        },
+        "awayBoxColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+        },
+        "homeBoxTextColor": {
+            "r": 118,
+            "g": 182,
+            "b": 230
+        },
+        "awayBoxTextColor": {
+            "r": 255,
+            "g": 0,
+            "b": 0
+        },
+        "homeNameColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+        },
+        "awayNameColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+        },
+        "scoreHomeColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+        },
+        "scoreAwayColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+        }
+    }
+}

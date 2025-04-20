@@ -1,6 +1,6 @@
 p5.disableFriendlyErrors = true;
 
-isRecord = true;
+isRecord = false;
 
 let MAC_INFO;
 let colors;
