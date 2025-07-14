@@ -1,6 +1,6 @@
 p5.disableFriendlyErrors = true;
 
-isRecord = false;
+isRecord = true;
 
 let MAC_INFO;
 let colors;
@@ -86,120 +86,123 @@ function preload() {
 
 
 
-const capturer = new CCapture({
-  format: 'webm',
-  framerate: 60,
-  verbose: true
-})
+let recorder;
+let recordedChunks = [];
+let videoStartTime;
+let canvas;
+
 
 function setup() {
+  canvas = createCanvas(WIDTH, HEIGTH);
+  frameRate(60);
+  pixelDensity(1);
 
-  let canvas = createCanvas(WIDTH, HEIGTH);
-  videoTime = MAC_INFO['videoDuration']
-  let canvasElement = document.getElementById('defaultCanvas0'); // p5.js'in varsayılan canvas ID'si
-  const ctx = canvasElement.getContext('2d', { willReadFrequently: true });
+  videoTime = MAC_INFO['videoDuration'];
+  let canvasElement = document.getElementById('defaultCanvas0');
+  canvasElement.getContext('2d', { willReadFrequently: true });
 
-  frameRate(60); // FPS'i 60 olarak sınırla
-  pixelDensity(1); // beyaz patlamayı engeller
+ if (isRecord) {
+    let stream = canvas.elt.captureStream(60);
+    
+    // Daha kaliteli kayıt için MediaRecorder ayarları
+ const options = {
+  mimeType: 'video/webm;codecs=vp9',
+  videoBitsPerSecond: 50000000,      // 50 Mbps (RAW'a yakın kalite)
+  bitsPerSecond: 50128000,
+  framerate: 60
+};
+    recorder = new MediaRecorder(stream, options);
 
+    // Daha sık veri toplama (büyük dosyalar için daha iyi)
+    recorder.ondataavailable = function(e) {
+        if (e.data.size > 0) recordedChunks.push(e.data);
+    };
 
-  if (isRecord) {
-    capturer.start();
-  }
-  
-  homePlayers = MAC_INFO['homePlayers']
-  awayPlayers = MAC_INFO['awayPlayers']
+    recorder.onstop = function() {
+        let blob = new Blob(recordedChunks, { type: 'video/webm' });
+        let url = URL.createObjectURL(blob);
+
+        let a = document.createElement('a');
+        a.href = url;
+        a.download = 'mac_ozeti_' + new Date().toISOString() + '.webm'; // Tarih ekleyelim
+        document.body.appendChild(a);
+        a.click();
+        
+        // Temizlik
+        setTimeout(() => { // Küçük bir gecikme ekleyelim
+            a.remove();
+            URL.revokeObjectURL(url);
+            recordedChunks = []; // Sonraki kayıtlar için temizle
+        }, 100);
+    };
+
+    // Her 100ms'de bir veri topla (daha güvenilir kayıt için)
+    recorder.start(100);
+    videoStartTime = millis();
+}
+
+  homePlayers = MAC_INFO['homePlayers'];
+  awayPlayers = MAC_INFO['awayPlayers'];
   homeCoach = MAC_INFO['info']['homeCoach'];
   awayCoach = MAC_INFO['info']['awayCoach'];
   homeSubstitutes = MAC_INFO['homeSubstitutes'];
   awaySubstitutes = MAC_INFO['awaySubstitutes'];
-  
 
-  Settings()
-  textFont(roboto); // Varsayılan font olarak ayarla
-  starTime = millis()
-
-
+  Settings();
+  textFont(roboto);
+  starTime = millis();
 }
-
-
-
-
 
 function addBox(x, y, boxWidth, boxHeight, color) {
   fill(color.r, color.g, color.b, color.a);
   rect(x, y, boxWidth, boxHeight);
 }
 
-
-
 function draw() {
   noStroke();
   background(backgroundImage);
-  addMatchDate(MATCH_DATE_BOX_X, MATCH_DATE_BOX_Y, MATCH_DATE_BOX_WIDTH, MATCH_DATE_BOX_HEIGHT, MATCH_DATE_BOX_COLOR);
-  addGuzelLogo()
 
- 
-
-  if(!isRecord) {
+  if (!isRecord) {
     let elapsedTime = millis() - starTime;
 
-      if (elapsedTime >= 1000) {
-        counter++;
-        starTime = millis();
-      }
-
-      fill(0);
-      textSize(32);
-      textAlign(LEFT, TOP);
-      text(counter, 10, 10);
+    if (elapsedTime >= 1000) {
+      counter++;
+      starTime = millis();
     }
 
+    fill(0);
+    textSize(32);
+    textAlign(LEFT, TOP);
+    text(counter, 10, 10);
+  }
 
-   
-
-  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:TOP_MIDDLE_ALPHA});
-  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:TOP_MIDDLE_ALPHA});
+  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, { r: 0, g: 0, b: 0, a: TOP_MIDDLE_ALPHA });
+  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, { r: 0, g: 0, b: 0, a: TOP_MIDDLE_ALPHA });
 
   addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 25, MATCH_COMMENTARY_HOME_COLOR);
   addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 25, MATCH_COMMENTARY_AWAY_COLOR);
 
+  let homeSize = resizeLogo(team1Logo);
+  image(team1Logo, HALF_X / 2 - homeSize.width / 2, LOGO_IMAGE_Y, homeSize.width, homeSize.height);
 
+  let awaySize = resizeLogo(team2Logo);
+  image(team2Logo, HALF_X + HALF_X / 2 - awaySize.width / 2, LOGO_IMAGE_Y, awaySize.width, awaySize.height);
 
-  let homeSize = resizeLogo(team1Logo)
-  image(team1Logo,  HALF_X/2 - homeSize.width/2, LOGO_IMAGE_Y, homeSize.width, homeSize.height);
-  let awaySize = resizeLogo(team2Logo)
-  image(team2Logo, HALF_X + HALF_X/2 - awaySize.width/2, LOGO_IMAGE_Y, awaySize.width, awaySize.height);
   addTeamName(MAC_INFO['info']['homeTeam'], HOME_NAME_X, TEAM_NAME_Y, HOME_NAME_COLOR);
   addTeamName(MAC_INFO['info']['awayTeam'], AWAY_NAME_X, TEAM_NAME_Y, AWAY_NAME_COLOR);
   addTeamScore(homeScore, SCORE_HOME_X, SCORE_TEAM_Y, SCORE_HOME_COLOR);
   addTeamScore(awayScore, SCORE_AWAY_X, SCORE_TEAM_Y, SCORE_AWAY_COLOR);
-  
+  addMatchDate(MATCH_DATE_BOX_X, MATCH_DATE_BOX_Y, MATCH_DATE_BOX_WIDTH, MATCH_DATE_BOX_HEIGHT, MATCH_DATE_BOX_COLOR);
 
+  addAction();
+  MatchComentaryAnimation();
+  addGuzelLogo();
 
-  addAction()
-
-  MatchComentaryAnimation()
-
-  
-
-  if (frameCount < 60 * videoTime && isRecord) {
-
-    capturer.capture(canvas)
-
-  } else if (frameCount === 60 * videoTime && isRecord) {
-    capturer.save()
-    capturer.stop()
-
+  if (isRecord && millis() - videoStartTime > videoTime * 1000) {
+    recorder.stop();
+    noLoop();
     sound.play();
-
-
   }
-
- 
-
-
-
 }
 
 function addGuzelLogo() {
@@ -720,9 +723,6 @@ function addMatchDate(x, y, w, h, color) {
   let macInfo = `${MAC_INFO['info']['leagueName']} (${MAC_INFO['info']['season']} Sezonu)`
   text(macInfo, WIDTH/2, y+  MATCH_DATE_TEXT_FIRST_LINE_MARGIN_TOP);
   macInfo = `${MAC_INFO['info']['matchDate']} (${MAC_INFO['info']['week']}. Hafta)`
-  if ('leg' in MAC_INFO['info']) {
-    macInfo = `${MAC_INFO['info']['matchDate']} (${MAC_INFO['info']['leg']})`
-  }
   text(macInfo, WIDTH/2, y+  MATCH_DATE_TEXT_SECOND_LINE_MARGIN_TOP);
 }
 
