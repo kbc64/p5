@@ -2,6 +2,17 @@ p5.disableFriendlyErrors = true;
 
 isRecord = false;
 
+
+let goalTimes = []; // Her gol anının millis() değeri burada tutulacak
+let whistleTimes = [];    // Düdük anları için zamanlar
+
+const WHISTLE_MESSAGES = [
+  "Maç Başladı!",
+  "İlk Yarı Bitti!",
+  "İkinci Yarı Başladı!",
+  "Maç Bitti!"
+];
+
 let MAC_INFO;
 let colors;
 let currenAnimsationIndex = 1;
@@ -67,6 +78,7 @@ function preload() {
   });
   
   ballImage = loadImage("../images/assets/ball.png");
+  missPenalty = loadImage("../images/assets/miss.png");
   yellowImage = loadImage("../images/assets/yellow.png");
   redImage = loadImage("../images/assets/red.png");
   yellowRedImage = loadImage("../images/assets/yellow_red.png");
@@ -353,6 +365,9 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
   if (actionType == 'gol') {
     tint(255, 255, 255, 220);
     image(ballImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2 + 2, imageSize, imageSize);
+  } else if (actionType == 'kacan_penalti') {
+    tint(255, 255, 255, tintAlpha);
+    image(missPenalty, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
   } else if (actionType == 'sarı') {
     tint(255, 255, 255, tintAlpha);
     image(yellowImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
@@ -636,7 +651,13 @@ function addMinute(minute) {
 
 }
 
-
+function formatMillis(ms) {
+  const totalSeconds = Math.floor(ms / 1000);
+  const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+  const seconds = String(totalSeconds % 60).padStart(2, '0');
+  const milliseconds = String(ms % 1000).padStart(3, '0');
+  return `${minutes}:${seconds}.${milliseconds}`;
+}
 
 
 function addMatchCommentary() {
@@ -644,6 +665,23 @@ function addMatchCommentary() {
   let bgColor = MAC_INFO['aksiyonlar'][JSON_INDEX]['bgColor']
   let textColor = MAC_INFO['aksiyonlar'][JSON_INDEX]['color']
   let boxText = MAC_INFO['aksiyonlar'][JSON_INDEX]['text']
+  
+  if(!isRecord) {
+     if (WHISTLE_MESSAGES.includes(boxText)) {
+      if (whistleTimes.length === 0 || millis() - whistleTimes[whistleTimes.length - 1] > 4000) {
+        whistleTimes.push(millis());
+      }
+    }
+
+      if (boxText === 'GOOOLLLL!') {
+      // Eğer aynı anda tekrar tekrar yazılmasın diye sonuncu entry'e benzemesin
+      if (goalTimes.length === 0 || millis() - goalTimes[goalTimes.length - 1] > 4000) {
+        goalTimes.push(millis());
+      }
+    }
+  }
+
+ 
 
   // Metin kutusunu çiz
   fill(bgColor.r, bgColor.g, bgColor.b);
@@ -658,9 +696,21 @@ function addMatchCommentary() {
   const centerY = MATCH_COMMENTARY_BOX_Y + MATCH_COMMENTARY_BOX_HEIGHT / 2;
   text(boxText, HALF_X, centerY-2.5);
 
+ 
+
   if (boxText == 'Maç Bitti!') {
     console.log(counter);
-  }
+    console.log("Maçta atılan tüm goller:");
+      goalTimes.forEach((t, i) => {
+            console.log(`Gol ${i + 1}: ${formatMillis(t)} (${(t / 1000).toFixed(2)} saniye)`);
+
+      });
+      console.log("📋 Düdük anları:");
+      whistleTimes.forEach((t, i) => {
+        console.log(`Düdük ${i + 1}: ${formatMillis(t)} (${(t / 1000).toFixed(2)} saniye)`);
+      });
+    
+      }
 }
 
 
