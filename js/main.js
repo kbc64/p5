@@ -366,6 +366,7 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
     tint(255, 255, 255, 220);
     image(ballImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2 + 2, imageSize, imageSize);
   } else if (actionType == 'kacan_penalti') {
+    imageSize = 34;
     tint(255, 255, 255, tintAlpha);
     image(missPenalty, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
   } else if (actionType == 'sarı') {
