@@ -1,6 +1,17 @@
 p5.disableFriendlyErrors = true;
 
-isRecord = true;
+isRecord = false;
+
+
+let goalTimes = []; // Her gol anının millis() değeri burada tutulacak
+let whistleTimes = [];    // Düdük anları için zamanlar
+
+const WHISTLE_MESSAGES = [
+  "Maç Başladı!",
+  "İlk Yarı Bitti!",
+  "İkinci Yarı Başladı!",
+  "Maç Bitti!"
+];
 
 let MAC_INFO;
 let colors;
@@ -67,6 +78,7 @@ function preload() {
   });
   
   ballImage = loadImage("../images/assets/ball.png");
+  missPenalty = loadImage("../images/assets/miss.png");
   yellowImage = loadImage("../images/assets/yellow.png");
   redImage = loadImage("../images/assets/red.png");
   yellowRedImage = loadImage("../images/assets/yellow_red.png");
@@ -86,123 +98,120 @@ function preload() {
 
 
 
-let recorder;
-let recordedChunks = [];
-let videoStartTime;
-let canvas;
-
+const capturer = new CCapture({
+  format: 'webm',
+  framerate: 60,
+  verbose: true
+})
 
 function setup() {
-  canvas = createCanvas(WIDTH, HEIGTH);
-  frameRate(60);
-  pixelDensity(1);
 
-  videoTime = MAC_INFO['videoDuration'];
-  let canvasElement = document.getElementById('defaultCanvas0');
-  canvasElement.getContext('2d', { willReadFrequently: true });
+  let canvas = createCanvas(WIDTH, HEIGTH);
+  videoTime = MAC_INFO['videoDuration']
+  let canvasElement = document.getElementById('defaultCanvas0'); // p5.js'in varsayılan canvas ID'si
+  const ctx = canvasElement.getContext('2d', { willReadFrequently: true });
 
- if (isRecord) {
-    let stream = canvas.elt.captureStream(60);
-    
-    // Daha kaliteli kayıt için MediaRecorder ayarları
- const options = {
-  mimeType: 'video/webm;codecs=vp9',
-  videoBitsPerSecond: 50000000,      // 50 Mbps (RAW'a yakın kalite)
-  bitsPerSecond: 50128000,
-  framerate: 60
-};
-    recorder = new MediaRecorder(stream, options);
+  frameRate(60); // FPS'i 60 olarak sınırla
+  pixelDensity(1); // beyaz patlamayı engeller
 
-    // Daha sık veri toplama (büyük dosyalar için daha iyi)
-    recorder.ondataavailable = function(e) {
-        if (e.data.size > 0) recordedChunks.push(e.data);
-    };
 
-    recorder.onstop = function() {
-        let blob = new Blob(recordedChunks, { type: 'video/webm' });
-        let url = URL.createObjectURL(blob);
-
-        let a = document.createElement('a');
-        a.href = url;
-        a.download = 'mac_ozeti_' + new Date().toISOString() + '.webm'; // Tarih ekleyelim
-        document.body.appendChild(a);
-        a.click();
-        
-        // Temizlik
-        setTimeout(() => { // Küçük bir gecikme ekleyelim
-            a.remove();
-            URL.revokeObjectURL(url);
-            recordedChunks = []; // Sonraki kayıtlar için temizle
-        }, 100);
-    };
-
-    // Her 100ms'de bir veri topla (daha güvenilir kayıt için)
-    recorder.start(100);
-    videoStartTime = millis();
-}
-
-  homePlayers = MAC_INFO['homePlayers'];
-  awayPlayers = MAC_INFO['awayPlayers'];
+  if (isRecord) {
+    capturer.start();
+  }
+  
+  homePlayers = MAC_INFO['homePlayers']
+  awayPlayers = MAC_INFO['awayPlayers']
   homeCoach = MAC_INFO['info']['homeCoach'];
   awayCoach = MAC_INFO['info']['awayCoach'];
   homeSubstitutes = MAC_INFO['homeSubstitutes'];
   awaySubstitutes = MAC_INFO['awaySubstitutes'];
+  
 
-  Settings();
-  textFont(roboto);
-  starTime = millis();
+  Settings()
+  textFont(roboto); // Varsayılan font olarak ayarla
+  starTime = millis()
+
+
 }
+
+
+
+
 
 function addBox(x, y, boxWidth, boxHeight, color) {
   fill(color.r, color.g, color.b, color.a);
   rect(x, y, boxWidth, boxHeight);
 }
 
+
+
 function draw() {
   noStroke();
   background(backgroundImage);
+  addMatchDate(MATCH_DATE_BOX_X, MATCH_DATE_BOX_Y, MATCH_DATE_BOX_WIDTH, MATCH_DATE_BOX_HEIGHT, MATCH_DATE_BOX_COLOR);
+  addGuzelLogo()
 
-  if (!isRecord) {
+ 
+
+  if(!isRecord) {
     let elapsedTime = millis() - starTime;
 
-    if (elapsedTime >= 1000) {
-      counter++;
-      starTime = millis();
+      if (elapsedTime >= 1000) {
+        counter++;
+        starTime = millis();
+      }
+
+      fill(0);
+      textSize(32);
+      textAlign(LEFT, TOP);
+      text(counter, 10, 10);
     }
 
-    fill(0);
-    textSize(32);
-    textAlign(LEFT, TOP);
-    text(counter, 10, 10);
-  }
 
-  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, { r: 0, g: 0, b: 0, a: TOP_MIDDLE_ALPHA });
-  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, { r: 0, g: 0, b: 0, a: TOP_MIDDLE_ALPHA });
+   
+
+  addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:TOP_MIDDLE_ALPHA});
+  addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, LOGO_BOX_HEIGHT, {'r':0, 'g':0, 'b':0, a:TOP_MIDDLE_ALPHA});
 
   addBox(LOGO_HOME_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 25, MATCH_COMMENTARY_HOME_COLOR);
   addBox(LOGO_AWAY_BOX_X, LOGO_BOX_Y, LOGO_BOX_WIDTH, 25, MATCH_COMMENTARY_AWAY_COLOR);
 
-  let homeSize = resizeLogo(team1Logo);
-  image(team1Logo, HALF_X / 2 - homeSize.width / 2, LOGO_IMAGE_Y, homeSize.width, homeSize.height);
 
-  let awaySize = resizeLogo(team2Logo);
-  image(team2Logo, HALF_X + HALF_X / 2 - awaySize.width / 2, LOGO_IMAGE_Y, awaySize.width, awaySize.height);
 
+  let homeSize = resizeLogo(team1Logo)
+  image(team1Logo,  HALF_X/2 - homeSize.width/2, LOGO_IMAGE_Y, homeSize.width, homeSize.height);
+  let awaySize = resizeLogo(team2Logo)
+  image(team2Logo, HALF_X + HALF_X/2 - awaySize.width/2, LOGO_IMAGE_Y, awaySize.width, awaySize.height);
   addTeamName(MAC_INFO['info']['homeTeam'], HOME_NAME_X, TEAM_NAME_Y, HOME_NAME_COLOR);
   addTeamName(MAC_INFO['info']['awayTeam'], AWAY_NAME_X, TEAM_NAME_Y, AWAY_NAME_COLOR);
   addTeamScore(homeScore, SCORE_HOME_X, SCORE_TEAM_Y, SCORE_HOME_COLOR);
   addTeamScore(awayScore, SCORE_AWAY_X, SCORE_TEAM_Y, SCORE_AWAY_COLOR);
-  addMatchDate(MATCH_DATE_BOX_X, MATCH_DATE_BOX_Y, MATCH_DATE_BOX_WIDTH, MATCH_DATE_BOX_HEIGHT, MATCH_DATE_BOX_COLOR);
+  
 
-  addAction();
-  MatchComentaryAnimation();
-  addGuzelLogo();
 
-  if (isRecord && millis() - videoStartTime > videoTime * 1000) {
-    recorder.stop();
-    noLoop();
+  addAction()
+
+  MatchComentaryAnimation()
+
+  
+
+  if (frameCount < 60 * videoTime && isRecord) {
+
+    capturer.capture(canvas)
+
+  } else if (frameCount === 60 * videoTime && isRecord) {
+    capturer.save()
+    capturer.stop()
+
     sound.play();
+
+
   }
+
+ 
+
+
+
 }
 
 function addGuzelLogo() {
@@ -356,20 +365,16 @@ function addMatchAction(x, y, width, height, color, minute, playerName, actionTy
   if (actionType == 'gol') {
     tint(255, 255, 255, 220);
     image(ballImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2 + 2, imageSize, imageSize);
-  } else if (actionType == 'sarı') {
+  } else if (actionType == 'kacan_penalti') {
+    imageSize = 34;
     tint(255, 255, 255, tintAlpha);
-    image(yellowImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
+    image(missPenalty, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
+  
   } else if (actionType == 'kırmızı') {
     tint(255, 255, 255, tintAlpha);
     image(redImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
   } else if (actionType == 'ikinci sarı kırmızı') {
     image(yellowRedImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
-  } else if (actionType == 'oyuncu değişikliği') {
-    image(exitImage, textX + playerWidth, y + (height - imageSize) / 2, imageSize, imageSize);
-    image(enterImage, x + width - imageSize - imageRightMargin, y + (height - imageSize) / 2, imageSize, imageSize);
-
-    textAlign(RIGHT, CENTER);
-    text(playerName, x + width - imageSize - imageRightMargin - 5, textY);
   }
 
   noTint();
@@ -532,62 +537,20 @@ function MatchComentaryAnimation() {
       awayScore = MAC_INFO['aksiyonlar'][JSON_INDEX]['awayScore'];
     }
   
-    if (MAC_INFO['aksiyonlar'][JSON_INDEX]['isSquad']&&(firstStartTime == null|| firstStartTime+squadDelay>millis())&&!is_pass) {
      
-      if(!isSquadAnimation) {
-        startTime += 50000000 
     
-        addSquad();
-        
-      } else {
-        if (isFirstSqauad) {
-          isFirstSqauad = false
-          firstStartTime = millis()
-          setTimeout(()=>{is_pass=true; startTime=0}, squadDelay)
-        }
-
-        
-          drawFooterBox()  
-          textSize(34);
-
-
-          for (let item of displayedSquad) {
-            const isSub   = MAC_INFO.homeSubstitutes.some(p => p.name === item.name)
-                         || MAC_INFO.awaySubstitutes.some(p => p.name === item.name);
-            const isCoach = item.number === 'TD';
-            const numCol  = isCoach ? coachNumberColor : isSub ? subNumberColor : numberColor;
-            const nameCol = isCoach ? coachNameColor   : isSub ? subNameColor   : nameColor;
-        
-            // Number box
-            fill(0, 0, 0, squadAlpha);
-            rect(item.x, item.y, NUMBER_BOX_WIDTH, SQUAD_BOX_HEIGHT);
-            fill(...numCol, numberAlpha);
-            textAlign(CENTER, CENTER);
-            text(item.number, item.x + NUMBER_BOX_WIDTH / 2, item.y + SQUAD_BOX_HEIGHT / 2 - 3);
-        
-            // Name box
-            fill(0, 0, 0, squadAlpha);
-            rect(item.x + NUMBER_BOX_WIDTH + 5, item.y, NAME_BOX_WIDTH, SQUAD_BOX_HEIGHT);
-            fill(...nameCol, nameAlpha);
-            textAlign(LEFT, CENTER);
-            text(item.name, item.x + NUMBER_BOX_WIDTH + 15, item.y + SQUAD_BOX_HEIGHT / 2 - 3);
-          }
-
-          addNotice()
-        
-       
           
         
-      }
+      
       
    
    
-    } else {
+ 
       if ('action' in MAC_INFO['aksiyonlar'][JSON_INDEX] && MAC_INFO['aksiyonlar'][JSON_INDEX]['action'] && isAppendAction) {
         isAppendAction = false
         actions.push(MAC_INFO['aksiyonlar'][JSON_INDEX]);
         
-      }
+      
   
   }
  
@@ -639,7 +602,13 @@ function addMinute(minute) {
 
 }
 
-
+function formatMillis(ms) {
+  const totalSeconds = Math.floor(ms / 1000);
+  const minutes = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+  const seconds = String(totalSeconds % 60).padStart(2, '0');
+  const milliseconds = String(ms % 1000).padStart(3, '0');
+  return `${minutes}:${seconds}.${milliseconds}`;
+}
 
 
 function addMatchCommentary() {
@@ -647,6 +616,23 @@ function addMatchCommentary() {
   let bgColor = MAC_INFO['aksiyonlar'][JSON_INDEX]['bgColor']
   let textColor = MAC_INFO['aksiyonlar'][JSON_INDEX]['color']
   let boxText = MAC_INFO['aksiyonlar'][JSON_INDEX]['text']
+  
+  if(!isRecord) {
+     if (WHISTLE_MESSAGES.includes(boxText)) {
+      if (whistleTimes.length === 0 || millis() - whistleTimes[whistleTimes.length - 1] > 4000) {
+        whistleTimes.push(millis());
+      }
+    }
+
+      if (boxText === 'GOOOLLLL!') {
+      // Eğer aynı anda tekrar tekrar yazılmasın diye sonuncu entry'e benzemesin
+      if (goalTimes.length === 0 || millis() - goalTimes[goalTimes.length - 1] > 4000) {
+        goalTimes.push(millis());
+      }
+    }
+  }
+
+ 
 
   // Metin kutusunu çiz
   fill(bgColor.r, bgColor.g, bgColor.b);
@@ -661,9 +647,12 @@ function addMatchCommentary() {
   const centerY = MATCH_COMMENTARY_BOX_Y + MATCH_COMMENTARY_BOX_HEIGHT / 2;
   text(boxText, HALF_X, centerY-2.5);
 
+ 
+
   if (boxText == 'Maç Bitti!') {
     console.log(counter);
-  }
+    
+      }
 }
 
 
@@ -723,6 +712,9 @@ function addMatchDate(x, y, w, h, color) {
   let macInfo = `${MAC_INFO['info']['leagueName']} (${MAC_INFO['info']['season']} Sezonu)`
   text(macInfo, WIDTH/2, y+  MATCH_DATE_TEXT_FIRST_LINE_MARGIN_TOP);
   macInfo = `${MAC_INFO['info']['matchDate']} (${MAC_INFO['info']['week']}. Hafta)`
+  if ('leg' in MAC_INFO['info']) {
+    macInfo = `${MAC_INFO['info']['matchDate']} (${MAC_INFO['info']['leg']})`
+  }
   text(macInfo, WIDTH/2, y+  MATCH_DATE_TEXT_SECOND_LINE_MARGIN_TOP);
 }
 

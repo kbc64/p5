@@ -1,0 +1,2345 @@
+{
+    "videoDuration": 126,
+    "info": {
+        "homeTeam": "GALATASARAY",
+        "awayTeam": "ERZURUMSPOR",
+        "homeCoach": "Mircea Lucescu",
+        "awayCoach": "Ruslan Abdullajev",
+        "leagueName": "Türkiye Süper Ligi",
+        "season": "2000/2001",
+        "week": 2,
+        "matchDate": "19 Ağustos 2000",
+        "matchTime": "19:00",
+        "stadium": "Ali Sami Yen",
+        "homeLogo": "/media/logo/galatasaray_170.png",
+        "awayLogo": "/media/logo/erzurumspor_219.png",
+        "bgImage": "/media/video_background_images/Ultra-photorealistic_football_stadium_under_overc_ac064e3c-c590-_mwccBaE.png"
+    },
+    "aksiyonlar": [
+        {
+            "text": "Maç Başladı!",
+            "w": 0,
+            "dc": 1000,
+            "isAnimation": false,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "minute": "1'"
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "8'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "8'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "8'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "8'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "8'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "8'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "8'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "8'  Gheorghe Hagi GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "8'",
+            "action": true,
+            "ilk_yari_skor": null,
+            "type": "gol",
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "8'  Galatasaray 1-0 Erzurumspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 1,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "8'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "22'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "22'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "22'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "22'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "22'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "22'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "22'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "22'  Jardel GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "22'",
+            "action": true,
+            "ilk_yari_skor": null,
+            "type": "gol",
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "22'  Galatasaray 2-0 Erzurumspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 2,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "22'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "26'  Jardel GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "26'",
+            "action": true,
+            "ilk_yari_skor": null,
+            "type": "gol",
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Maçtaki 2. Golü",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "26'  Galatasaray 3-0 Erzurumspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 3,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "26'",
+            "action": false,
+            "ilk_yari_skor": null,
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "İlk Yarı Bitti!",
+            "w": 0,
+            "dc": 500,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "minute": "İY"
+        },
+        {
+            "text": "İY: Galatasaray 3-0 Erzurumspor",
+            "w": 0,
+            "dc": 500,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "minute": "İY"
+        },
+        {
+            "text": "İkinci Yarı Başladı!",
+            "w": 0,
+            "dc": 500,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "minute": "46'"
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "52'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "52'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "52'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "52'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "52'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "52'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "52'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "52'  Jardel GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "52'",
+            "action": true,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": "gol",
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Maçtaki 3. Golü",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "52'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "52'  Galatasaray 4-0 Erzurumspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 4,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "52'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "75'  Jardel GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": true,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": "gol",
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Maçtaki 4. Golü",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "75'  Galatasaray 5-0 Erzurumspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 5,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "75'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "87'  Jardel GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "87'",
+            "action": true,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": "gol",
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Maçtaki 5. Golü",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "87'  Galatasaray 6-0 Erzurumspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Jardel",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 6,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "87'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": -900,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": true,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "bgColor": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "color": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "GOOOLLLL!",
+            "w": 1,
+            "dc": 1300,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "90'  Gheorghe Hagi GOL",
+            "w": 1,
+            "dc": 500,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": true,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "90'",
+            "action": true,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": "gol",
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Maçtaki 2. Golü",
+            "w": 1,
+            "dc": 500,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "90'  Galatasaray 7-0 Erzurumspor",
+            "w": 1,
+            "dc": 500,
+            "player": "Gheorghe Hagi",
+            "player2": false,
+            "isAnimation": false,
+            "homeScore": 7,
+            "awayScore": 0,
+            "isScore": false,
+            "isScoreChange": false,
+            "isSquad": false,
+            "minute": "90'",
+            "action": false,
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "type": false,
+            "color": {
+                "r": 255,
+                "g": 255,
+                "b": 0
+            },
+            "bgColor": {
+                "r": 235,
+                "g": 0,
+                "b": 0
+            }
+        },
+        {
+            "text": "Maç Bitti!",
+            "isAnimation": false,
+            "isScore": false,
+            "w": 0,
+            "dc": 750,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "minute": "MS"
+        },
+        {
+            "text": "MS: Galatasaray 7-0 Erzurumspor",
+            "isAnimation": false,
+            "isScore": false,
+            "w": 0,
+            "dc": 0,
+            "isSquad": false,
+            "bgColor": {
+                "r": 255,
+                "g": 208,
+                "b": 0
+            },
+            "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+            },
+            "ilk_yari_skor": [
+                3,
+                0
+            ],
+            "minute": "MS"
+        }
+    ],
+    "homePlayers": [
+        {
+            "number": 1,
+            "name": "Claudio Taffarel",
+            "id": 13697
+        },
+        {
+            "number": 4,
+            "name": "Gheorghe Popescu",
+            "id": 13527
+        },
+        {
+            "number": 26,
+            "name": "Emre Aşık",
+            "id": 13034
+        },
+        {
+            "number": 67,
+            "name": "Ergün Penbe",
+            "id": 12842
+        },
+        {
+            "number": 14,
+            "name": "Fatih Akyel",
+            "id": 13526
+        },
+        {
+            "number": 8,
+            "name": "Suat Kaya",
+            "id": 12261
+        },
+        {
+            "number": 7,
+            "name": "Okan Buruk",
+            "id": 12864
+        },
+        {
+            "number": 5,
+            "name": "Emre Belözoğlu",
+            "id": 13516
+        },
+        {
+            "number": 10,
+            "name": "Gheorghe Hagi",
+            "id": 13375
+        },
+        {
+            "number": 20,
+            "name": "Serkan Aykut",
+            "id": 13051
+        },
+        {
+            "number": 9,
+            "name": "Jardel",
+            "id": 14030
+        }
+    ],
+    "awayPlayers": [
+        {
+            "number": 1,
+            "name": "Milorad Korac",
+            "id": 14001
+        },
+        {
+            "number": 4,
+            "name": "Ömer Erdoğan",
+            "id": 13730
+        },
+        {
+            "number": 5,
+            "name": "Hasan Vural",
+            "id": 14002
+        },
+        {
+            "number": 6,
+            "name": "Sohrab Bakhtiarizadeh",
+            "id": 14003
+        },
+        {
+            "number": 7,
+            "name": "Ergin Yücetaş",
+            "id": 13857
+        },
+        {
+            "number": 9,
+            "name": "Ali Yılmaz",
+            "id": 13737
+        },
+        {
+            "number": 20,
+            "name": "Selçuk Beyaz",
+            "id": 13930
+        },
+        {
+            "number": 26,
+            "name": "Soner Neliker",
+            "id": 13590
+        },
+        {
+            "number": 18,
+            "name": "Vidadi Rzayev",
+            "id": 14004
+        },
+        {
+            "number": 19,
+            "name": "Sasa Kovacevic",
+            "id": 14005
+        },
+        {
+            "number": 10,
+            "name": "Alexander Löbe",
+            "id": 13898
+        }
+    ],
+    "homeSubstitutes": [
+        {
+            "number": 16,
+            "name": "Kerem İnan",
+            "id": 13924
+        },
+        {
+            "number": 3,
+            "name": "Bülent Korkmaz",
+            "id": 12448
+        },
+        {
+            "number": 57,
+            "name": "Hakan Ünsal",
+            "id": 13004
+        },
+        {
+            "number": 28,
+            "name": "Bülent Akın",
+            "id": 13506
+        },
+        {
+            "number": 22,
+            "name": "Ümit Davala",
+            "id": 13332
+        },
+        {
+            "number": 11,
+            "name": "Hasan Şaş",
+            "id": 13240
+        },
+        {
+            "number": 36,
+            "name": "Marcio",
+            "id": 13887
+        }
+    ],
+    "awaySubstitutes": [
+        {
+            "number": 22,
+            "name": "Armağan Vatanoğlu",
+            "id": 14140
+        },
+        {
+            "number": 61,
+            "name": "Eyüp Saka",
+            "id": 13940
+        },
+        {
+            "number": 23,
+            "name": "Cüneyt Kocabıçak",
+            "id": 14047
+        },
+        {
+            "number": 2,
+            "name": "Kürşat Karakaş",
+            "id": 13729
+        },
+        {
+            "number": 62,
+            "name": "İsa Atik Palandöken",
+            "id": 19024
+        },
+        {
+            "number": 25,
+            "name": "Zafer Demir",
+            "id": 13732
+        },
+        {
+            "number": 24,
+            "name": "Mustafa Acar",
+            "id": 14042
+        }
+    ],
+    "isNumberingSquad": false,
+    "settings": {
+        "matchCommentaryHomeColor": {
+            "r": 235,
+            "g": 0,
+            "b": 0
+        },
+        "matchCommentaryAwayColor": {
+            "r": 0,
+            "g": 149,
+            "b": 217
+        },
+        "homeBoxColor": {
+            "r": 235,
+            "g": 0,
+            "b": 0
+        },
+        "awayBoxColor": {
+            "r": 0,
+            "g": 149,
+            "b": 217
+        },
+        "homeBoxTextColor": {
+            "r": 255,
+            "g": 255,
+            "b": 0
+        },
+        "awayBoxTextColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+        },
+        "homeNameColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+        },
+        "awayNameColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+        },
+        "scoreHomeColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+        },
+        "scoreAwayColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+        }
+    }
+}
