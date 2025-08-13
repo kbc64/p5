@@ -1,6 +1,6 @@
 p5.disableFriendlyErrors = true;
 
-isRecord = false;
+isRecord = true;
 
 
 let goalTimes = []; // Her gol anının millis() değeri burada tutulacak

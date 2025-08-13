@@ -31,17 +31,7 @@ cmd_audio = (
     f'output_{video_id}.mp4'
 )
 
-# 5. Final videoyu süreye göre kırpma
-minute = input("Kaç dakika alalım? ")
-second = input("Kaç saniye alalım? ")
 
-# Süre formatı: 00:MM:SS
-duration = f'00:{minute.zfill(2)}:{second.zfill(2)}'
-
-cmd_cut = (
-    f'ffmpeg -i output_{video_id}.mp4 -t {duration} -c copy '
-    f'final_{video_id}.mp4'
-)
 
 print("\n1) Dönüştürme komutu:")
 print(cmd_convert)
@@ -54,6 +44,19 @@ print(cmd_overlay)
 
 print("\n4) Ses ekleme komutu:")
 print(cmd_audio)
+
+
+# 5. Final videoyu süreye göre kırpma
+minute = input("Kaç dakika alalım? ")
+second = input("Kaç saniye alalım? ")
+
+# Süre formatı: 00:MM:SS
+duration = f'00:{minute.zfill(2)}:{second.zfill(2)}'
+
+cmd_cut = (
+    f'ffmpeg -i output_{video_id}.mp4 -t {duration} -c copy '
+    f'final_{video_id}.mp4'
+)
 
 print("\n5) Süre kısaltma (final):")
 print(cmd_cut)
